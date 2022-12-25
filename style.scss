@@ -18,10 +18,8 @@ background-attachment: fixed;
 background-color: burlywood;
 
 @media screen and (min-width: 451px) {
-    background-image: url(../images/Header_bc_1024.jpg);
-    
-}
-}
+    background-image: url(../images/Header_bc_1024.jpg);    
+}}
 
 header::before {
     content: "";
@@ -33,29 +31,30 @@ width: 150px;
 position:absolute;
 top: -20% ;
 display:none;
-
-
 }
 
 h1 {color: cornsilk;
-    font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
+    font-size: 3vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
+
+    @media screen and (min-width: 750px) {
+  
+    }
 }
 
 .header-container { background-color: rgba(0,0,0, 0.6);
 position:relative;
 display:flex;
-padding: 20px;
+padding: 10px;
 justify-content: center;
 align-items: center;
-width: 60%;
+width: 30%;
 aspect-ratio: 1;
 border-radius: 50%;
 text-align:center;
 border: 3px solid burlywood;
 
-@media screen and (min-width: 770px) {
- 
+@media screen and (min-width: 750px) {
    
 }
 }

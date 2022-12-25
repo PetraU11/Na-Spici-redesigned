@@ -41,18 +41,17 @@ header img {
 
 h1 {
   color: cornsilk;
-  font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
+  font-size: 3vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
   font-family: "Courgette", cursive;
 }
-
 .header-container {
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
   display: flex;
-  padding: 20px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  width: 30%;
   aspect-ratio: 1;
   border-radius: 50%;
   text-align: center;
