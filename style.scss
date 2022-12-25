@@ -9,16 +9,16 @@ header {
 display:flex;
 justify-content: center;
 align-items: center;
-background-image: url(../images/Header_bc_450.jpg);
+background-image: url(../images/IMG_0430up.jpg);
 height: 100vh;
 background-position: center center;
 background-repeat: no-repeat;
-background-size: contain;
+background-size: cover;
 background-attachment: fixed;
 background-color: burlywood;
 
 @media screen and (min-width: 451px) {
-    background-image: url(../images/Header_bc_1024.jpg);    
+    background-image: url(../images/IMG_0430up.jpg);    
 }}
 
 header::before {
@@ -34,7 +34,7 @@ display:none;
 }
 
 h1 {color: cornsilk;
-    font-size: 3vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
+    font-size: 5vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
 
     @media screen and (min-width: 750px) {
@@ -48,7 +48,7 @@ display:flex;
 padding: 10px;
 justify-content: center;
 align-items: center;
-width: 30%;
+width: 40%;
 aspect-ratio: 1;
 border-radius: 50%;
 text-align:center;
