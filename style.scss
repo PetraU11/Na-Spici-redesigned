@@ -9,7 +9,7 @@ header {
 display:flex;
 justify-content: center;
 align-items: center;
-background-image: url(../images/IMG0454_L.jpg);
+background-image: url(../images/Header_bc_450.jpg);
 height: 100vh;
 background-position: center center;
 background-repeat: no-repeat;
@@ -17,9 +17,13 @@ background-size: cover;
 background-attachment: fixed;
 background-color: burlywood;
 
+@media screen and (min-width: 451px) {
+    background-image: url(../images/Header_bc_1024.jpg);
+    
+}
 }
 
-header::after {
+header::before {
     content: "";
  
 }
@@ -34,23 +38,24 @@ display:none;
 }
 
 h1 {color: cornsilk;
-    padding-left: 15px;
-    font-size: 3.5rem; /* responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
+    font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
 }
 
 .header-container { background-color: rgba(0,0,0, 0.6);
 position:relative;
-padding:15px;
 display:flex;
+padding: 20px;
 justify-content: center;
 align-items: center;
-width: 400px;
-height: 400px;
+width: 60%;
+aspect-ratio: 1;
 border-radius: 50%;
 text-align:center;
-border: 3px solid burlywood;}
+border: 3px solid burlywood;
 
-.oterivracka {
-  
+@media screen and (min-width: 770px) {
+ 
+   
+}
 }
