@@ -56,12 +56,17 @@ header::before {
   background-color: rgb(184, 125, 83);
 }
 
+div[class^=section-first] + p {
+  color: red;
+}
+
 /* Section first */
 .section.first {
   margin-top: 25px;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 .section-first__why {
   text-align: center;
@@ -87,6 +92,30 @@ header::before {
 
 .section-first__location-map {
   display: none;
+}
+
+.section-first__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.section-first__contact-header {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.section-first__contact-tel {
+  flex-basis: 45%;
+  text-align: right;
+  border-right: 2px solid black;
+  padding-right: 6px;
+  margin-right: 6px;
+}
+
+.section-first__contact-mail {
+  flex-basis: 45%;
 }
 
 /* Section second */
