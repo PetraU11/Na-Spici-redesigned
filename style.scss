@@ -13,6 +13,10 @@ color: $c-text;
 font-family: 'Montserrat', sans-serif;
 font-size: 1.2rem; }
 
+h2 {
+    font-family: 'Courgette', cursive;
+}
+
 
 /* HEADER */
 header {
@@ -66,6 +70,7 @@ div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;}
 /* Section first */
 .section.first {
     margin-top: 25px;
+    margin-bottom: 25px;
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
@@ -108,8 +113,29 @@ margin-top:0;}
 .section.two {
     background-image: url(../images/events_bc_1024.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
+    background-size: 100%;
+    padding: 40px;
+    text-align: right;
+   position:relative;
  }
+
+ /*
+.button {
+    position:absolute;
+    top: -35%;
+    left: 40%;
+    color: $c-main;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    padding-top: 35px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid $c-text;
+    background-color: $c-button;
+} */
+
+
 
 /* FOOTER */

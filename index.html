@@ -57,19 +57,64 @@
 
 <section class="section two"> 
 
-<p> Aktuality a Akce </p>
-
-<p> V listopadu se můžete těšit na:</p>
+<h2> Připravili jsme si pro Vás:</h2>
 <p> Zabijačkové hody </p>
 <p> 28. - 29. 10. od 11 hod.</p>
-
-
-Pro menu klikněte ZDE
+<p> Pro menu klikněte ZDE </p>
 </section>
 
 
 <section class="section three"> 
 <p> Rezervace </p>
+
+
+<form action="https://submit-form.com/AsX6HR47" method="POST"> 
+
+    <input type="hidden" name="_redirect" value="https://hospudka-na-spici.netlify.app/booking-form-submitted/">
+
+    
+<div class="form">
+<label for="jmeno"> Jméno, pod kterým bude rezervace provedena <span class="required"> * </span> </label>
+<input type="text" name="jmeno" id="jmeno" maxlength="40"
+placeholder="Jirka Nováků" autofocus required>
+</div>
+
+<div class="form">
+<label for="email"> Kontaktní e-mail <span class="required"> * </span></label>
+<input type="email" name="email" id="email" placeholder="jiri.spica@seznam.cz" required>
+</div>
+
+
+<div class="form">
+<label for="tel"> Kontaktní telefon <span class="required"> * </span> </label>
+<input type="tel" name="tel" id="tel" min="9" max="12" placeholder="723 123 456" required>
+</div>
+
+<div class="form">
+<label for="pocet"> Počet osob <span class="required"> * </span> </label>
+<input type="number" name="pocet" id="pocet" min="1" placeholder="3" required>
+</div>
+
+<div class="form">
+<label for="datum"> Datum <span class="required"> * </span></label>
+<input type="date" name="datum" id="datum" required>
+</div>
+
+<div class="form">
+<label for="cas"> Čas <span class="required"> * </span></label>
+<input type="time" name="cas" id="cas" required>
+</div>
+
+<div class="form">
+<label for="info"> Upřesňující informace </label>
+<textarea name="info" id="info" cols="30" rows="10" >  
+</textarea>
+</div> 
+    
+<button class="booking-button" type="submit" name="tlacitko">Odeslat rezervaci</button> 
+
+
+</form>  
 </section>
 
 <section class="section four"> 
