@@ -6,8 +6,10 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(247, 242, 235);
-  color: rgb(65, 39, 4);
+  background-color: rgb(240, 226, 207);
+  color: rgb(79, 25, 11);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
 }
 
 /* HEADER */
@@ -21,7 +23,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: burlywood;
 }
 @media screen and (min-width: 451px) {
   header {
@@ -47,17 +48,18 @@ header::before {
   border: 3px solid burlywood;
 }
 .header__text {
-  color: cornsilk;
+  color: rgb(240, 226, 207);
   font-size: 5vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
   font-family: "Courgette", cursive;
 }
 /* MAIN */
 .section:nth-child(even) {
-  background-color: rgb(184, 125, 83);
+  background-color: rgb(166, 100, 15);
+  color: rgb(240, 226, 207);
 }
 
-div[class^=section-first] + p {
-  color: red;
+div[class^=section-first] > h2 {
+  font-family: "Courgette", cursive;
 }
 
 /* Section first */
@@ -112,15 +114,21 @@ div[class^=section-first] + p {
   border-right: 2px solid black;
   padding-right: 6px;
   margin-right: 6px;
+  margin-top: 0;
 }
 
 .section-first__contact-mail {
   flex-basis: 45%;
+  text-align: left;
+  margin-top: 0;
 }
 
 /* Section second */
 .section.two {
-  background-color: rgb(184, 125, 83);
+  background-image: url(../images/events_bc_1024.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
 }
 
 /* FOOTER *//*# sourceMappingURL=style.css.map */

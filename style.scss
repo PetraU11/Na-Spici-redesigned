@@ -1,9 +1,17 @@
+$c-background:rgb(247, 219, 181); 
+$c-header-footer:rgb(166, 100, 15);
+$c-main: rgb(240, 226, 207);
+$c-text: rgb(79, 25, 11);
+$c-button:rgb(131, 86, 29);
+
 *, :after, :before { box-sizing: border-box;}
 
 body {margin: 0;
 padding: 0;
-background-color: rgb(247, 242, 235);
-color: rgb(65, 39, 4);}
+background-color: $c-main;
+color: $c-text;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.2rem; }
 
 
 /* HEADER */
@@ -17,7 +25,7 @@ background-position: center center;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
-background-color: burlywood;
+
 
 @media screen and (min-width: 451px) {
     background-image: url(../images/IMG_0430up.jpg);    
@@ -27,7 +35,8 @@ header::before {
     content: "";}
 
 
-.header__container { background-color: rgba(0,0,0, 0.6);
+.header__container {
+background-color: rgba(0,0,0, 0.6);
 position:relative;
 display:flex;
 padding: 10px;
@@ -42,7 +51,7 @@ border: 3px solid burlywood;
 @media screen and (min-width: 750px) {}
 }
 
-.header__text {color: cornsilk;
+.header__text {color: $c-main;
     font-size: 5vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
 
@@ -50,8 +59,9 @@ border: 3px solid burlywood;
 
 /* MAIN */
 
-.section:nth-child(even){background-color: rgb(184, 125, 83);}
-div[class^= "section-first"] + p {color:red;}
+.section:nth-child(even){background-color: $c-header-footer;
+color: $c-main}
+div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;}
 
 /* Section first */
 .section.first {
@@ -86,11 +96,20 @@ text-align: center;}
 text-align:right;
 border-right: 2px solid black;
 padding-right: 6px;
-margin-right: 6px;}
-.section-first__contact-mail {flex-basis: 45%;}
+margin-right: 6px;
+margin-top:0;
+}
+.section-first__contact-mail {flex-basis: 45%;
+text-align: left;
+margin-top:0;}
 
 /* Section second */
 
-.section.two {background-color: rgb(184, 125, 83); }
+.section.two {
+    background-image: url(../images/events_bc_1024.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+ }
 
 /* FOOTER */
