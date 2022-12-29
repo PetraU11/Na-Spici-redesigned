@@ -9,7 +9,7 @@ body {
   background-color: rgb(240, 226, 207);
   color: rgb(79, 25, 11);
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 h2 {
@@ -21,7 +21,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
+  background-image: url(../images/IMG_0430up_400.jpg); /*nastavit fotky pro breakpointy*/
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ header::before {
 }
 .header__text {
   color: rgb(240, 226, 207);
-  font-size: 5vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
+  font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
   font-family: "Courgette", cursive;
 }
 /* MAIN */
@@ -68,8 +68,6 @@ div[class^=section-first] > h2 {
 
 /* Section first */
 .section.first {
-  margin-top: 25px;
-  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -175,6 +173,9 @@ div[class^=section-first] > h2 {
   }
 }
 
+.section-three__bookinginfo {
+  margin-bottom: 40px;
+}
 @media screen and (min-width: 600px) {
   .section-three__bookinginfo {
     grid-column: 2/3;
@@ -186,6 +187,8 @@ div[class^=section-first] > h2 {
 }
 
 .form {
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto;

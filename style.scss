@@ -11,7 +11,7 @@ padding: 0;
 background-color: $c-main;
 color: $c-text;
 font-family: 'Montserrat', sans-serif;
-font-size: 1.2rem; }
+font-size: 1.1rem; }
 
 h2 {
     font-family: 'Courgette', cursive;
@@ -23,7 +23,7 @@ header {
 display:flex;
 justify-content: center;
 align-items: center;
-background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
+background-image: url(../images/IMG_0430up_400.jpg); /*nastavit fotky pro breakpointy*/
 height: 100vh;
 background-position: center center;
 background-repeat: no-repeat;
@@ -56,7 +56,7 @@ border: 3px solid burlywood;
 }
 
 .header__text {color: $c-main;
-    font-size: 5vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
+    font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
 
     @media screen and (min-width: 750px) {}}
@@ -64,18 +64,16 @@ border: 3px solid burlywood;
 /* MAIN */
 
 .section:nth-child(even){background-color: $c-header-footer;
-color: $c-main}
+color: $c-main;}
 div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;}
+
 
 /* Section first */
 .section.first {
-    margin-top: 25px;
-    margin-bottom: 25px;
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
     text-align: center;
-
 
     @media screen and (min-width: 750px) {}
 }
@@ -152,10 +150,13 @@ margin-top:0;}
 
 .section-three__bookinginfo {
     @media screen and (min-width: 600px) { grid-column: 2 / 3 };
+    margin-bottom: 40px;
 }
 
 .section-three__booking-timedate {display:flex;}
 .form {
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right:auto;}
