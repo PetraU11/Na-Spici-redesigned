@@ -113,8 +113,9 @@ margin-top:0;}
 .section.two {
     background-image: url(../images/events_bc_1024.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding: 40px;
+    height: 430px;
     text-align: right;
    position:relative;
  }
@@ -136,6 +137,55 @@ margin-top:0;}
     background-color: $c-button;
 } */
 
+/* Section three */
 
+.section.three {text-align: center;
+    @media screen and (min-width: 600px) {display:grid;
+    grid-template-columns: 5% repeat(2, 1fr) 5%;
+    column-gap: 5%;
+    row-gap: 20px;
+}}
+
+.section-three__perex {
+    @media screen and (min-width: 600px) { grid-column: 2 / -2 };
+}
+
+.section-three__bookinginfo {
+    @media screen and (min-width: 600px) { grid-column: 2 / 3 };
+}
+
+.section-three__booking-timedate {display:flex;}
+.form {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right:auto;}
+
+.form label { display:block;}
+
+.form input,
+.form textarea {
+    width: 100%;
+    border: 2px solid $c-header-footer;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: rgb(242, 238, 232);}
+
+    .form input:focus,
+    .form textarea:focus { 
+        outline:0;
+        border: 2px solid $c-text; }
+            
+           /* .form input:placeholder-shown {background-color:bisque;}*/
+    .form input:not(:placeholder-shown):valid {
+        background-color: $c-header-footer;} 
+           
+                
+    .required {
+        color: red;
+        margin:0;
+        display:inline-block;
+            }
+            
 
 /* FOOTER */

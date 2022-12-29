@@ -132,8 +132,9 @@ div[class^=section-first] > h2 {
 .section.two {
   background-image: url(../images/events_bc_1024.jpeg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   padding: 40px;
+  height: 430px;
   text-align: right;
   position: relative;
 }
@@ -154,4 +155,77 @@ div[class^=section-first] > h2 {
     border: 5px solid $c-text;
     background-color: $c-button;
 } */
+/* Section three */
+.section.three {
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .section.three {
+    display: grid;
+    grid-template-columns: 5% repeat(2, 1fr) 5%;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .section-three__perex {
+    grid-column: 2/-2;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .section-three__bookinginfo {
+    grid-column: 2/3;
+  }
+}
+
+.section-three__booking-timedate {
+  display: flex;
+}
+
+.form {
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form label {
+  display: block;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border: 2px solid rgb(166, 100, 15);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: rgb(242, 238, 232);
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 0;
+  border: 2px solid rgb(79, 25, 11);
+}
+
+/* .form input:placeholder-shown {background-color:bisque;}*/
+.form input:not(:-moz-placeholder-shown):valid {
+  background-color: rgb(166, 100, 15);
+}
+.form input:not(:-ms-input-placeholder):valid {
+  background-color: rgb(166, 100, 15);
+}
+.form input:not(:placeholder-shown):valid {
+  background-color: rgb(166, 100, 15);
+}
+
+.required {
+  color: red;
+  margin: 0;
+  display: inline-block;
+}
+
 /* FOOTER *//*# sourceMappingURL=style.css.map */

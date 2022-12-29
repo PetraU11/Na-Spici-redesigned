@@ -65,8 +65,14 @@
 
 
 <section class="section three"> 
-<p> Rezervace </p>
 
+<h2 class="section-three__perex"> Zarezervujte si u nás stůl online nebo nám zavolejte!</h2>
+
+<div class="section-three__bookinginfo">
+<p> Rezervace přes rezervační formulář lze provádět <b>pouze den předem.</b> </p>
+<p> V případě rezervace v daný den nás neváhejte kontaktovat na tel.čísle: +420 777 777 777. 
+  </p> 
+</div>
 
 <form action="https://submit-form.com/AsX6HR47" method="POST"> 
 
@@ -80,12 +86,6 @@ placeholder="Jirka Nováků" autofocus required>
 </div>
 
 <div class="form">
-<label for="email"> Kontaktní e-mail <span class="required"> * </span></label>
-<input type="email" name="email" id="email" placeholder="jiri.spica@seznam.cz" required>
-</div>
-
-
-<div class="form">
 <label for="tel"> Kontaktní telefon <span class="required"> * </span> </label>
 <input type="tel" name="tel" id="tel" min="9" max="12" placeholder="723 123 456" required>
 </div>
@@ -95,6 +95,7 @@ placeholder="Jirka Nováků" autofocus required>
 <input type="number" name="pocet" id="pocet" min="1" placeholder="3" required>
 </div>
 
+<div class="section-three__booking-timedate">
 <div class="form">
 <label for="datum"> Datum <span class="required"> * </span></label>
 <input type="date" name="datum" id="datum" required>
@@ -104,10 +105,11 @@ placeholder="Jirka Nováků" autofocus required>
 <label for="cas"> Čas <span class="required"> * </span></label>
 <input type="time" name="cas" id="cas" required>
 </div>
+ </div>
 
 <div class="form">
 <label for="info"> Upřesňující informace </label>
-<textarea name="info" id="info" cols="30" rows="10" >  
+<textarea name="info" id="info" rows="5" >  
 </textarea>
 </div> 
     
