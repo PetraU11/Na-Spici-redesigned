@@ -132,7 +132,7 @@ div[class^=section-first] > h2 {
   margin-top: 0;
 }
 
-/* Section second */
+/* Section second - Aktuality Akce */
 .section.two {
   background-image: url(../images/events_bc_plate.jpeg);
   background-repeat: no-repeat;
@@ -178,7 +178,7 @@ div[class^=section-first] > h2 {
     border: 5px solid $c-text;
     background-color: $c-button;
 } */
-/* Section three */
+/* Section three - Rezervace */
 .section.three {
   text-align: center;
 }
@@ -191,12 +191,6 @@ div[class^=section-first] > h2 {
     row-gap: 20px;
     justify-items: center;
     align-items: center;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .section-three__perex {
-    grid-column: 2/-2;
   }
 }
 
@@ -214,6 +208,7 @@ div[class^=section-first] > h2 {
 }
 
 form {
+  margin-top: 20px;
   margin-bottom: 15px;
 }
 
@@ -254,12 +249,18 @@ form {
 }
 .form input:not(:placeholder-shown):valid {
   background-color: rgb(166, 100, 15);
-}
-
+} /*změnit*/
 .required {
   color: red;
   margin: 0;
   display: inline-block;
+}
+
+.booking-button {
+  background-color: rgb(166, 100, 15);
+  color: rgb(240, 226, 207);
+  border: none;
+  padding: 5px;
 }
 
 /* Section four */

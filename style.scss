@@ -110,7 +110,7 @@ margin-top:0;
 text-align: left;
 margin-top:0;}
 
-/* Section second */
+/* Section second - Aktuality Akce */
 
 .section.two {
     background-image: url(../images/events_bc_plate.jpeg);
@@ -159,7 +159,7 @@ margin-top:0;}
     background-color: $c-button;
 } */
 
-/* Section three */
+/* Section three - Rezervace */
 
 .section.three {text-align: center;
     @media screen and (min-width: 600px) {display:grid;
@@ -170,10 +170,6 @@ margin-top:0;}
     align-items: center;
 }}
 
-.section-three__perex {
-    @media screen and (min-width: 600px) { grid-column: 2 / -2;}
-}
-
 .section-three__bookinginfo {
     @media screen and (min-width: 600px) { grid-column: 2 / 3 };
     margin-bottom: 40px;
@@ -183,6 +179,7 @@ margin-top:0;}
 
 .section-three__booking-timedate {display:flex;}
 form{
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 .form {
@@ -210,7 +207,7 @@ form{
             
            /* .form input:placeholder-shown {background-color:bisque;}*/
     .form input:not(:placeholder-shown):valid {
-        background-color: $c-header-footer;} 
+        background-color: $c-header-footer;} /*změnit*/
            
                 
     .required {
@@ -218,6 +215,11 @@ form{
         margin:0;
         display:inline-block;
             }
+
+.booking-button {background-color:$c-header-footer;
+color: $c-main;
+border: none;
+padding: 5px;}
  
 /* Section four */
 .section.four {
