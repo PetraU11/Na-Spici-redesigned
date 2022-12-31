@@ -62,7 +62,8 @@ header::before {
   padding: 15px;
 }
 
-.section:nth-child(even) {
+.section:nth-child(even),
+.footer {
   background-color: rgb(166, 100, 15);
   color: rgb(240, 226, 207);
 }
@@ -135,7 +136,10 @@ div[class^=section-first] > h2 {
 .section.two {
   background-image: url(../images/events_bc_plate.jpeg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   padding: 40px;
   height: 400px;
   text-align: right;
@@ -155,7 +159,6 @@ div[class^=section-first] > h2 {
   grid-column: 3/4;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
-  height: auto;
   text-align: center;
 }
 
@@ -260,4 +263,38 @@ form {
 }
 
 /* Section four */
-/* FOOTER *//*# sourceMappingURL=style.css.map */
+@media screen and (min-width: 600px) {
+  .section.four {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.section-four__info {
+  margin-bottom: 20px;
+  order: 2;
+}
+
+.section-four__images {
+  order: 1;
+  margin-top: 15px;
+}
+
+.section-four__images img {
+  width: 25%;
+  display: inline-block;
+}
+
+/* Section five */
+@media screen and (min-width: 600px) {
+  .section.five {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* FOOTER */
+.footer {
+  height: 80px;
+  padding: 30px;
+}/*# sourceMappingURL=style.css.map */

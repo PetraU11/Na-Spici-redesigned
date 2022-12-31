@@ -60,11 +60,14 @@ border: 3px solid burlywood;
     font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
 
-    @media screen and (min-width: 750px) {}}
+    @media screen and (min-width: 1200px) {
+      
+    }}
 
 /* MAIN */
 .section {padding: 15px;}
-.section:nth-child(even){background-color: $c-header-footer;
+.section:nth-child(even),
+.footer {background-color: $c-header-footer;
 color: $c-main;}
 div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;}
 
@@ -112,7 +115,10 @@ margin-top:0;}
 .section.two {
     background-image: url(../images/events_bc_plate.jpeg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     padding: 40px;
     height: 400px;
     text-align: right;
@@ -133,7 +139,6 @@ margin-top:0;}
     grid-column: 3 / 4;
     background-color: rgba(0,0,0, 0.2);
     padding: 20px;
-    height:auto;
     text-align: center;
 
 }
@@ -215,8 +220,28 @@ form{
             }
  
 /* Section four */
+.section.four {
+    @media screen and (min-width: 600px) {display:flex;
+    align-items: center;}
+}
+.section-four__info {margin-bottom: 20px;
+order: 2;}
+.section-four__images {order: 1;
+margin-top: 15px;}
+.section-four__images img {width: 25%;
+    display:inline-block;
+}
 
+/* Section five */
 
-.section-four__photo {}
+.section.five {
+    @media screen and (min-width: 600px) {display:flex;
+    align-items: center;}}
+
+.section-five__info {}
+.section-five__images {}
 
 /* FOOTER */
+
+.footer {height: 80px;
+padding: 30px;}
