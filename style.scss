@@ -113,12 +113,6 @@ margin-top:0;}
 /* Section second - Aktuality Akce */
 
 .section.two {
-    background-image: url(../images/events_bc_plate.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
     padding: 40px;
     height: 400px;
     text-align: right;
@@ -126,38 +120,27 @@ margin-top:0;}
    display:grid;
    grid-template-columns: 1fr 1fr auto 1fr;
 
+   /*
    @media screen and (min-width: 450px) { 
     background-image: url(../images/events_bc_1024.jpeg);
     background-size: cover;
     height: 450px;
    }
-
+*/
    
  }
 
 .section-two__content {
+    background-image: url(../images/events_bc_1024.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
     grid-column: 3 / 4;
-    background-color: rgba(0,0,0, 0.2);
+    background-color: rgba(0,0,0, 0.6);
     padding: 20px;
-    text-align: center;
-
+    text-align: right;
 }
- /*
-.button {
-    position:absolute;
-    top: -35%;
-    left: 40%;
-    color: $c-main;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:center;
-    padding-top: 35px;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    border: 5px solid $c-text;
-    background-color: $c-button;
-} */
 
 /* Section three - Rezervace */
 
@@ -168,7 +151,7 @@ margin-top:0;}
     column-gap: 5%;
     row-gap: 10px;
     justify-items: center;
-    align-items: center;
+   
 }}
 
 .section-three__bookinginfo {
