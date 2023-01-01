@@ -185,10 +185,10 @@ div[class^=section-first] > h2 {
 @media screen and (min-width: 600px) {
   .section.three {
     display: grid;
-    grid-template-columns: 5% repeat(2, 1fr) 5%;
+    grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 5%;
          column-gap: 5%;
-    row-gap: 20px;
+    row-gap: 10px;
     justify-items: center;
     align-items: center;
   }
@@ -199,12 +199,19 @@ div[class^=section-first] > h2 {
 }
 @media screen and (min-width: 600px) {
   .section-three__bookinginfo {
-    grid-column: 2/3;
+    grid-column: 1/2;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  form {
+    min-width: 520px;
   }
 }
 
 .section-three__booking-timedate {
   display: flex;
+  flex-wrap: wrap;
 }
 
 form {
@@ -259,8 +266,20 @@ form {
 .booking-button {
   background-color: rgb(166, 100, 15);
   color: rgb(240, 226, 207);
-  border: none;
-  padding: 5px;
+  border: 2px solid rgb(79, 25, 11);
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+}
+
+.booking-button:hover {
+  background-color: rgb(131, 86, 29);
+}
+
+.booking-button:active {
+  background-color: rgb(240, 226, 207);
+  color: rgb(166, 100, 15);
 }
 
 /* Section four */

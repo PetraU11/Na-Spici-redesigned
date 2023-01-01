@@ -162,22 +162,30 @@ margin-top:0;}
 /* Section three - Rezervace */
 
 .section.three {text-align: center;
+    
     @media screen and (min-width: 600px) {display:grid;
-    grid-template-columns: 5% repeat(2, 1fr) 5%;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 5%;
-    row-gap: 20px;
+    row-gap: 10px;
     justify-items: center;
     align-items: center;
 }}
 
 .section-three__bookinginfo {
-    @media screen and (min-width: 600px) { grid-column: 2 / 3 };
+    @media screen and (min-width: 600px) { grid-column: 1 / 2 };
     margin-bottom: 40px;
-
- 
 }
 
-.section-three__booking-timedate {display:flex;}
+form {
+    @media screen and (min-width: 900px){
+   min-width: 520px;}
+}
+
+.section-three__booking-timedate {display:flex;
+flex-wrap:wrap;}
+
+
+
 form{
     margin-top: 20px;
     margin-bottom: 15px;
@@ -218,8 +226,16 @@ form{
 
 .booking-button {background-color:$c-header-footer;
 color: $c-main;
-border: none;
-padding: 5px;}
+border:2px solid $c-text;
+padding: 10px;
+border-radius: 10px;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.1rem}
+
+.booking-button:hover {background-color:$c-button;}
+
+.booking-button:active {background-color:$c-main;
+color: $c-header-footer;}
  
 /* Section four */
 .section.four {
