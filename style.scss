@@ -113,19 +113,7 @@ margin-top:0;}
 /* Section second - Aktuality Akce */
 
 .section.two {
-   position:relative;
-
-   }
-
-   /*
-   @media screen and (min-width: 450px) { 
-    background-image: url(../images/events_bc_1024.jpeg);
-    background-size: cover;
-    height: 450px;
-   }
-*/
-   
- 
+   position:relative;}
 
 .section-two__content {
     background-image: url(../images/events_bc_plate.jpeg);
@@ -139,8 +127,6 @@ margin-top:0;}
     width: 100%;
     min-height: 300px;
   
-   
-
     @media screen and (min-width: 450px) { 
         background-image: url(../images/events_bc_1024.jpeg);
         text-align: right;
@@ -149,6 +135,11 @@ margin-top:0;}
 @media screen and (min-width: 1250px) {
     min-height: 400px;
 }}
+
+.section-two__content_bc-color {background-color: rgba(0,0,0, 0.2);
+    padding: 10px;
+    margin-top: 20px;
+}
 
 /* Section three - Rezervace */
 

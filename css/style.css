@@ -137,13 +137,6 @@ div[class^=section-first] > h2 {
   position: relative;
 }
 
-/*
-   @media screen and (min-width: 450px) { 
-    background-image: url(../images/events_bc_1024.jpeg);
-    background-size: cover;
-    height: 450px;
-   }
-*/
 .section-two__content {
   background-image: url(../images/events_bc_plate.jpeg);
   background-repeat: no-repeat;
@@ -166,6 +159,12 @@ div[class^=section-first] > h2 {
   .section-two__content {
     min-height: 400px;
   }
+}
+
+.section-two__content_bc-color {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin-top: 20px;
 }
 
 /* Section three - Rezervace */
