@@ -113,7 +113,9 @@ margin-top:0;}
 /* Section second - Aktuality Akce */
 
 .section.two {
-   position:relative;}
+   position:relative;
+font-weight: bold;
+color:$c-main;}
 
 .section-two__content {
     background-image: url(../images/events_bc_plate.jpeg);

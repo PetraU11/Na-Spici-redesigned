@@ -135,6 +135,8 @@ div[class^=section-first] > h2 {
 /* Section second - Aktuality Akce */
 .section.two {
   position: relative;
+  font-weight: bold;
+  color: rgb(240, 226, 207);
 }
 
 .section-two__content {
