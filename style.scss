@@ -52,17 +52,14 @@ aspect-ratio: 1;
 border-radius: 50%;
 text-align:center;
 border: 3px solid burlywood;
-
-@media screen and (min-width: 750px) {}
 }
 
 .header__text {color: $c-main;
     font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
+}
 
-    @media screen and (min-width: 1200px) {
-      
-    }}
+
 
 /* MAIN */
 .section {padding: 15px;}
@@ -115,7 +112,9 @@ margin-top:0;}
 .section.two {
    position:relative;
 font-weight: bold;
-color:$c-main;}
+color:$c-main;
+background-color: $c-header-footer;}
+
 
 .section-two__content {
     background-image: url(../images/events_bc_plate.jpeg);
@@ -123,7 +122,6 @@ color:$c-main;}
     background-size: cover;
     background-position: center center;
     background-attachment: scroll;
-    background-color: rgba(0,0,0, 0.6);
     padding: 20px;
     text-align: center;
     width: 100%;
@@ -137,6 +135,23 @@ color:$c-main;}
 @media screen and (min-width: 1250px) {
     min-height: 400px;
 }}
+
+.section-two__content-two {
+    background-image: url(../images/Slider_bc_beer.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    min-height: 300px;
+
+    @media screen and (min-width: 1250px) {
+        min-height: 400px;
+    }
+
+}
 
 .section-two__content_bc-color {background-color: rgba(0,0,0, 0.2);
     padding: 10px;

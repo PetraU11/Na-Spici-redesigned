@@ -52,11 +52,13 @@ header::before {
   text-align: center;
   border: 3px solid burlywood;
 }
+
 .header__text {
   color: rgb(240, 226, 207);
   font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
   font-family: "Courgette", cursive;
 }
+
 /* MAIN */
 .section {
   padding: 15px;
@@ -137,6 +139,7 @@ div[class^=section-first] > h2 {
   position: relative;
   font-weight: bold;
   color: rgb(240, 226, 207);
+  background-color: rgb(166, 100, 15);
 }
 
 .section-two__content {
@@ -145,7 +148,6 @@ div[class^=section-first] > h2 {
   background-size: cover;
   background-position: center center;
   background-attachment: scroll;
-  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   text-align: center;
   width: 100%;
@@ -159,6 +161,23 @@ div[class^=section-first] > h2 {
 }
 @media screen and (min-width: 1250px) {
   .section-two__content {
+    min-height: 400px;
+  }
+}
+
+.section-two__content-two {
+  background-image: url(../images/Slider_bc_beer.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  min-height: 300px;
+}
+@media screen and (min-width: 1250px) {
+  .section-two__content-two {
     min-height: 400px;
   }
 }
