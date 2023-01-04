@@ -212,6 +212,10 @@ div[class^=section-first] > h2 {
   }
 }
 
+.section-three__bookinginfo img {
+  width: 35%;
+}
+
 @media screen and (min-width: 900px) {
   form {
     min-width: 520px;
@@ -301,7 +305,11 @@ form {
 
 .section-four__info {
   margin-bottom: 20px;
-  order: 2;
+}
+@media screen and (min-width: 600px) {
+  .section-four__info {
+    text-align: right;
+  }
 }
 
 .section-four__images {
@@ -320,6 +328,20 @@ form {
     display: flex;
     align-items: center;
   }
+}
+
+.section-five__info {
+  order: 2;
+}
+@media screen and (min-width: 600px) {
+  .section-five__info {
+    text-align: left;
+  }
+}
+
+.section-five__images img {
+  width: 25%;
+  display: inline-block;
 }
 
 /* FOOTER */

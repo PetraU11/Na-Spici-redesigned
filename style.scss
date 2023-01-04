@@ -146,9 +146,7 @@ background-color: $c-header-footer;}
     @media screen and (min-width: 1250px) {
         min-height: 400px;
         
-    }
-
-}
+    }}
 
 .section-two__content_bc-color {
     width: 60%;
@@ -178,7 +176,8 @@ background-color: $c-header-footer;}
     margin-bottom: 40px;
 }
 
-form {
+.section-three__bookinginfo img {width: 35%;}
+form { 
     @media screen and (min-width: 900px){
    min-width: 520px;}
 }
@@ -245,7 +244,8 @@ color: $c-header-footer;}
     align-items: center;}
 }
 .section-four__info {margin-bottom: 20px;
-order: 2;}
+@media screen and (min-width: 600px) {text-align:right;}
+}
 .section-four__images {order: 1;
 margin-top: 15px;}
 .section-four__images img {width: 25%;
@@ -253,13 +253,16 @@ margin-top: 15px;}
 }
 
 /* Section five */
-
 .section.five {
     @media screen and (min-width: 600px) {display:flex;
     align-items: center;}}
 
-.section-five__info {}
-.section-five__images {}
+.section-five__info {
+    order: 2;
+    @media screen and (min-width: 600px) {text-align:left;}}
+
+.section-five__images img {width: 25%;
+    display:inline-block;}
 
 /* FOOTER */
 
