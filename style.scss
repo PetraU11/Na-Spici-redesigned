@@ -59,7 +59,9 @@ border: 3px solid burlywood;
     font-family: 'Courgette', cursive;
 }
 
-
+.header__menu {
+   display:none;
+}
 
 /* MAIN */
 .section {padding: 15px;}
@@ -125,7 +127,7 @@ background-color: $c-header-footer;}
     padding: 20px;
     text-align: center;
     width: 100%;
-    min-height: 300px;
+    min-height: 350px;
 
 @media screen and (min-width: 1250px) {
     min-height: 400px;
@@ -140,7 +142,7 @@ background-color: $c-header-footer;}
     padding: 20px;
     text-align: center;
     width: 100%;
-    min-height: 300px;
+    min-height: 350px;
 
 
     @media screen and (min-width: 1250px) {
@@ -161,31 +163,30 @@ background-color: $c-header-footer;}
 
 /* Section three - Rezervace */
 
-.section.three {text-align: center;
-    
-    @media screen and (min-width: 600px) {display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 5%;
-    row-gap: 10px;
-    justify-items: center;
-   
-}}
+.section.three { 
+    margin-left:auto;
+    margin-right:auto;
+    @media screen and (min-width: 600px) {display:flex;
+    align-items: center;}}
 
 .section-three__bookinginfo {
-    @media screen and (min-width: 600px) { grid-column: 1 / 2 };
-    margin-bottom: 40px;
-}
+    margin-bottom: 20px;
+    @media screen and (min-width: 600px) {text-align:left;}}
 
-.section-three__bookinginfo img {width: 35%;}
+.section-three__images {
+    margin-top: 15px;}
+
+.section-three__images img {width: 25%;
+        display:inline-block;}
+
+.section-three__booking-timedate {display:flex;
+        flex-wrap:wrap;}
+
+
 form { 
     @media screen and (min-width: 900px){
    min-width: 520px;}
 }
-
-.section-three__booking-timedate {display:flex;
-flex-wrap:wrap;}
-
-
 
 form{
     margin-top: 20px;

@@ -59,6 +59,10 @@ header::before {
   font-family: "Courgette", cursive;
 }
 
+.header__menu {
+  display: none;
+}
+
 /* MAIN */
 .section {
   padding: 15px;
@@ -151,7 +155,7 @@ div[class^=section-first] > h2 {
   padding: 20px;
   text-align: center;
   width: 100%;
-  min-height: 300px;
+  min-height: 350px;
 }
 @media screen and (min-width: 1250px) {
   .section-two__content {
@@ -168,7 +172,7 @@ div[class^=section-first] > h2 {
   padding: 20px;
   text-align: center;
   width: 100%;
-  min-height: 300px;
+  min-height: 350px;
 }
 @media screen and (min-width: 1250px) {
   .section-two__content-two {
@@ -190,41 +194,43 @@ div[class^=section-first] > h2 {
 
 /* Section three - Rezervace */
 .section.three {
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 600px) {
   .section.three {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    -moz-column-gap: 5%;
-         column-gap: 5%;
-    row-gap: 10px;
-    justify-items: center;
+    display: flex;
+    align-items: center;
   }
 }
 
 .section-three__bookinginfo {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 600px) {
   .section-three__bookinginfo {
-    grid-column: 1/2;
+    text-align: left;
   }
 }
 
-.section-three__bookinginfo img {
-  width: 35%;
+.section-three__images {
+  margin-top: 15px;
+}
+
+.section-three__images img {
+  width: 25%;
+  display: inline-block;
+}
+
+.section-three__booking-timedate {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 900px) {
   form {
     min-width: 520px;
   }
-}
-
-.section-three__booking-timedate {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 form {
