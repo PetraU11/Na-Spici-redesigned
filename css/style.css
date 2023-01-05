@@ -60,7 +60,27 @@ header::before {
 }
 
 .header__menu {
-  display: none;
+  position: absolute;
+  top: 1%;
+  right: 2%;
+}
+
+.header__menu-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header__menu-list li {
+  list-style: none;
+}
+
+.header__menu-list a {
+  text-decoration: none;
+  color: rgb(240, 226, 207);
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid burlywood;
 }
 
 /* MAIN */
@@ -164,7 +184,7 @@ div[class^=section-first] > h2 {
 }
 
 .section-two__content-two {
-  background-image: url(../images/Slider_bc_beer.jpeg);
+  background-image: url(../images/Slider_bc_beer.jpeg); /*zmenit výšku u samotných fotek, u mobilu nesedí kvůli obsahu */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -204,17 +224,19 @@ div[class^=section-first] > h2 {
   }
 }
 
-.section-three__bookinginfo {
+.section-three__info {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 600px) {
-  .section-three__bookinginfo {
+  .section-three__info {
     text-align: left;
+    order: 2;
   }
 }
 
 .section-three__images {
   margin-top: 15px;
+  width: 45%;
 }
 
 .section-three__images img {
