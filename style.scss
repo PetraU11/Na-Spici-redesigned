@@ -59,16 +59,15 @@ border: 3px solid burlywood;
     font-family: 'Courgette', cursive;
 }
 
+/*
 .header__menu {
     position:absolute;
     top: 1%;
-    right: 2%;
-}
+    right: 2%;}
 
 .header__menu-list {
   display:flex;
-  justify-content: flex-end;
-}
+  justify-content: flex-end;}
 
 .header__menu-list li {list-style: none;}
 
@@ -79,9 +78,102 @@ margin-left: 10px;
 margin-right: 10px;
 padding-bottom: 2px;
 border-bottom: 2px solid burlywood}
-  
+ */ 
+
+   
+//Hamburger menu//      
+
+.header__menu {
+position:absolute;
+left: 8%;
+top: 5%;
+z-index: 2;
+height: 60px;
+margin-top: 10px;
+
+  @media screen and (min-width: 1000px) {
+    display:none;
+}}
+
+.menu__checkbox {
+      position: absolute;
+      left: -9999px;}
+
+.menu__toggler { cursor:pointer;}
+
+.bar { 
+display: block;
+width: 45px;
+height: 5px;
+background-color: burlywood;
+border-radius: 10%;
+margin-top: 5px;
+}
+
+.bar:nth-child(2) {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 80%;
+  margin-right: auto;
+  margin-left:auto;
+}
+
+  .menu__list {
+      padding: 0;
+      list-style: none;
+      background-color: burlywood;
+      display:none;
+      position:absolute;
+    transform:translate(-8%, 55px);}/*rozbalovací menu*/
    
 
+  
+    .menu__item { border-bottom: 1px solid $c-header-footer;
+    text-align:right;
+  width: 100vw;
+  }
+  
+    .menu__item.active { 
+      background-color: blue;
+    }
+  
+    .menu__link {
+    display:block;
+    padding: 15px;
+    text-decoration: none;
+    color: $c-text;
+    font-weight: bold;
+    text-align: left;
+  
+    }
+  
+    .menu__link:hover {
+        background-color: blue; }
+  
+  
+  .menu__checkbox:checked ~ .menu__list{
+  display:block;
+  
+  }
+  
+  .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
+    position:absolute;
+    top: 15px;
+    transform:rotate(45deg);
+    }
+  
+  .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(2) {
+       display:none;
+    }
+  
+  .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
+    position:absolute;
+    top: 15px;
+    transform:rotate(-45deg);
+  }
+    
+  
+    
 
 
 /* MAIN */
