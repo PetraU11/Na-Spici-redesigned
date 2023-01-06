@@ -46,11 +46,21 @@ header::before {
   padding: 10px;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 50%;
   aspect-ratio: 1;
   border-radius: 50%;
   text-align: center;
   border: 3px solid burlywood;
+}
+@media screen and (min-width: 600px) {
+  .header__container {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header__container {
+    width: 40%;
+  }
 }
 
 .header__text {
@@ -131,7 +141,6 @@ border-bottom: 2px solid burlywood}
   display: none;
   position: absolute;
   transform: translate(-8%, 55px); /*rozbalovací menu*/
-  /* transition: transform 0.5s ease-in-out ;*/
 }
 
 .menu__item {
