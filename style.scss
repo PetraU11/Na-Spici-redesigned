@@ -90,10 +90,15 @@ top: 5%;
 z-index: 2;
 height: 60px;
 margin-top: 10px;
+opacity: 0.90;
 
   @media screen and (min-width: 1000px) {
     display:none;
 }}
+
+.menu__container { display: block;
+    position: relative;
+} /*asi nemusí být */
 
 .menu__checkbox {
       position: absolute;
@@ -124,13 +129,15 @@ margin-top: 5px;
       background-color: burlywood;
       display:none;
       position:absolute;
-    transform:translate(-8%, 55px);}/*rozbalovací menu*/
+    transform:translate(-8%, 55px);/*rozbalovací menu*/
+    /* transition: transform 0.5s ease-in-out ;*/ 
    
+}
 
   
     .menu__item { border-bottom: 1px solid $c-header-footer;
-    text-align:right;
   width: 100vw;
+
   }
   
     .menu__item.active { 
@@ -139,12 +146,12 @@ margin-top: 5px;
   
     .menu__link {
     display:block;
-    padding: 15px;
+    padding: 25px;
     text-decoration: none;
     color: $c-text;
     font-weight: bold;
-    text-align: left;
-  
+    text-align: center;
+    
     }
   
     .menu__link:hover {
@@ -160,16 +167,19 @@ margin-top: 5px;
     position:absolute;
     top: 15px;
     transform:rotate(45deg);
+    transition: transform 0.4s ease-in-out;
     }
   
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(2) {
        display:none;
+       
     }
   
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
     position:absolute;
     top: 15px;
     transform:rotate(-45deg);
+    transition: transform 0.4s ease-in-out;
   }
     
   
