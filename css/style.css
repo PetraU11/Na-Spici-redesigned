@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/IMG_0430up_400.jpg); /*nastavit fotky pro breakpointy*/
+  background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
