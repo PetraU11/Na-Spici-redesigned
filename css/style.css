@@ -71,7 +71,8 @@ header::before {
 
 .header__arrow {
   position: absolute;
-  bottom: -200px; /* zafixovat arrow pro vetší obrazovky*/
+  bottom: 20px;
+  /* zafixovat arrow pro vetší obrazovky*/
 }
 
 /*
