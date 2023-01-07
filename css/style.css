@@ -69,6 +69,11 @@ header::before {
   font-family: "Courgette", cursive;
 }
 
+.header__arrow {
+  position: absolute;
+  bottom: -200px; /* zafixovat arrow pro vetší obrazovky*/
+}
+
 /*
 .header__menu {
     position:absolute;
@@ -107,7 +112,7 @@ border-bottom: 2px solid burlywood}
 .menu__container {
   display: block;
   position: relative;
-} /*asi nemusí být */
+} /*asi nemusí být, jestli nechci border  */
 .menu__checkbox {
   position: absolute;
   left: -9999px;
@@ -121,7 +126,7 @@ border-bottom: 2px solid burlywood}
   display: block;
   width: 45px;
   height: 5px;
-  background-color: burlywood;
+  background-color: rgb(240, 226, 207);
   border-radius: 10%;
   margin-top: 5px;
 }

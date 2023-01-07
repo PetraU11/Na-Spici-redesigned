@@ -64,6 +64,11 @@ border: 3px solid burlywood;
     font-family: 'Courgette', cursive;
 }
 
+.header__arrow {
+    position:absolute;
+    bottom: -200px; /* zafixovat arrow pro vetší obrazovky*/
+}
+
 /*
 .header__menu {
     position:absolute;
@@ -103,7 +108,8 @@ opacity: 0.90;
 
 .menu__container { display: block;
     position: relative;
-} /*asi nemusí být */
+   
+} /*asi nemusí být, jestli nechci border  */
 
 .menu__checkbox {
       position: absolute;
@@ -115,7 +121,7 @@ opacity: 0.90;
 display: block;
 width: 45px;
 height: 5px;
-background-color: burlywood;
+background-color: $c-main;
 border-radius: 10%;
 margin-top: 5px;
 }
@@ -135,6 +141,7 @@ margin-top: 5px;
       display:none;
       position:absolute;
     transform:translate(-8%, 55px);/*rozbalovací menu*/
+
 }
 
   
@@ -163,7 +170,6 @@ margin-top: 5px;
   
   .menu__checkbox:checked ~ .menu__list{
   display:block;
-  
   }
   
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
