@@ -346,11 +346,42 @@ div[class^=section-first] > h2 {
 
 .section-three__images {
   margin-top: 15px;
-  width: 45%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 10%;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.img1 {
+  border: 5px solid rgb(123, 74, 11);
+  border-radius: 5%;
+}
+
+.img2 {
+  position: absolute;
+  border: 5px solid rgb(218, 124, 51);
+  transform: rotate(15deg);
+  border-radius: 5%;
+}
+
+.img3 {
+  position: absolute;
+  border: 5px solid rgb(123, 74, 11);
+  transform: rotate(-15deg);
+  border-radius: 5%;
+}
+
+.img4 {
+  position: absolute;
+  border: 5px solid rgb(218, 124, 51);
+  border-radius: 5%;
 }
 
 .section-three__images img {
-  width: 25%;
+  width: 55%;
   display: inline-block;
 }
 
