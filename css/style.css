@@ -340,19 +340,24 @@ div[class^=section-first] > h2 {
 @media screen and (min-width: 600px) {
   .section-three__info {
     text-align: left;
+    width: 60%;
     order: 2;
   }
 }
 
 .section-three__images {
   margin-top: 15px;
-  width: 90%;
   display: flex;
   justify-content: center;
   position: relative;
   border-radius: 10%;
-  margin-top: 45px;
-  margin-bottom: 45px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+@media screen and (min-width: 600px) {
+  .section-three__images {
+    width: 40%;
+  }
 }
 
 .img1 {
@@ -381,7 +386,7 @@ div[class^=section-first] > h2 {
 }
 
 .section-three__images img {
-  width: 55%;
+  max-width: 85%;
   display: inline-block;
 }
 
