@@ -305,6 +305,7 @@ background-color: $c-header-footer;
 .section-three__info {
     margin-bottom: 20px;
     @media screen and (min-width: 600px) {text-align:left;
+        margin-left: 20px;
         width: 60%;
         order: 2;}}
 
