@@ -336,7 +336,6 @@ div[class^=section-first] > h2 {
     text-align: left;
     width: 50%;
     margin-left: 20px;
-    width: 60%;
     order: 2;
   }
 }
@@ -493,6 +492,12 @@ form {
 }
 
 /* Section five */
+.section.five {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 @media screen and (min-width: 600px) {
   .section.five {
     display: flex;
@@ -500,18 +505,51 @@ form {
   }
 }
 
-.section-five__info {
-  order: 2;
-}
 @media screen and (min-width: 600px) {
   .section-five__info {
     text-align: left;
+    margin-right: 20px;
+    width: 50%;
+    order: 2;
+  }
+}
+
+.section-five__images {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 600px) {
+  .section-five__images {
+    width: 50%;
   }
 }
 
 .section-five__images img {
-  width: 25%;
-  display: inline-block;
+  width: 250px;
+}
+@media screen and (min-width: 1000px) {
+  .section-five__images img {
+    width: 350px;
+  }
+}
+
+.img10 {
+  border: 5px solid rgb(123, 74, 11);
+  border-radius: 5%;
+}
+
+.img11 {
+  position: absolute;
+  border: 5px solid rgb(218, 124, 51);
+  border-radius: 5%;
+  transform: translateX(-100%) rotate(15deg);
+}
+
+.img12 {
+  position: absolute;
+  border: 5px solid rgb(123, 74, 11);
+  border-radius: 5%;
+  transform: translateX(-100%) rotate(-15deg);
 }
 
 /* FOOTER */
