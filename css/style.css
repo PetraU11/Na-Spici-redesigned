@@ -326,6 +326,8 @@ div[class^=section-first] > h2 {
 .section.three {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 600px) {
   .section.three {
@@ -334,12 +336,10 @@ div[class^=section-first] > h2 {
   }
 }
 
-.section-three__info {
-  margin-bottom: 20px;
-}
 @media screen and (min-width: 600px) {
   .section-three__info {
     text-align: left;
+    width: 50%;
     margin-left: 20px;
     width: 60%;
     order: 2;
@@ -347,17 +347,12 @@ div[class^=section-first] > h2 {
 }
 
 .section-three__images {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  border-radius: 10%;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 @media screen and (min-width: 600px) {
   .section-three__images {
-    width: 40%;
+    width: 50%;
   }
 }
 
@@ -369,28 +364,58 @@ div[class^=section-first] > h2 {
 .img2 {
   position: absolute;
   border: 5px solid rgb(218, 124, 51);
-  transform: rotate(15deg);
   border-radius: 5%;
+  transform: translateX(-100%) rotate(15deg);
 }
 
 .img3 {
   position: absolute;
   border: 5px solid rgb(123, 74, 11);
-  transform: rotate(-15deg);
   border-radius: 5%;
+  transform: translateX(-100%) rotate(-15deg);
 }
 
 .img4 {
   position: absolute;
   border: 5px solid rgb(218, 124, 51);
   border-radius: 5%;
+  transform: translateX(-100%);
 }
 
-.section-three__images img {
-  max-width: 85%;
-  display: inline-block;
+/*
+.section-three__images {
+margin-top: 15px;
+display:flex;
+justify-content: center;
+position:relative;
+border-radius: 10%;
+margin-top: 75px;
+margin-bottom: 75px;
+@media screen and (min-width: 600px) { width: 40%;}}
+
+.img1 {
+    border: 5px solid rgb(123, 74, 11);
+border-radius: 5%;}
+
+.img2 {position:absolute;
+    border: 5px solid rgb(218, 124, 51);
+transform:rotate(15deg);
+border-radius: 5%;}
+
+.img3 {position:absolute;
+    border: 5px solid rgb(123, 74, 11);
+transform:rotate(-15deg);
+border-radius: 5%;;
 }
 
+.img4 {position:absolute;
+    border: 5px solid rgb(218, 124, 51);
+    border-radius: 5%;
+}
+
+.section-three__images img {max-width: 85%;
+        display:inline-block;}
+*/
 .section-three__booking-timedate {
   display: flex;
   flex-wrap: wrap;
