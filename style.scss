@@ -315,13 +315,12 @@ background-color: $c-header-footer;
     margin-top: 50px;
     margin-bottom: 50px;
     @media screen and (min-width: 600px) {
-        width: 50%;
+        width: 50%;}
     }
-}
 
-.section-three__images a { 
-
-}
+.section-three__images img {width: 250px;
+    @media screen and (min-width: 1000px) { width: 350px;
+}}
 
 .img1 {
     border: 5px solid rgb(123, 74, 11);
