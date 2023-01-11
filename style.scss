@@ -201,7 +201,9 @@ margin-top: 5px;
 .section:nth-child(even),
 .footer {background-color: $c-header-footer;
 color: $c-main;}
-div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;}
+div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;} /*vymazat?*/
+
+
 
 
 /* Section first */
@@ -210,9 +212,8 @@ div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;}
     flex-wrap:wrap;
     justify-content: center;
     text-align: center;
-
-    @media screen and (min-width: 750px) {}
 }
+
 .section-first__why {
     text-align: center;
     flex-basis: 100%;
@@ -223,12 +224,14 @@ div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;}
 .section-first__location {flex-basis:50%;
     @media screen and (min-width: 600px) {flex-basis: calc(100%/3)}}
 .section-first__location-map {display:none;}
+
+
+
 .section-first__contact {
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-}
+    flex-wrap: wrap;}
 .section-first__contact-header {flex-basis: 100%;
 text-align: center;}
 .section-first__contact-tel {flex-basis: 45%;
@@ -236,19 +239,23 @@ text-align:right;
 border-right: 2px solid black;
 padding-right: 6px;
 margin-right: 6px;
-margin-top:0;
-}
+margin-top:0;}
 .section-first__contact-mail {flex-basis: 45%;
 text-align: left;
 margin-top:0;}
+
+
+
+
 
 /* Section second - Aktuality Akce */
 
 .section.two {
    position:relative;
 font-weight: bold;
-color:$c-main;
-background-color: $c-header-footer;
+border-style: outset;
+border-color: rgb(221, 128, 6);
+border-width: 10px;
 }
 
 
@@ -281,7 +288,7 @@ background-color: $c-header-footer;
     margin-left: 50px;
     padding: 10px;
 
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 500px) {
         margin-top: 30px;}
 
     @media screen and (min-width: 800px) {
@@ -337,6 +344,7 @@ transform: translateX(-100%) rotate(-15deg);
     border: 5px solid rgb(218, 124, 51);
     border-radius: 5%;
     transform: translateX(-100%);
+   
 }
 
 .section-three__booking-timedate {display:flex;
@@ -402,6 +410,10 @@ color: $c-header-footer;}
  
 /* Section four */
 .section.four {
+    border-style: outset;
+    border-color: rgb(221, 128, 6);
+    border-width: 10px;
+
     @media screen and (min-width: 600px) {display:flex;
     align-items: center;}
 }
