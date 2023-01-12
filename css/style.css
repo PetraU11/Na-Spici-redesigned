@@ -386,90 +386,72 @@ div[class^=section-first] > h2 {
   transform: translateX(-100%);
 }
 
-.section-three__booking-timedate {
-  display: flex;
-  flex-wrap: wrap;
-}
+/* BOOKING FORM
+.section-three__booking-timedate {display:flex;
+        flex-wrap:wrap;}
 
-@media screen and (min-width: 900px) {
-  form {
-    min-width: 520px;
-  }
-}
+form { 
+    @media screen and (min-width: 900px){
+   min-width: 520px;}}
 
-form {
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
+form{
+    margin-top: 20px;
+    margin-bottom: 15px;}
 
 .form {
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right:auto;}
 
-.form label {
-  display: block;
-}
+.form label { display:block;}
 
 .form input,
 .form textarea {
-  width: 100%;
-  border: 2px solid rgb(166, 100, 15);
-  border-radius: 10px;
-  font-size: 16px;
-  padding: 5px 10px;
-  background-color: rgb(242, 238, 232);
-}
+    width: 100%;
+    border: 2px solid $c-header-footer;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: rgb(242, 238, 232);}
 
-.form input:focus,
-.form textarea:focus {
-  outline: 0;
-  border: 2px solid rgb(79, 25, 11);
-}
+    .form input:focus,
+    .form textarea:focus { 
+        outline:0;
+        border: 2px solid $c-text; }
 
-/* .form input:placeholder-shown {background-color:bisque;}*/
-.form input:not(:-moz-placeholder-shown):valid {
-  background-color: rgb(166, 100, 15);
-}
-.form input:not(:-ms-input-placeholder):valid {
-  background-color: rgb(166, 100, 15);
-}
-.form input:not(:placeholder-shown):valid {
-  background-color: rgb(166, 100, 15);
-} /*změnit*/
-.required {
-  color: red;
-  margin: 0;
-  display: inline-block;
-}
+          .form input:placeholder-shown {background-color:bisque;}
+    .form input:not(:placeholder-shown):valid {
+        background-color: $c-header-footer;} *změnit
 
-.booking-button {
-  background-color: rgb(166, 100, 15);
-  color: rgb(240, 226, 207);
-  border: 2px solid rgb(79, 25, 11);
-  padding: 10px;
-  border-radius: 10px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
-}
 
-.booking-button:hover {
-  background-color: rgb(131, 86, 29);
-}
+    .required {
+        color: red;
+        margin:0;
+        display:inline-block; }
 
-.booking-button:active {
-  background-color: rgb(240, 226, 207);
-  color: rgb(166, 100, 15);
-}
+.booking-button {background-color:$c-header-footer;
+color: $c-main;
+border:2px solid $c-text;
+padding: 10px;
+border-radius: 10px;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.1rem}
 
+.booking-button:hover {background-color:$c-button;}
+
+.booking-button:active {background-color:$c-main;
+color: $c-header-footer;} */
 /* Section four */
 .section.four {
   border-style: outset;
   border-color: rgb(221, 128, 6);
   border-width: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 600px) {
   .section.four {
@@ -478,23 +460,51 @@ form {
   }
 }
 
-.section-four__info {
-  margin-bottom: 20px;
-}
 @media screen and (min-width: 600px) {
   .section-four__info {
     text-align: right;
+    margin-left: 20px;
+    width: 50%;
   }
 }
 
 .section-four__images {
   order: 1;
-  margin-top: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 600px) {
+  .section-four__images {
+    width: 50%;
+  }
 }
 
-.section-four__images img {
-  width: 25%;
-  display: inline-block;
+.img5 {
+  border: 5px solid rgb(123, 74, 11);
+  border-radius: 5%;
+}
+
+.img6 {
+  position: absolute;
+  border: 5px solid rgb(218, 124, 51);
+  border-radius: 5%;
+  transform: translateX(-100%);
+  width: 190px;
+}
+
+.img7 {
+  position: absolute;
+  border: 5px solid rgb(123, 74, 11);
+  border-radius: 5%;
+  transform: translateX(-100%) rotate(-15deg);
+}
+
+.img8 {
+  position: absolute;
+  border: 5px solid rgb(218, 124, 51);
+  border-radius: 5%;
+  transform: translateX(-100%) rotate(-15deg);
+  width: 190px;
 }
 
 /* Section five */
@@ -556,6 +566,13 @@ form {
   border: 5px solid rgb(123, 74, 11);
   border-radius: 5%;
   transform: translateX(-100%) rotate(-15deg);
+}
+
+.img13 {
+  position: absolute;
+  border: 5px solid rgb(218, 124, 51);
+  border-radius: 5%;
+  transform: translateX(-100%);
 }
 
 /* FOOTER */
