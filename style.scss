@@ -429,7 +429,8 @@ color: $c-header-footer;} */
     @media screen and (min-width: 600px) {
         width: 50%;}}
 
-.section-four__images img {}
+.section-four__images img {width: 85%;
+max-width: 320px;}
 
 .img5 {border: 5px solid rgb(123, 74, 11);
     border-radius: 5%;}
