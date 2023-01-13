@@ -55,13 +55,14 @@ border: 3px solid burlywood;
 
 @media screen and (min-width: 600px) {width: 45%;}
 
-@media screen and (min-width: 1000px) {width: 40%;}
+@media screen and (min-width: 1000px) {width: 30%;}
 
 }
 
 .header__text {color: $c-main;
     font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
+    @media screen and (min-width: 1000px) {font-size: 4vw;;}
 }
 
 .header__arrow {
@@ -212,26 +213,38 @@ div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;} /*vymazat?
     flex-wrap:wrap;
     justify-content: center;
     text-align: center;
+    @media screen and (min-width: 1000px) {display:grid;
+    grid-template-columns: 5% 1fr 1fr 5%;}
 }
 
 .section-first__why {
     text-align: center;
     flex-basis: 100%;
-    @media screen and (min-width: 750px) {}}
+    @media screen and (min-width: 1000px) {grid-column: 2 / 3 ;}}
 
 .section-first__opening { flex-basis: 50%;
-    @media screen and (min-width: 600px) {flex-basis: calc(100%/3)}}
+    @media screen and (min-width: 600px) {flex-basis: calc(100%/3)}
+    @media screen and (min-width: 1000px) {grid-column: 2 / 3 ;}}
+
 .section-first__location {flex-basis:50%;
     @media screen and (min-width: 600px) {flex-basis: calc(100%/3)}}
-.section-first__location-map {display:none;}
+.section-first__location-link {
+    @media screen and (min-width: 1000px) {display:none;}
+}
+.section-first__location-map {display:none;
+    @media screen and (min-width: 1000px) {display:inline-block;}
+}
 
-
+.section-first__link {
+    @media screen and (min-width: 1000px) {grid-column: 2 / 3 ;}
+}
 
 .section-first__contact {
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+    @media screen and (min-width: 1000px) {grid-column: 2 / 3 ;}}
 .section-first__contact-header {flex-basis: 100%;
 text-align: center;}
 .section-first__contact-tel {flex-basis: 45%;
@@ -304,7 +317,8 @@ border-width: 10px;
     margin-bottom: 20px;
     margin-top: 20px;
     @media screen and (min-width: 600px) {display:flex;
-    align-items: center;}}
+    align-items: center;}
+}
 
 .section-three__info {
     @media screen and (min-width: 600px) {
@@ -414,10 +428,11 @@ color: $c-header-footer;} */
     margin-right:auto;
     margin-bottom: 20px;
     margin-top: 20px;
-
     @media screen and (min-width: 600px) {display:flex;
-    align-items: center;}
+        align-items: center;}
+    
 }
+
 .section-four__info {
 @media screen and (min-width: 600px) {text-align:right;
     margin-left: 20px;
@@ -457,8 +472,6 @@ width: 190px;
 .section.five {
     margin-left:auto;
     margin-right:auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
     @media screen and (min-width: 600px) {display:flex;
     align-items: center;}}
 
@@ -477,8 +490,7 @@ width: 190px;
 
 .section-five__images img {width: 250px;
             @media screen and (min-width: 1000px) { width: 350px;
-                
-        }}
+}}
 
 .img10 {
      border: 5px solid rgb(123, 74, 11);

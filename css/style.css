@@ -59,7 +59,7 @@ header::before {
 }
 @media screen and (min-width: 1000px) {
   .header__container {
-    width: 40%;
+    width: 30%;
   }
 }
 
@@ -67,6 +67,11 @@ header::before {
   color: rgb(240, 226, 207);
   font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
   font-family: "Courgette", cursive;
+}
+@media screen and (min-width: 1000px) {
+  .header__text {
+    font-size: 4vw;
+  }
 }
 
 .header__arrow {
@@ -214,17 +219,34 @@ div[class^=section-first] > h2 {
   justify-content: center;
   text-align: center;
 }
+@media screen and (min-width: 1000px) {
+  .section.first {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+  }
+}
 
 .section-first__why {
   text-align: center;
   flex-basis: 100%;
 }
+@media screen and (min-width: 1000px) {
+  .section-first__why {
+    grid-column: 2/3;
+  }
+}
+
 .section-first__opening {
   flex-basis: 50%;
 }
 @media screen and (min-width: 600px) {
   .section-first__opening {
     flex-basis: 33.3333333333%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .section-first__opening {
+    grid-column: 2/3;
   }
 }
 
@@ -237,8 +259,25 @@ div[class^=section-first] > h2 {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .section-first__location-link {
+    display: none;
+  }
+}
+
 .section-first__location-map {
   display: none;
+}
+@media screen and (min-width: 1000px) {
+  .section-first__location-map {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .section-first__link {
+    grid-column: 2/3;
+  }
 }
 
 .section-first__contact {
@@ -246,6 +285,11 @@ div[class^=section-first] > h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 1000px) {
+  .section-first__contact {
+    grid-column: 2/3;
+  }
 }
 
 .section-first__contact-header {
@@ -516,8 +560,6 @@ color: $c-header-footer;} */
 .section.five {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 @media screen and (min-width: 600px) {
   .section.five {
