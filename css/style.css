@@ -213,103 +213,14 @@ div[class^=section-first] > h2 {
   font-family: "Courgette", cursive;
 } /*vymazat?*/
 /* Section first */
-.section.first {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-}
-@media screen and (min-width: 1000px) {
-  .section.first {
-    display: grid;
-    grid-template-columns: 5% 1fr 1fr 5%;
-  }
-}
-
 .section-first__why {
   text-align: center;
-  flex-basis: 100%;
-}
-@media screen and (min-width: 1000px) {
-  .section-first__why {
-    grid-column: 2/3;
-  }
-}
-
-.section-first__opening {
-  flex-basis: 50%;
-}
-@media screen and (min-width: 600px) {
-  .section-first__opening {
-    flex-basis: 33.3333333333%;
-  }
-}
-@media screen and (min-width: 1000px) {
-  .section-first__opening {
-    grid-column: 2/3;
-  }
-}
-
-.section-first__location {
-  flex-basis: 50%;
-}
-@media screen and (min-width: 600px) {
-  .section-first__location {
-    flex-basis: 33.3333333333%;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .section-first__location-link {
-    display: none;
-  }
-}
-
-.section-first__location-map {
-  display: none;
-}
-@media screen and (min-width: 1000px) {
-  .section-first__location-map {
-    display: inline-block;
-  }
 }
 
 @media screen and (min-width: 1000px) {
   .section-first__link {
     grid-column: 2/3;
   }
-}
-
-.section-first__contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-@media screen and (min-width: 1000px) {
-  .section-first__contact {
-    grid-column: 2/3;
-  }
-}
-
-.section-first__contact-header {
-  flex-basis: 100%;
-  text-align: center;
-}
-
-.section-first__contact-tel {
-  flex-basis: 45%;
-  text-align: right;
-  border-right: 2px solid black;
-  padding-right: 6px;
-  margin-right: 6px;
-  margin-top: 0;
-}
-
-.section-first__contact-mail {
-  flex-basis: 45%;
-  text-align: left;
-  margin-top: 0;
 }
 
 /* Section second - Aktuality Akce */
@@ -624,6 +535,56 @@ color: $c-header-footer;} */
 
 /* FOOTER */
 .footer {
-  height: 80px;
   padding: 30px;
+}
+
+.footer__location {
+  flex-basis: 50%;
+}
+@media screen and (min-width: 600px) {
+  .footer__location {
+    flex-basis: 33.3333333333%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .footer__location-link {
+    display: none;
+  }
+}
+
+.footer__location-map {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .footer__location-map {
+    display: inline-block;
+  }
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__contact-header {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.footer__contact-tel {
+  flex-basis: 45%;
+  text-align: right;
+  border-right: 2px solid black;
+  padding-right: 6px;
+  margin-right: 6px;
+  margin-top: 0;
+}
+
+.footer__contact-mail {
+  flex-basis: 45%;
+  text-align: left;
+  margin-top: 0;
 }/*# sourceMappingURL=style.css.map */

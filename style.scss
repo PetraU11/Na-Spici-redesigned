@@ -206,58 +206,14 @@ div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;} /*vymazat?
 
 
 
-
 /* Section first */
-.section.first {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    text-align: center;
-    @media screen and (min-width: 1000px) {display:grid;
-    grid-template-columns: 5% 1fr 1fr 5%;}
-}
 
 .section-first__why {
     text-align: center;
-    flex-basis: 100%;
-    @media screen and (min-width: 1000px) {grid-column: 2 / 3 ;}}
-
-.section-first__opening { flex-basis: 50%;
-    @media screen and (min-width: 600px) {flex-basis: calc(100%/3)}
-    @media screen and (min-width: 1000px) {grid-column: 2 / 3 ;}}
-
-.section-first__location {flex-basis:50%;
-    @media screen and (min-width: 600px) {flex-basis: calc(100%/3)}}
-.section-first__location-link {
-    @media screen and (min-width: 1000px) {display:none;}
 }
-.section-first__location-map {display:none;
-    @media screen and (min-width: 1000px) {display:inline-block;}
-}
-
 .section-first__link {
     @media screen and (min-width: 1000px) {grid-column: 2 / 3 ;}
 }
-
-.section-first__contact {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    @media screen and (min-width: 1000px) {grid-column: 2 / 3 ;}}
-.section-first__contact-header {flex-basis: 100%;
-text-align: center;}
-.section-first__contact-tel {flex-basis: 45%;
-text-align:right;
-border-right: 2px solid black;
-padding-right: 6px;
-margin-right: 6px;
-margin-top:0;}
-.section-first__contact-mail {flex-basis: 45%;
-text-align: left;
-margin-top:0;}
-
-
 
 
 
@@ -515,5 +471,32 @@ width: 190px;
 
 /* FOOTER */
 
-.footer {height: 80px;
+.footer {
 padding: 30px;}
+
+
+.footer__location {flex-basis:50%;
+    @media screen and (min-width: 600px) {flex-basis: calc(100%/3)}}
+.footer__location-link {
+    @media screen and (min-width: 1000px) {display:none;}
+}
+.footer__location-map {display:none;
+    @media screen and (min-width: 1000px) {display:inline-block;}
+}
+
+.footer__contact {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;}
+.footer__contact-header {flex-basis: 100%;
+text-align: center;}
+.footer__contact-tel {flex-basis: 45%;
+text-align:right;
+border-right: 2px solid black;
+padding-right: 6px;
+margin-right: 6px;
+margin-top:0;}
+.footer__contact-mail {flex-basis: 45%;
+text-align: left;
+margin-top:0;}
