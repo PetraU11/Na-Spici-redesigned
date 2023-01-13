@@ -491,12 +491,15 @@ padding: 30px;}
     flex-wrap: wrap;}
 .footer__contact-header {flex-basis: 100%;
 text-align: center;}
-.footer__contact-tel {flex-basis: 45%;
+.footer__contact-tel {
+    @media screen and (min-width: 410px) {flex-basis: 45%;
 text-align:right;
 border-right: 2px solid black;
 padding-right: 6px;
 margin-right: 6px;
-margin-top:0;}
-.footer__contact-mail {flex-basis: 45%;
+margin-top:0;}}
+.footer__contact-mail {
+    @media screen and (min-width: 410px) 
+{flex-basis: 45%;
 text-align: left;
-margin-top:0;}
+margin-top:0;}}

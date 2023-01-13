@@ -574,17 +574,21 @@ color: $c-header-footer;} */
   text-align: center;
 }
 
-.footer__contact-tel {
-  flex-basis: 45%;
-  text-align: right;
-  border-right: 2px solid black;
-  padding-right: 6px;
-  margin-right: 6px;
-  margin-top: 0;
+@media screen and (min-width: 410px) {
+  .footer__contact-tel {
+    flex-basis: 45%;
+    text-align: right;
+    border-right: 2px solid black;
+    padding-right: 6px;
+    margin-right: 6px;
+    margin-top: 0;
+  }
 }
 
-.footer__contact-mail {
-  flex-basis: 45%;
-  text-align: left;
-  margin-top: 0;
+@media screen and (min-width: 410px) {
+  .footer__contact-mail {
+    flex-basis: 45%;
+    text-align: left;
+    margin-top: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
