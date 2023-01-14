@@ -103,7 +103,7 @@ border-bottom: 2px solid burlywood}
 .header__menu {
   position: absolute;
   left: 8%;
-  top: 0%;
+  top: 2%;
   z-index: 2;
   height: 60px;
   margin-top: 10px;
@@ -220,10 +220,11 @@ div[class^=section-first] > h2 {
 .section-first__why {
   text-align: center;
 }
-
 @media screen and (min-width: 1000px) {
-  .section-first__link {
-    grid-column: 2/3;
+  .section-first__why {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -275,6 +276,17 @@ div[class^=section-first] > h2 {
     margin-top: 40px;
     font-size: 1.3em;
   }
+}
+
+.section-two__link {
+  font-weight: normal;
+  position: absolute;
+  bottom: 15%;
+  transform: translateX(-45%);
+}
+
+.section-two__link-span {
+  color: rgb(240, 226, 207);
 }
 
 /* Section three - Rezervace */
@@ -541,15 +553,6 @@ color: $c-header-footer;} */
 .footer {
   padding: 30px;
 }
-@media screen and (min-width: 1000px) {
-  .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    -moz-column-gap: 15px;
-         column-gap: 15px;
-    text-align: left;
-  }
-}
 
 .footer__hr {
   width: 50%;
@@ -563,6 +566,21 @@ color: $c-header-footer;} */
   }
 }
 
+.footer__wrapper {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (min-width: 1000px) {
+  .footer__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .footer__opening {
     grid-column: 1/2;
@@ -570,9 +588,6 @@ color: $c-header-footer;} */
   }
 }
 
-.footer__location {
-  flex-basis: 50%;
-}
 @media screen and (min-width: 600px) {
   .footer__location {
     flex-basis: 33.3333333333%;
@@ -581,7 +596,7 @@ color: $c-header-footer;} */
 @media screen and (min-width: 1000px) {
   .footer__location {
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 4/5;
   }
 }
 
@@ -599,52 +614,69 @@ color: $c-header-footer;} */
     display: inline-block;
     width: 90%;
     height: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
     grid-column: 2/3;
     grid-row: 1/6;
   }
 }
 
-.footer__contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
 @media screen and (min-width: 1000px) {
   .footer__contact {
     grid-column: 1/2;
-    grid-row: 4/5;
+    grid-row: 3/4;
+    justify-content: left;
+    align-items: left;
   }
 }
 
-@media screen and (min-width: 410px) {
+@media screen and (min-width: 430px) {
+  .footer__contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer__contact-wrapper {
+    justify-content: left;
+  }
+}
+
+.footer__contact-tel {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 430px) {
   .footer__contact-tel {
-    flex-basis: 45%;
-    text-align: right;
-    border-right: 2px solid black;
-    padding-right: 6px;
+    border-right: 2px solid rgb(240, 226, 207);
     margin-right: 6px;
-    margin-top: 0;
+    padding-right: 6px;
   }
 }
 
-@media screen and (min-width: 410px) {
-  .footer__contact-mail {
-    flex-basis: 45%;
-    text-align: left;
-    margin-top: 0;
-  }
+.footer__contact-mail {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
+@media screen and (min-width: 600px) {
+  .footer__payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1000px) {
   .footer__payment {
     grid-column: 1/2;
     grid-row: 1/2;
-    display: flex;
+    justify-content: left;
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 600px) {
   .footer__payment-type {
     margin-left: 20px;
   }

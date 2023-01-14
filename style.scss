@@ -99,15 +99,14 @@ border-bottom: 2px solid burlywood}
 .header__menu {
 position:absolute;
 left: 8%;
-top: 0%;
+top: 2%;
 z-index: 2;
 height: 60px;
 margin-top: 10px;
 opacity: 0.90;
 
   @media screen and (min-width: 1000px) {
-    display:none;
-}}
+    display:none;}}
 
 .menu__header {color:$c-main;
 margin-bottom:0;
@@ -129,14 +128,11 @@ width: 40px;
 height: 5px;
 background-color: $c-main;
 border-radius: 10%;
-margin-top: 10px;
-}
+margin-top: 10px;}
 
 .bar:nth-child(2) {
   margin-top: 12px;
-  margin-bottom: 12px;
-
-}
+  margin-bottom: 12px;}
 
   .menu__list {
       padding: 0;
@@ -144,19 +140,13 @@ margin-top: 10px;
       background-color: burlywood;
       display:none;
       position:absolute;
-    transform:translate(-8%, 55px);/*rozbalovací menu*/
+    transform:translate(-8%, 55px);/*rozbalovací menu*/ }
 
-}
-
-  
     .menu__item { border-bottom: 1px solid $c-header-footer;
-  width: 100vw;
-
-  }
+  width: 100vw;}
   
     .menu__item.active { 
-      background-color: blue;
-    }
+      background-color: blue;}
   
     .menu__link {
     display:block;
@@ -164,39 +154,31 @@ margin-top: 10px;
     text-decoration: none;
     color: $c-text;
     font-weight: bold;
-    text-align: center;
-    
-    }
+    text-align: center; }
   
     .menu__link:hover {
         background-color: blue; }
   
   
   .menu__checkbox:checked ~ .menu__list{
-  display:block;
-  }
+  display:block;}
   
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
     position:absolute;
     top: 15px;
     transform:rotate(45deg);
-    transition: transform 0.4s ease-in-out;
-    }
+    transition: transform 0.4s ease-in-out; }
   
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(2) {
-       display:none;
-       
-    }
+       display:none;}
   
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
     position:absolute;
     top: 15px;
     transform:rotate(-45deg);
-    transition: transform 0.4s ease-in-out;
-  }
+    transition: transform 0.4s ease-in-out;}
     
   
-    
 
 
 /* MAIN */
@@ -211,17 +193,15 @@ div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;} /*vymazat?
 
 .section-first__why {
     text-align: center;
-}
-.section-first__link {
-    @media screen and (min-width: 1000px) {grid-column: 2 / 3 ;}
-}
-
+    @media screen and (min-width: 1000px) {width: 70%;
+    margin-left:auto;
+    margin-right:auto;}}
 
 
 /* Section second - Aktuality Akce */
 
 .section.two {
-   position:relative;
+position:relative;
 font-weight: bold;
 border-style: outset;
 border-color: rgb(221, 128, 6);
@@ -266,6 +246,12 @@ border-width: 10px;
         font-size: 1.3em;
         }}
 
+.section-two__link {font-weight: normal;
+  position:absolute;
+bottom: 15%;
+transform: translateX(-45%) ;}
+
+.section-two__link-span {color:$c-main; }
 /* Section three - Rezervace */
 
 .section.three { 
@@ -474,10 +460,6 @@ width: 190px;
 
 .footer {
 padding: 30px;
-@media screen and (min-width: 1000px) {display:grid;
-grid-template-columns: 1fr 1fr;
-column-gap: 15px;
-text-align: left;}
 }
 
 .footer__hr { width: 50%;
@@ -487,15 +469,22 @@ color: $c-main;
 @media screen and (min-width: 1000px) {display:none;
 }}
 
+.footer__wrapper { width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    @media screen and (min-width: 1000px) {display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        text-align: left;}}
+
 .footer__opening {
     @media screen and (min-width: 1000px)  {grid-column: 1 / 2;
-    grid-row: 2 / 3; }
-}
+    grid-row: 2 / 3; }}
 
-.footer__location {flex-basis:50%;
+.footer__location {
     @media screen and (min-width: 600px) {flex-basis: calc(100%/3)}
     @media screen and (min-width: 1000px)  {grid-column: 1 / 2;
-        grid-row: 3 / 4; }}
+        grid-row: 4 / 5; }}
 
         .footer__location-link {
             @media screen and (min-width: 1000px) {display:none;}}
@@ -504,38 +493,47 @@ color: $c-main;
     @media screen and (min-width: 1000px) {display:inline-block;
         width: 90%;
         height:90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 10px;
     grid-column: 2 / 3;
     grid-row: 1 / 6;}}
 
 .footer__contact {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     @media screen and (min-width: 1000px)  {grid-column: 1 / 2;
-        grid-row: 4 / 5; }}
+        grid-row: 3 / 4;
+        justify-content: left;
+        align-items: left; }}
 
+        .footer__contact-wrapper {
+            @media screen and (min-width: 430px) {display:flex;
+            justify-content: center;
+        align-items: center;}
+        @media screen and (min-width: 1000px) {
+            justify-content: left; }}
 
-            .footer__contact-tel {
-                @media screen and (min-width: 410px) {flex-basis: 45%;
-            text-align:right;
-            border-right: 2px solid black;
-            padding-right: 6px;
-            margin-right: 6px;
-            margin-top:0;}}
-            .footer__contact-mail {
-                @media screen and (min-width: 410px) 
-            {flex-basis: 45%;
-            text-align: left;
-            margin-top:0;}}
+        .footer__contact-tel {margin-top: 0px;
+            margin-bottom:0px;
+            @media screen and (min-width: 430px) { border-right: 2px solid $c-main;
+                margin-right: 6px;
+                padding-right: 6px;
+        }}
 
+        .footer__contact-mail {
+            margin-top: 0px;
+            margin-bottom:0px;
+        }
+    
 .footer__payment {
-     @media screen and (min-width: 1000px)  {grid-column: 1 / 2;
-        grid-row: 1 / 2; 
-    display:flex;}}
+     @media screen and (min-width: 600px) {display:flex;
+align-items: center;
+justify-content: center;}
+@media screen and (min-width: 1000px) {grid-column: 1 / 2;
+    grid-row: 1 / 2;
+justify-content: left;}}
     
     .footer__payment-type {
-        @media screen and (min-width: 1000px)  {margin-left: 20px;}}
+        @media screen and (min-width: 600px){margin-left: 20px;}}
 
 .footer__copyright {
     @media screen and (min-width: 1000px)  {grid-column: 1 / 3;
