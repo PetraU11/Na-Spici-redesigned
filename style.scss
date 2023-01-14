@@ -205,7 +205,6 @@ color: $c-main;}
 div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;} /*vymazat?*/
 
 
-
 /* Section first */
 
 .section-first__why {
@@ -472,34 +471,71 @@ width: 190px;
 /* FOOTER */
 
 .footer {
-padding: 30px;}
+padding: 30px;
+@media screen and (min-width: 1000px) {display:grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 15px;
+text-align: left;}
+}
 
+.footer__hr { width: 50%;
+margin-top: 20px;
+margin-bottom: 20px;
+color: $c-main;
+@media screen and (min-width: 1000px) {display:none;
+}}
+
+.footer__opening {
+    @media screen and (min-width: 1000px)  {grid-column: 1 / 2;
+    grid-row: 2 / 3; }
+}
 
 .footer__location {flex-basis:50%;
-    @media screen and (min-width: 600px) {flex-basis: calc(100%/3)}}
-.footer__location-link {
-    @media screen and (min-width: 1000px) {display:none;}
-}
+    @media screen and (min-width: 600px) {flex-basis: calc(100%/3)}
+    @media screen and (min-width: 1000px)  {grid-column: 1 / 2;
+        grid-row: 3 / 4; }}
+
+        .footer__location-link {
+            @media screen and (min-width: 1000px) {display:none;}}
+            
 .footer__location-map {display:none;
-    @media screen and (min-width: 1000px) {display:inline-block;}
-}
+    @media screen and (min-width: 1000px) {display:inline-block;
+        width: 90%;
+        height:90%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;}}
 
 .footer__contact {
     display:flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;}
-.footer__contact-header {flex-basis: 100%;
-text-align: center;}
-.footer__contact-tel {
-    @media screen and (min-width: 410px) {flex-basis: 45%;
-text-align:right;
-border-right: 2px solid black;
-padding-right: 6px;
-margin-right: 6px;
-margin-top:0;}}
-.footer__contact-mail {
-    @media screen and (min-width: 410px) 
-{flex-basis: 45%;
-text-align: left;
-margin-top:0;}}
+    flex-wrap: wrap;
+    @media screen and (min-width: 1000px)  {grid-column: 1 / 2;
+        grid-row: 4 / 5; }}
+
+
+            .footer__contact-tel {
+                @media screen and (min-width: 410px) {flex-basis: 45%;
+            text-align:right;
+            border-right: 2px solid black;
+            padding-right: 6px;
+            margin-right: 6px;
+            margin-top:0;}}
+            .footer__contact-mail {
+                @media screen and (min-width: 410px) 
+            {flex-basis: 45%;
+            text-align: left;
+            margin-top:0;}}
+
+.footer__payment {
+     @media screen and (min-width: 1000px)  {grid-column: 1 / 2;
+        grid-row: 1 / 2; 
+    display:flex;}}
+    
+    .footer__payment-type {
+        @media screen and (min-width: 1000px)  {margin-left: 20px;}}
+
+.footer__copyright {
+    @media screen and (min-width: 1000px)  {grid-column: 1 / 3;
+    margin-top: 30px;
+text-align: center;}}
