@@ -115,6 +115,11 @@ border-bottom: 2px solid burlywood}
   }
 }
 
+.menu__header {
+  color: rgb(240, 226, 207);
+  margin-bottom: 0;
+}
+
 .menu__container {
   display: block;
   position: relative;
@@ -130,19 +135,16 @@ border-bottom: 2px solid burlywood}
 
 .bar {
   display: block;
-  width: 45px;
+  width: 60px;
   height: 5px;
   background-color: rgb(240, 226, 207);
   border-radius: 10%;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .bar:nth-child(2) {
   margin-top: 12px;
   margin-bottom: 12px;
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .menu__list {

@@ -108,9 +108,11 @@ opacity: 0.90;
     display:none;
 }}
 
+.menu__header {color:$c-main;
+margin-bottom:0;}
+
 .menu__container { display: block;
     position: relative;
-   
 } /*asi nemusí být, jestli nechci border  */
 
 .menu__checkbox {
@@ -121,19 +123,17 @@ opacity: 0.90;
 
 .bar { 
 display: block;
-width: 45px;
+width: 60px;
 height: 5px;
 background-color: $c-main;
 border-radius: 10%;
-margin-top: 5px;
+margin-top: 10px;
 }
 
 .bar:nth-child(2) {
   margin-top: 12px;
   margin-bottom: 12px;
-  width: 80%;
-  margin-right: auto;
-  margin-left:auto;
+
 }
 
   .menu__list {
