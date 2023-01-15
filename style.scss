@@ -51,6 +51,8 @@ border: 3px solid burlywood;
 
 @media screen and (min-width: 600px) {width: 45%;}
 
+/*@media screen and (max-height:) {} prozkoumat, potřebuju nastavit pro tablet */
+
 @media screen and (min-width: 1000px) {width: 30%;}
 
 }
@@ -140,7 +142,8 @@ z-index:-1;
 transform:translate(-8%, -10%);/*rozbalovací menu*/
     @media screen and (min-width: 600px) {display:flex !important;
     transform:translate(-3%, -30%);
-    background-color:transparent;}}
+    background-color:transparent;
+}}
 
 .menu__item {
 border-bottom: 1px solid $c-header-footer;
@@ -149,8 +152,9 @@ width: 100vw;
         width: auto;
         border-bottom:none;
         border-right: 1px solid $c-header-footer;
-        font-size: 0.8rem;
-         width: 15vw;}}
+        font-size: 0.9rem;
+         width: 15vw;
+        }}
   
    /* .menu__item.active { 
       background-color: yellow;} eleventy */
@@ -182,6 +186,7 @@ color: $c-main;
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
     position:absolute;
     top: 15px;
+    /* background-color: $c-text; pro změnu barvy křízku */
     transform:rotate(45deg);
     transition: transform 0.4s ease-in-out; }
   
