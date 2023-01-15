@@ -36,10 +36,6 @@ background-attachment: scroll;
     background-image: url(../images/IMG_0430up.jpg);    
 }}
 
-header::before {
-    content: "";}
-
-
 .header__container {
 background-color: rgba(0,0,0, 0.6);
 position:relative;
@@ -71,6 +67,9 @@ border: 3px solid burlywood;
     
     /* zafixovat arrow pro vetší obrazovky*/
 }
+.menu__header-span {
+    @media screen and (min-width: 600px) {display:none}}
+
 
 /*
 .header__menu {
@@ -99,14 +98,10 @@ border-bottom: 2px solid burlywood}
 .header__menu {
 position:absolute;
 left: 8%;
-top: 2%;
+top: 0%;
 z-index: 2;
 height: 60px;
-margin-top: 10px;
-opacity: 0.90;
-
-  @media screen and (min-width: 1000px) {
-    display:none;}}
+opacity: 0.90;}
 
 .menu__header {color:$c-main;
 margin-bottom:0;
@@ -120,7 +115,8 @@ font-size: 1rem;}
       position: absolute;
       left: -9999px;}
 
-.menu__toggler { cursor:pointer;}
+.menu__toggler { cursor:pointer;
+    @media screen and (min-width: 600px) {display:none;}}
 
 .bar { 
 display: block;
@@ -134,31 +130,51 @@ margin-top: 10px;}
   margin-top: 12px;
   margin-bottom: 12px;}
 
-  .menu__list {
-      padding: 0;
-      list-style: none;
-      background-color: burlywood;
-      display:none;
-      position:absolute;
-    transform:translate(-8%, 55px);/*rozbalovací menu*/ }
+.menu__list {
+padding: 0;
+list-style: none;
+background-color: burlywood;
+display:none;
+position:absolute;
+z-index:-1;
+transform:translate(-8%, -10%);/*rozbalovací menu*/
+    @media screen and (min-width: 600px) {display:flex !important;
+    transform:translate(-3%, -30%);
+    background-color:transparent;}}
 
-    .menu__item { border-bottom: 1px solid $c-header-footer;
-  width: 100vw;}
+.menu__item {
+border-bottom: 1px solid $c-header-footer;
+width: 100vw;
+        @media screen and (min-width: 600px) {
+        width: auto;
+        border-bottom:none;
+        border-right: 1px solid $c-header-footer;
+        font-size: 0.8rem;
+         width: 15vw;}}
   
-    .menu__item.active { 
-      background-color: blue;}
+   /* .menu__item.active { 
+      background-color: yellow;} eleventy */
   
-    .menu__link {
-    display:block;
-    padding: 25px;
-    text-decoration: none;
-    color: $c-text;
-    font-weight: bold;
-    text-align: center; }
+.menu__link {
+display:block;
+padding: 25px;
+text-decoration: none;
+color: $c-text;
+font-weight: bold;
+text-align: center; 
+    @media screen and (min-width: 600px){
+    color:$c-main;
+    padding:15px;
+    background-color:rgba(0,0,0, 0.3);
+    height: 100%;}}
   
-    .menu__link:hover {
-        background-color: blue; }
-  
+.menu__link:hover {
+background-color:$c-text; 
+color: $c-main;
+    @media screen and (min-width: 600px){
+    background-color:$c-main;
+    color: $c-text; }}
+   
   
   .menu__checkbox:checked ~ .menu__list{
   display:block;}
@@ -179,8 +195,6 @@ margin-top: 10px;}
     transition: transform 0.4s ease-in-out;}
     
   
-
-
 /* MAIN */
 .section {padding: 15px;}
 .section:nth-child(even),
@@ -288,21 +302,17 @@ border-radius: 5%;}
 .img2 {position:absolute;
     border: 5px solid rgb(218, 124, 51);
 border-radius: 5%;
-transform: translateX(-100%) rotate(15deg);
-}
+transform: translateX(-100%) rotate(15deg);}
 
 .img3 {position:absolute;
     border: 5px solid rgb(123, 74, 11);
 border-radius: 5%;
-transform: translateX(-100%) rotate(-15deg);
-}
+transform: translateX(-100%) rotate(-15deg);}
 
 .img4 {position:absolute;
     border: 5px solid rgb(218, 124, 51);
     border-radius: 5%;
-    transform: translateX(-100%);
-   
-}
+    transform: translateX(-100%);}
 
 /* BOOKING FORM
 .section-three__booking-timedate {display:flex;
@@ -440,11 +450,10 @@ width: 190px;
     border-radius: 5%;}
 
 .img11 {position:absolute;
-   
         border: 5px solid rgb(218, 124, 51);
     border-radius: 5%;
     transform: translateX(-100%) rotate(15deg);
-    }
+}
 
 .img12 {position:absolute;
     border: 5px solid rgb(123, 74, 11);;
@@ -492,7 +501,7 @@ color: $c-main;
 .footer__location-map {display:none;
     @media screen and (min-width: 1000px) {display:inline-block;
         width: 90%;
-        height:90%;
+        height:95%;
         margin-right: auto;
         margin-left: auto;
         margin-top: 10px;
@@ -522,7 +531,7 @@ color: $c-main;
         .footer__contact-mail {
             margin-top: 0px;
             margin-bottom:0px;
-        }
+        } /* margin top pro mobil a a href pro email */
     
 .footer__payment {
      @media screen and (min-width: 600px) {display:flex;

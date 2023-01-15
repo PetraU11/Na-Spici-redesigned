@@ -35,10 +35,6 @@ header {
   }
 }
 
-header::before {
-  content: "";
-}
-
 .header__container {
   background-color: rgba(0, 0, 0, 0.6);
   position: relative;
@@ -80,6 +76,12 @@ header::before {
   /* zafixovat arrow pro vetší obrazovky*/
 }
 
+@media screen and (min-width: 600px) {
+  .menu__header-span {
+    display: none;
+  }
+}
+
 /*
 .header__menu {
     position:absolute;
@@ -103,16 +105,10 @@ border-bottom: 2px solid burlywood}
 .header__menu {
   position: absolute;
   left: 8%;
-  top: 2%;
+  top: 0%;
   z-index: 2;
   height: 60px;
-  margin-top: 10px;
   opacity: 0.9;
-}
-@media screen and (min-width: 1000px) {
-  .header__menu {
-    display: none;
-  }
 }
 
 .menu__header {
@@ -133,6 +129,11 @@ border-bottom: 2px solid burlywood}
 
 .menu__toggler {
   cursor: pointer;
+}
+@media screen and (min-width: 600px) {
+  .menu__toggler {
+    display: none;
+  }
 }
 
 .bar {
@@ -155,18 +156,33 @@ border-bottom: 2px solid burlywood}
   background-color: burlywood;
   display: none;
   position: absolute;
-  transform: translate(-8%, 55px); /*rozbalovací menu*/
+  z-index: -1;
+  transform: translate(-8%, -10%); /*rozbalovací menu*/
+}
+@media screen and (min-width: 600px) {
+  .menu__list {
+    display: flex !important;
+    transform: translate(-3%, -30%);
+    background-color: transparent;
+  }
 }
 
 .menu__item {
   border-bottom: 1px solid rgb(166, 100, 15);
   width: 100vw;
 }
-
-.menu__item.active {
-  background-color: blue;
+@media screen and (min-width: 600px) {
+  .menu__item {
+    width: auto;
+    border-bottom: none;
+    border-right: 1px solid rgb(166, 100, 15);
+    font-size: 0.8rem;
+    width: 15vw;
+  }
 }
 
+/* .menu__item.active { 
+   background-color: yellow;} eleventy */
 .menu__link {
   display: block;
   padding: 25px;
@@ -175,9 +191,24 @@ border-bottom: 2px solid burlywood}
   font-weight: bold;
   text-align: center;
 }
+@media screen and (min-width: 600px) {
+  .menu__link {
+    color: rgb(240, 226, 207);
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
+}
 
 .menu__link:hover {
-  background-color: blue;
+  background-color: rgb(79, 25, 11);
+  color: rgb(240, 226, 207);
+}
+@media screen and (min-width: 600px) {
+  .menu__link:hover {
+    background-color: rgb(240, 226, 207);
+    color: rgb(79, 25, 11);
+  }
 }
 
 .menu__checkbox:checked ~ .menu__list {
@@ -613,7 +644,7 @@ color: $c-header-footer;} */
   .footer__location-map {
     display: inline-block;
     width: 90%;
-    height: 90%;
+    height: 95%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 10px;
@@ -659,8 +690,7 @@ color: $c-header-footer;} */
 .footer__contact-mail {
   margin-top: 0px;
   margin-bottom: 0px;
-}
-
+} /* margin top pro mobil a a href pro email */
 @media screen and (min-width: 600px) {
   .footer__payment {
     display: flex;
