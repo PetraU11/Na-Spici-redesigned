@@ -193,6 +193,7 @@ left:0 !important;}
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
     position:absolute;
     top: 15px;
+    z-index:100;
     background-color: $c-text;
     /* background-color: $c-text; pro změnu barvy křízku */
     transform:rotate(45deg);
@@ -204,6 +205,7 @@ left:0 !important;}
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
     position:absolute;
     top: 15px;
+    z-index:100;
     background-color: $c-text;
     transform:rotate(-45deg);
     transition: transform 0.4s ease-in-out;}
