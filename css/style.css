@@ -89,7 +89,7 @@ header {
   top: 0%;
   z-index: 2;
   height: 60px;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .menu__header {
@@ -104,12 +104,16 @@ header {
   position: relative;
 } /*asi nemusí být, jestli nechci border  */
 .menu__checkbox {
+  opacity: 0;
   position: absolute;
   left: -9999px;
 }
 
 .menu__toggler {
+  position: -webkit-sticky;
+  position: sticky;
   cursor: pointer;
+  z-index: 1;
 }
 @media screen and (min-width: 1000px) {
   .menu__toggler {
@@ -132,52 +136,65 @@ header {
 }
 
 .menu__list {
-  padding: 0;
-  list-style: none;
-  background-color: burlywood;
-  display: none;
-  position: absolute;
-  z-index: -1;
-  transform: translate(-8%, 10%); /*rozbalovací menu*/
-}
-@media screen and (min-width: 1000px) {
-  .menu__list {
-    display: flex !important;
-    transform: translate(-3%, -30%);
-    background-color: transparent;
-  }
-}
-
-.menu__item {
-  border-bottom: 1px solid rgb(166, 100, 15);
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
   width: 100vw;
-}
-@media screen and (min-width: 1000px) {
-  .menu__item {
-    width: 15vw;
-    border-bottom: none;
-    border-right: 1px solid rgb(166, 100, 15);
-    font-size: 0.9rem;
-  }
+  height: 100vh;
+  margin: 0;
+  padding: 100px 0;
+  list-style: none;
+  background-color: rgb(240, 226, 207);
+  transition-duration: 0.25s;
 }
 
+/* padding: 0;
+list-style: none;
+background-color: burlywood;
+display:none;
+position:absolute;
+z-index:-1;
+transform:translate(-8%, 10%);/*rozbalovací menu
+    @media screen and (min-width: 1000px) {display:flex !important;
+    transform:translate(-3%, -30%);
+    background-color:transparent;
+}} */
+.menu__item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*   border-bottom: 1px solid $c-header-footer;
+width: 100vw;
+        @media screen and (min-width: 1000px) {
+        width: 15vw;
+        border-bottom:none;
+        border-right: 1px solid $c-header-footer;
+        font-size: 0.9rem;
+}} */
 /* .menu__item.active { 
    background-color: yellow;} eleventy */
 .menu__link {
   display: block;
-  padding: 25px;
+  padding: 12px 24px;
   text-decoration: none;
+  transition-duration: 0.25s;
   color: rgb(79, 25, 11);
   font-weight: bold;
   text-align: center;
-}
-@media screen and (min-width: 1000px) {
-  .menu__link {
-    color: rgb(240, 226, 207);
-    padding: 15px 10px;
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 100%;
-  }
+  /* display:block;
+    border-bottom: 1px solid $c-header-footer;
+  padding: 25px;
+  text-decoration: none;
+  color: $c-text;
+  font-weight: bold;
+  text-align: center; 
+      @media screen and (min-width: 1000px){
+      color:$c-main;
+      padding: 15px 10px;
+      background-color:rgba(0,0,0, 0.3);
+      height: 100%;}*/
 }
 
 .menu__link:hover {
@@ -192,12 +209,13 @@ header {
 }
 
 .menu__checkbox:checked ~ .menu__list {
-  display: block;
+  left: 0 !important;
 }
 
 .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
   position: absolute;
   top: 15px;
+  background-color: rgb(79, 25, 11);
   /* background-color: $c-text; pro změnu barvy křízku */
   transform: rotate(45deg);
   transition: transform 0.4s ease-in-out;
@@ -210,6 +228,7 @@ header {
 .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
   position: absolute;
   top: 15px;
+  background-color: rgb(79, 25, 11);
   transform: rotate(-45deg);
   transition: transform 0.4s ease-in-out;
 }
