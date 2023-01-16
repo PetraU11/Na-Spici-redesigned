@@ -71,33 +71,22 @@ border: 3px solid burlywood;
 
 
    
-//Hamburger menu//      
-.menu__header-span {
-   // @media screen and (min-width: 1000px) {display:none}
-}
+//Hamburger menu// 
 
 .header__menu {
 position:absolute;
 left: 8%;
-top: 0%;
+top: 3%;
 z-index: 2;
-height: 60px;
+height: 60px; //musí být?
 opacity: 0.95;}
 
-.menu__header {color:$c-main;
-margin-bottom:0;
-margin-left: -2px;
-font-size: 1rem;}
-
-.menu__container { display: block;
-    position: relative;} /*asi nemusí být, jestli nechci border  */
-
-.menu__checkbox {opacity:0; // asi vymazat, ne? to bude souviset s tím, že to nejde vidět 
+.menu__checkbox {
       position: absolute;
       left: -9999px;}
 
 .menu__toggler { 
-    position: sticky;
+   position: relative; //sticky, fixed
     cursor: pointer;
     z-index: 1;
    //cursor:pointer;
@@ -121,9 +110,9 @@ margin-top: 10px;}
     top: 0;
     left: -100%;
     width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 80px 0;
+   height: 100vh;
+    margin-top: 0px;
+    padding: 60px 0;
     list-style: none;
     background-color: $c-main;
     transition-duration: .25s;
@@ -189,6 +178,9 @@ color: $c-main;
   // display:block;
 left:0 !important;}
 
+.menu__checkbox:checked ~ .menu__toggler {
+    position:fixed;
+}
   
   .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
     position:absolute;
