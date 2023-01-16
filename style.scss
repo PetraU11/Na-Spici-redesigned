@@ -66,34 +66,11 @@ border: 3px solid burlywood;
 .header__arrow {
     position:absolute;
     bottom: 20px;
-    
-    /* zafixovat arrow pro vetší obrazovky*/
+     /* zafixovat arrow pro vetší obrazovky*/
 }
+
 .menu__header-span {
-    @media screen and (min-width: 600px) {display:none}}
-
-
-/*
-.header__menu {
-    position:absolute;
-    top: 1%;
-    right: 2%;}
-
-.header__menu-list {
-  display:flex;
-  justify-content: flex-end;}
-
-.header__menu-list li {list-style: none;}
-
-.header__menu-list a{
-  text-decoration: none;
-  color:rgb(240, 226, 207);
-margin-left: 10px;
-margin-right: 10px;
-padding-bottom: 2px;
-border-bottom: 2px solid burlywood}
- */ 
-
+    @media screen and (min-width: 1000px) {display:none}}
    
 //Hamburger menu//      
 
@@ -118,7 +95,7 @@ font-size: 1rem;}
       left: -9999px;}
 
 .menu__toggler { cursor:pointer;
-    @media screen and (min-width: 600px) {display:none;}}
+    @media screen and (min-width: 1000px) {display:none;}}
 
 .bar { 
 display: block;
@@ -139,8 +116,8 @@ background-color: burlywood;
 display:none;
 position:absolute;
 z-index:-1;
-transform:translate(-8%, -10%);/*rozbalovací menu*/
-    @media screen and (min-width: 600px) {display:flex !important;
+transform:translate(-8%, 10%);/*rozbalovací menu*/
+    @media screen and (min-width: 1000px) {display:flex !important;
     transform:translate(-3%, -30%);
     background-color:transparent;
 }}
@@ -148,13 +125,12 @@ transform:translate(-8%, -10%);/*rozbalovací menu*/
 .menu__item {
 border-bottom: 1px solid $c-header-footer;
 width: 100vw;
-        @media screen and (min-width: 600px) {
-        width: auto;
+        @media screen and (min-width: 1000px) {
+        width: 15vw;
         border-bottom:none;
         border-right: 1px solid $c-header-footer;
         font-size: 0.9rem;
-         width: 15vw;
-        }}
+}}
   
    /* .menu__item.active { 
       background-color: yellow;} eleventy */
@@ -166,16 +142,16 @@ text-decoration: none;
 color: $c-text;
 font-weight: bold;
 text-align: center; 
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 1000px){
     color:$c-main;
-    padding:15px;
+    padding: 15px 10px;
     background-color:rgba(0,0,0, 0.3);
     height: 100%;}}
   
 .menu__link:hover {
 background-color:$c-text; 
 color: $c-main;
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 1000px){
     background-color:$c-main;
     color: $c-text; }}
    
@@ -200,6 +176,11 @@ color: $c-main;
     transition: transform 0.4s ease-in-out;}
     
   
+
+
+
+
+
 /* MAIN */
 .section {padding: 15px;}
 .section:nth-child(even),

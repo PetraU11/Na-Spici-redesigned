@@ -77,32 +77,12 @@ header {
   /* zafixovat arrow pro vetší obrazovky*/
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .menu__header-span {
     display: none;
   }
 }
 
-/*
-.header__menu {
-    position:absolute;
-    top: 1%;
-    right: 2%;}
-
-.header__menu-list {
-  display:flex;
-  justify-content: flex-end;}
-
-.header__menu-list li {list-style: none;}
-
-.header__menu-list a{
-  text-decoration: none;
-  color:rgb(240, 226, 207);
-margin-left: 10px;
-margin-right: 10px;
-padding-bottom: 2px;
-border-bottom: 2px solid burlywood}
- */
 .header__menu {
   position: absolute;
   left: 8%;
@@ -131,7 +111,7 @@ border-bottom: 2px solid burlywood}
 .menu__toggler {
   cursor: pointer;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .menu__toggler {
     display: none;
   }
@@ -158,9 +138,9 @@ border-bottom: 2px solid burlywood}
   display: none;
   position: absolute;
   z-index: -1;
-  transform: translate(-8%, -10%); /*rozbalovací menu*/
+  transform: translate(-8%, 10%); /*rozbalovací menu*/
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .menu__list {
     display: flex !important;
     transform: translate(-3%, -30%);
@@ -172,13 +152,12 @@ border-bottom: 2px solid burlywood}
   border-bottom: 1px solid rgb(166, 100, 15);
   width: 100vw;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .menu__item {
-    width: auto;
+    width: 15vw;
     border-bottom: none;
     border-right: 1px solid rgb(166, 100, 15);
     font-size: 0.9rem;
-    width: 15vw;
   }
 }
 
@@ -192,10 +171,10 @@ border-bottom: 2px solid burlywood}
   font-weight: bold;
   text-align: center;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .menu__link {
     color: rgb(240, 226, 207);
-    padding: 15px;
+    padding: 15px 10px;
     background-color: rgba(0, 0, 0, 0.3);
     height: 100%;
   }
@@ -205,7 +184,7 @@ border-bottom: 2px solid burlywood}
   background-color: rgb(79, 25, 11);
   color: rgb(240, 226, 207);
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .menu__link:hover {
     background-color: rgb(240, 226, 207);
     color: rgb(79, 25, 11);
