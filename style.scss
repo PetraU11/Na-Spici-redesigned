@@ -69,10 +69,12 @@ border: 3px solid burlywood;
      /* zafixovat arrow pro vetší obrazovky*/
 }
 
-.menu__header-span {
-    @media screen and (min-width: 1000px) {display:none}}
+
    
 //Hamburger menu//      
+.menu__header-span {
+   // @media screen and (min-width: 1000px) {display:none}
+}
 
 .header__menu {
 position:absolute;
@@ -121,7 +123,7 @@ margin-top: 10px;}
     width: 100vw;
     height: 100vh;
     margin: 0;
-    padding: 100px 0;
+    padding: 80px 0;
     list-style: none;
     background-color: $c-main;
     transition-duration: .25s;
@@ -140,8 +142,6 @@ transform:translate(-8%, 10%);/*rozbalovací menu
 }} */
 
 .menu__item {
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 /*   border-bottom: 1px solid $c-header-footer;
 width: 100vw;
@@ -157,7 +157,8 @@ width: 100vw;
   
 .menu__link {
     display: block;
-    padding: 12px 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-decoration: none;
     transition-duration: .25s;
     color: $c-text;
