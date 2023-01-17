@@ -45,13 +45,11 @@ justify-content: center;
 align-items: center;
 width: 50%;
 aspect-ratio: 1;
-border-radius: 50%;
+border-radius: 60%;
 text-align:center;
 border: 3px solid burlywood;
 
-@media screen and (min-width: 600px) {width: 45%;}
-
-/*@media screen and (max-height:) {} prozkoumat, potřebuju nastavit pro tablet */
+@media screen and (min-width: 600px) {width: 40%;}
 
 @media screen and (min-width: 1000px) {width: 30%;}
 
@@ -61,6 +59,7 @@ border: 3px solid burlywood;
     font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
     @media screen and (min-width: 1000px) {font-size: 4vw;;}
+    
 }
 
 .header__arrow {
@@ -72,14 +71,11 @@ border: 3px solid burlywood;
 
    
 //Hamburger menu//      
-.menu__header-span {
-   // @media screen and (min-width: 1000px) {display:none}
-}
 
 .header__menu {
 position:absolute;
 left: 8%;
-top: 0%;
+top: 5%;
 z-index: 2;
 height: 60px;
 opacity: 0.95;}
@@ -100,7 +96,6 @@ font-size: 1rem;}
     position: sticky;
     cursor: pointer;
     z-index: 1;
-   //cursor:pointer;
     @media screen and (min-width: 1000px) {display:none;}}
 
 .bar { 
@@ -112,72 +107,56 @@ border-radius: 10%;
 margin-top: 10px;}
 
 .bar:nth-child(2) {
-  margin-top: 12px;
-  margin-bottom: 12px;}
+margin-top: 12px;
+margin-bottom: 12px;}
 
 .menu__list {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    background-color: $c-main;
-    transition-duration: .25s;
-    overflow: auto;
-  }
-
-/* padding: 0;
+display: block;
+position: fixed;
+top: 0;
+left: -100%;
+width: 100vw;
+height: 100vh;
+margin: 0;
+padding: 80px 0;
 list-style: none;
-background-color: burlywood;
-display:none;
-position:absolute;
-z-index:-1;
-transform:translate(-8%, 10%);/*rozbalovací menu
+background-color: $c-main;
+transition-duration: .25s;
+overflow: auto;
     @media screen and (min-width: 1000px) {display:flex !important;
-    transform:translate(-3%, -30%);
-    background-color:transparent;
-}} */
+    justify-content: center;
+    position:absolute; 
+    background-color: transparent;
+    height: auto;
+    transform:translate(-8%, -40%);
+}}
 
 .menu__item {
-}
-/*   border-bottom: 1px solid $c-header-footer;
-width: 100vw;
-        @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1000px) {
         width: 15vw;
         border-bottom:none;
         border-right: 1px solid $c-header-footer;
         font-size: 0.9rem;
-}} */
-  
+}}
+
    /* .menu__item.active { 
       background-color: yellow;} eleventy */
   
 .menu__link {
-    display: block;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-decoration: none;
-    transition-duration: .25s;
-    color: $c-text;
-    font-weight: bold;
-    text-align: center;
- /* display:block;
-  border-bottom: 1px solid $c-header-footer;
-padding: 25px;
+display: block;
+padding-top: 30px;
+padding-bottom: 30px;
 text-decoration: none;
+transition-duration: .25s;
 color: $c-text;
 font-weight: bold;
-text-align: center; 
+text-align: center;
     @media screen and (min-width: 1000px){
-    color:$c-main;
-    padding: 15px 10px;
-    background-color:rgba(0,0,0, 0.3);
-    height: 100%;}*/} 
-  
+        color:$c-main;
+        padding: 15px 10px;
+        background-color:rgba(0,0,0, 0.3);
+        height: 100%;}}
+
 .menu__link:hover {
 background-color:$c-text; 
 color: $c-main;
@@ -185,39 +164,30 @@ color: $c-main;
     background-color:$c-main;
     color: $c-text; }}
    
-
-
-  .menu__checkbox:checked ~ .menu__list{
+.menu__checkbox:checked ~ .menu__list{
   // display:block;
 left:0 !important;}
 
-.menu__checkbox:checked ~ .menu__toggler {
-    position:fixed;
-}
+.menu__checkbox:checked ~ .menu__toggler {position:fixed;}
   
-  .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
+.menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
     position:absolute;
     top: 15px;
     z-index:100;
-    background-color: $c-text;
-    /* background-color: $c-text; pro změnu barvy křízku */
+    background-color: $c-button;
     transform:rotate(45deg);
     transition: transform 0.4s ease-in-out; }
   
-  .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(2) {
-       display:none;}
+.menu__checkbox:checked ~ .menu__toggler .bar:nth-child(2) {display:none;}
   
-  .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
+.menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
     position:absolute;
     top: 15px;
     z-index:100;
-    background-color: $c-text;
+    background-color: $c-button;
     transform:rotate(-45deg);
     transition: transform 0.4s ease-in-out;}
     
-  
-
-
 
 
 

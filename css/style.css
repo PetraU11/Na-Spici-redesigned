@@ -44,14 +44,13 @@ header {
   align-items: center;
   width: 50%;
   aspect-ratio: 1;
-  border-radius: 50%;
+  border-radius: 60%;
   text-align: center;
   border: 3px solid burlywood;
-  /*@media screen and (max-height:) {} prozkoumat, potřebuju nastavit pro tablet */
 }
 @media screen and (min-width: 600px) {
   .header__container {
-    width: 45%;
+    width: 40%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -80,7 +79,7 @@ header {
 .header__menu {
   position: absolute;
   left: 8%;
-  top: 0%;
+  top: 5%;
   z-index: 2;
   height: 60px;
   opacity: 0.95;
@@ -143,26 +142,26 @@ header {
   transition-duration: 0.25s;
   overflow: auto;
 }
+@media screen and (min-width: 1000px) {
+  .menu__list {
+    display: flex !important;
+    justify-content: center;
+    position: absolute;
+    background-color: transparent;
+    height: auto;
+    transform: translate(-8%, -40%);
+  }
+}
 
-/* padding: 0;
-list-style: none;
-background-color: burlywood;
-display:none;
-position:absolute;
-z-index:-1;
-transform:translate(-8%, 10%);/*rozbalovací menu
-    @media screen and (min-width: 1000px) {display:flex !important;
-    transform:translate(-3%, -30%);
-    background-color:transparent;
-}} */
-/*   border-bottom: 1px solid $c-header-footer;
-width: 100vw;
-        @media screen and (min-width: 1000px) {
-        width: 15vw;
-        border-bottom:none;
-        border-right: 1px solid $c-header-footer;
-        font-size: 0.9rem;
-}} */
+@media screen and (min-width: 1000px) {
+  .menu__item {
+    width: 15vw;
+    border-bottom: none;
+    border-right: 1px solid rgb(166, 100, 15);
+    font-size: 0.9rem;
+  }
+}
+
 /* .menu__item.active { 
    background-color: yellow;} eleventy */
 .menu__link {
@@ -174,18 +173,14 @@ width: 100vw;
   color: rgb(79, 25, 11);
   font-weight: bold;
   text-align: center;
-  /* display:block;
-    border-bottom: 1px solid $c-header-footer;
-  padding: 25px;
-  text-decoration: none;
-  color: $c-text;
-  font-weight: bold;
-  text-align: center; 
-      @media screen and (min-width: 1000px){
-      color:$c-main;
-      padding: 15px 10px;
-      background-color:rgba(0,0,0, 0.3);
-      height: 100%;}*/
+}
+@media screen and (min-width: 1000px) {
+  .menu__link {
+    color: rgb(240, 226, 207);
+    padding: 15px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+  }
 }
 
 .menu__link:hover {
@@ -211,8 +206,7 @@ width: 100vw;
   position: absolute;
   top: 15px;
   z-index: 100;
-  background-color: rgb(79, 25, 11);
-  /* background-color: $c-text; pro změnu barvy křízku */
+  background-color: rgb(131, 86, 29);
   transform: rotate(45deg);
   transition: transform 0.4s ease-in-out;
 }
@@ -225,7 +219,7 @@ width: 100vw;
   position: absolute;
   top: 15px;
   z-index: 100;
-  background-color: rgb(79, 25, 11);
+  background-color: rgb(131, 86, 29);
   transform: rotate(-45deg);
   transition: transform 0.4s ease-in-out;
 }
