@@ -80,19 +80,32 @@ header {
 .header__menu {
   position: absolute;
   left: 8%;
-  top: 3%;
+  top: 0%;
   z-index: 2;
   height: 60px;
   opacity: 0.95;
 }
 
+.menu__header {
+  color: rgb(240, 226, 207);
+  margin-bottom: 0;
+  margin-left: -2px;
+  font-size: 1rem;
+}
+
+.menu__container {
+  display: block;
+  position: relative;
+} /*asi nemusí být, jestli nechci border  */
 .menu__checkbox {
+  opacity: 0;
   position: absolute;
   left: -9999px;
 }
 
 .menu__toggler {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   cursor: pointer;
   z-index: 1;
 }
@@ -123,11 +136,12 @@ header {
   left: -100%;
   width: 100vw;
   height: 100vh;
-  margin-top: 0px;
-  padding: 60px 0;
+  margin: 0;
+  padding: 80px 0;
   list-style: none;
   background-color: rgb(240, 226, 207);
   transition-duration: 0.25s;
+  overflow: auto;
 }
 
 /* padding: 0;
