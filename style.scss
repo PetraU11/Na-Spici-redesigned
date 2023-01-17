@@ -52,22 +52,19 @@ border: 3px solid burlywood;
 @media screen and (min-width: 600px) {width: 40%;}
 
 @media screen and (min-width: 1000px) {width: 30%;}
+// nested media query ? pro výšku. 
 
 }
 
 .header__text {color: $c-main;
     font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
-    @media screen and (min-width: 1000px) {font-size: 4vw;;}
-    
-}
+    @media screen and (min-width: 1000px) {font-size: 4vw;;}}
 
 .header__arrow {
     position:absolute;
     bottom: 20px;
-     /* zafixovat arrow pro vetší obrazovky*/
-}
-
+     /* zafixovat arrow pro vetší obrazovky nebo změnit width toho kulatého kontejneru? */}
 
    
 //Hamburger menu//      
@@ -85,10 +82,7 @@ margin-bottom:0;
 margin-left: -2px;
 font-size: 1rem;}
 
-.menu__container { display: block;
-    position: relative;} /*asi nemusí být, jestli nechci border  */
-
-.menu__checkbox {opacity:0; // asi vymazat, ne? to bude souviset s tím, že to nejde vidět 
+.menu__checkbox {
       position: absolute;
       left: -9999px;}
 
@@ -188,7 +182,6 @@ left:0 !important;}
     transform:rotate(-45deg);
     transition: transform 0.4s ease-in-out;}
     
-
 
 
 /* MAIN */
@@ -465,9 +458,10 @@ width: 190px;
 
 .footer {
 padding: 30px;
+font-size: 0.8rem;
 }
 
-.footer__hr { width: 50%;
+.footer__hr { width: 30%;
 margin-top: 20px;
 margin-bottom: 20px;
 color: $c-main;

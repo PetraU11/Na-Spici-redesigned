@@ -20,12 +20,11 @@
 <body>
 
     <header> 
-        <nav class="header__menu"> <!-- hamburger-menu -->
-           <!-- <h3 class="menu__header"><span class="menu__header-span">Menu </span></h3>  -->
+        <nav class="header__menu"> 
             <div class="menu__container"><!-- -->
             
-            <input type="checkbox" class="menu__checkbox" id="menu-checkbox"> <!-- id menu__toggle -->
-            <label for="menu-checkbox" class="menu__toggler"> <!--  menu_btn -->
+            <input type="checkbox" class="menu__checkbox" id="menu-checkbox"> 
+            <label for="menu-checkbox" class="menu__toggler"> 
               <div class="menu__bars">
                 <span class="bar">  </span>
                 <span class="bar"> </span>
@@ -33,9 +32,9 @@
                </div>
             </label>
         
-     <ul class="menu__list">  <!-- menu box -->
-        <li class="menu__item"><a class="menu__link" href="#">Úvod</a></li> <!--  a - menu item -->
-        <li class="menu__item"><a class="menu__link" href="#section1">O nás</a></li>
+     <ul class="menu__list"> 
+        <li class="menu__item"><a class="menu__link" href="#">Úvod</a></li> 
+        <li class="menu__item"><a class="menu__link" href="#">O nás</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Aktuality & Akce</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Rezervace</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Naše nabídka</a></li>
@@ -44,15 +43,6 @@
             </div>
               </nav>
 
-       <!--  <div class="header__menu">   
-        <ul class="header__menu-list"> 
-            <li><a href="/"> O nás</a></li>
-            <li><a href="/"> Aktuality & Akce</a>  </li>
-            <li><a href="/"> Rezervace</a>  </li>
-            <li><a href="/"> Naše nabídka</a>  </li>
-            <li><a href="/">  Catering </a></li>
-        </ul> 
-        </div>-->
    <div class="header__container">
 <h1 class="header__text"> Vítejte v Hospůdce Na Špici </h1>
 </div> 
@@ -70,12 +60,13 @@
 <section id="section1" class="section first"> 
 <div class="section-first__why"> 
 
-<h2> Jsme jediná hospůdka v Ostravě, ve které si dáte tankový Radegast 10° i 12°, zahrajete si šipky a mrknete na fotbal.
+<h2> Jsme jediná hospůdka v Ostravě, ve které si dáte tankový Radegast 10° i 12°, zahrajete si šipky a mrknete na fotbal i s vašim chlupatým členem rodiny.
     <!-- pet friendly--> 
 </h2>
 </div>
 
-<a class="section-first__link" href="/" > <span> Více o nás ZDE </span></a>
+<!-- <a class="section-first__link" href="/" > <span> Více o nás ZDE </span></a>
+-->
 </section>
 
 <section id="section2" class="section two"> 
@@ -104,6 +95,7 @@
 <h2> Připravili jsme si pro Vás:</h2>
 <p> Zabijačkové hody </p>
 <p> 28. - 29. 10. od 11 hod.</p>
+<a class="section-two__link" href="#" > <span class="section-two__link-span"> Více z našich akcí a aktualit ZDE</span></a>
 </div>
 </div>
         </li>
@@ -114,6 +106,7 @@
 <h2> Připravili jsme si pro Vás:</h2>
 <p> Gulášový víkend </p>
 <p> 21. - 23. 10. od 16 hod.</p>
+<a class="section-two__link" href="#" > <span class="section-two__link-span"> Více z našich akcí a aktualit ZDE</span></a>
 </div>
 </div>
         </li>
@@ -126,6 +119,7 @@
 <p> Otevírací doba </p>
 <p>  PO-SO 10:00 - 24:00 <br> 
 NE 10:00 - 23:00 </p>
+<a class="section-two__link" href="#" > <span class="section-two__link-span"> Více z našich akcí a aktualit ZDE</span></a>
 </div>
 </div>
         </li>
@@ -154,8 +148,8 @@ NE 10:00 - 23:00 </p>
     }).mount()
   </script>
 
-<a class="section-two__link" href="#" > <span class="section-two__link-span"> Více z našich akcí a aktualit ZDE</span></a>
-
+<!-- <a class="section-two__link" href="#" > <span class="section-two__link-span"> Více z našich akcí a aktualit ZDE</span></a>
+-->
 </section>
 
 <section id="section3"  class="section three"> 
@@ -266,6 +260,8 @@ placeholder="Jirka Novák" autofocus required>
     </main>
 
 
+
+
 <footer class="footer"> 
 
 <div class="footer__wrapper"> 
@@ -273,9 +269,9 @@ placeholder="Jirka Novák" autofocus required>
 <div class="footer__payment"> 
     <h3> Možnosti platby </h3>
     <div class="footer__payment-type">
-           <img class="payment-type-logo" src="images/footer_banknotes.png" alt="bankovka">
-           <img class="payment-type-logo" src="images/footer_visa.png" alt="logo visa">
-           <img class="payment-type-logo" src="images/footer_mastercard.png" alt="logo mastercard">
+           <img class="payment-type-logo" src="images/footer_banknotes.png" alt="bankovka" width="35">
+           <img class="payment-type-logo" src="images/footer_visa.png" alt="logo visa" width="35">
+           <img class="payment-type-logo" src="images/footer_mastercard.png" alt="logo mastercard" width="35">
     </div>
 </div>
 <hr class="footer__hr"> 
@@ -299,7 +295,7 @@ placeholder="Jirka Novák" autofocus required>
     
 <div class="footer__location"> 
     <p> Hospůdka Na Špici </p>
-    <p>Svazacká 1b, 700 30 Ostrava</p>
+    <p>Svazacká 3128/1b, 700 30 Ostrava</p>
     <p>IČ: 42762529</p>
     <a href="https://www.google.com/maps/place/Svaz%C3%A1ck%C3%A1+3128%2F1B,+700+30+Ostrava-jih-Z%C3%A1b%C5%99eh/@49.789812,18.2353254,17z/data=!3m1!4b1!4m5!3m4!1s0x4713e4ebb2371595:0x8afa5060e77a4779!8m2!3d49.789812!4d18.2375141"> 
     <p class="footer__location-link"> Zobrazit na mapě </p> </a>
