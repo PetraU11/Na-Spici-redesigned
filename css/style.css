@@ -53,6 +53,11 @@ header {
     width: 40%;
   }
 }
+@media screen and (max-height: 500px) {
+  .header__container {
+    width: 30%;
+  }
+}
 @media screen and (min-width: 1000px) {
   .header__container {
     width: 30%;
@@ -65,6 +70,11 @@ header {
   font-family: "Courgette", cursive;
 }
 @media screen and (min-width: 1000px) {
+  .header__text {
+    font-size: 4vw;
+  }
+}
+@media screen and (max-height: 500px) {
   .header__text {
     font-size: 4vw;
   }
