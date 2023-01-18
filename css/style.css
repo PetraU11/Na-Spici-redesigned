@@ -92,7 +92,7 @@ header {
 
 .header__arrow {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
 }
 @media screen and (max-height: 450px) {
   .header__arrow {
