@@ -60,7 +60,7 @@ header {
 }
 @media screen and (min-width: 600px) and (max-height: 450px) {
   .header__container {
-    width: 35%;
+    width: 25%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -68,7 +68,7 @@ header {
     width: 30%;
   }
 }
-@media screen and (min-width: 600px) and (max-height: 450px) {
+@media screen and (min-width: 1000px) and (max-height: 450px) {
   .header__container {
     width: 20%;
   }
@@ -93,7 +93,6 @@ header {
 .header__arrow {
   position: absolute;
   bottom: 20px;
-  /* zafixovat arrow pro vetší obrazovky nebo změnit width toho kulatého kontejneru? */
 }
 
 .header__menu {
