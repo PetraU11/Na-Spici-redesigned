@@ -86,7 +86,7 @@ header {
 }
 @media screen and (max-height: 450px) {
   .header__text {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 
@@ -96,7 +96,7 @@ header {
 }
 @media screen and (max-height: 450px) {
   .header__arrow {
-    bottom: 0px;
+    bottom: 5px;
     width: 25px;
     height: 30px;
   }

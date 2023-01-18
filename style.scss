@@ -71,12 +71,12 @@ border: 3px solid burlywood;
     font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
     @media screen and (min-width: 1000px) {font-size: 4vw;}
-    @media screen and (max-height: 450px) {font-size: 3vw;}}
+    @media screen and (max-height: 450px) {font-size: 4vw;}}
 
 .header__arrow {
     position:absolute;
     bottom: 20px;
-    @media screen and (max-height: 450px) {bottom: 0px;
+    @media screen and (max-height: 450px) {bottom: 5px;
     width: 25px;
 height: 30px;}}
 
