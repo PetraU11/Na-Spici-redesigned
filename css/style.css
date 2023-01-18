@@ -94,6 +94,11 @@ header {
   position: absolute;
   bottom: 20px;
 }
+@media screen and (max-height: 450px) {
+  .header__arrow {
+    bottom: 5px;
+  }
+}
 
 .header__menu {
   position: absolute;
