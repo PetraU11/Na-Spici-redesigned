@@ -48,19 +48,29 @@ header {
   text-align: center;
   border: 3px solid burlywood;
 }
+@media screen and (max-height: 450px) {
+  .header__container {
+    width: 25%;
+  }
+}
 @media screen and (min-width: 600px) {
   .header__container {
     width: 40%;
   }
 }
-@media screen and (max-height: 500px) {
+@media screen and (min-width: 600px) and (max-height: 450px) {
   .header__container {
-    width: 30%;
+    width: 25%;
   }
 }
 @media screen and (min-width: 1000px) {
   .header__container {
     width: 30%;
+  }
+}
+@media screen and (min-width: 600px) and (max-height: 450px) {
+  .header__container {
+    width: 20%;
   }
 }
 
@@ -74,9 +84,9 @@ header {
     font-size: 4vw;
   }
 }
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 450px) {
   .header__text {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 }
 

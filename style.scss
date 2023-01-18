@@ -49,12 +49,23 @@ border-radius: 60%;
 text-align:center;
 border: 3px solid burlywood;
 
+@media screen and (max-height: 450px) {width: 25%;}
+
 @media screen and (min-width: 600px) {width: 40%;}
 
-@media screen and (max-height: 500px) {width: 30%;}
+@media  screen and  (min-width: 600px)  {
+    @media  screen and  (max-height: 450px)  {
+        width: 25%;
+     }}
 
 @media screen and (min-width: 1000px) {width: 30%;}
-// nested media query ? pro výšku. 
+
+@media  screen and  (min-width: 600px)  {
+    @media  screen and  (max-height: 450px)  {
+        width: 20%;
+     }}
+
+//musí být všechny? 
 
 }
 
@@ -62,7 +73,7 @@ border: 3px solid burlywood;
     font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
     font-family: 'Courgette', cursive;
     @media screen and (min-width: 1000px) {font-size: 4vw;}
-    @media screen and (max-height: 500px) {font-size: 4vw;}}
+    @media screen and (max-height: 450px) {font-size: 3vw;}}
 
 .header__arrow {
     position:absolute;
