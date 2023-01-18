@@ -49,13 +49,13 @@ border-radius: 60%;
 text-align:center;
 border: 3px solid burlywood;
 
-@media screen and (max-height: 450px) {width: 30%;}
+@media screen and (max-height: 450px) {width: 35%;}
 
 @media screen and (min-width: 600px) {width: 40%;}
 
 @media  screen and  (min-width: 600px)  {
     @media  screen and  (max-height: 450px)  {
-        width: 30%;
+        width: 35%;
      }}
 
 @media screen and (min-width: 1000px) {width: 30%;}
