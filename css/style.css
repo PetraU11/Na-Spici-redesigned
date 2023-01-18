@@ -96,7 +96,7 @@ header {
 }
 @media screen and (max-height: 450px) {
   .header__arrow {
-    bottom: 5px;
+    bottom: 0px;
   }
 }
 
