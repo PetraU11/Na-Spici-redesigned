@@ -348,6 +348,8 @@ div[class^=section-first] > h2 {
 
 .section-three__info {
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 600px) {
   .section-three__info {
