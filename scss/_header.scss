@@ -1,0 +1,184 @@
+/* HEADER */
+
+$c-background:rgb(247, 219, 181); 
+$c-header-footer:rgb(166, 100, 15);
+$c-main: rgb(240, 226, 207);
+$c-text: rgb(79, 25, 11);
+$c-button:rgb(131, 86, 29);
+
+header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    
+    @media screen and (min-width: 451px) {
+        background-image: url(../images/IMG_0430up.jpg); } }
+
+    
+    .header__container {
+    background-color: rgba(0,0,0, 0.6);
+    position:relative;
+    display:flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 1;
+    border-radius: 60%;
+    text-align:center;
+    border: 3px solid burlywood;
+    
+    @media screen and (max-height: 450px) {width: 35%;}
+    
+    @media screen and (min-width: 600px) {width: 40%;}
+    
+    @media  screen and  (min-width: 600px)  {
+        @media  screen and  (max-height: 450px)  {
+            width: 25%;}}
+    
+    @media screen and (min-width: 1000px) {width: 30%;}
+    
+    @media  screen and  (min-width: 1000px)  {
+        @media  screen and  (max-height: 450px)  {
+            width: 20%;
+         }}
+    }
+    //musí být všechny? 
+    
+    
+    .header__text {color: $c-main;
+        font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
+        font-family: 'Courgette', cursive;
+        @media screen and (min-width: 1000px) {font-size: 4vw;}
+        @media screen and (max-height: 450px) {font-size: 4vw;}}
+    
+    .header__arrow {
+        position:absolute;
+        bottom: 10px;
+        @media screen and (max-height: 450px) {bottom: 5px;
+        width: 25px;
+    height: 30px;}}
+    
+       
+    //Hamburger menu//      
+    
+    .header__menu {
+    position:absolute;
+    left: 8%;
+    top: 5%;
+    z-index: 2;
+    height: 60px;
+    opacity: 0.95;}
+    
+    .menu__header {color:$c-main;
+    margin-bottom:0;
+    margin-left: -2px;
+    font-size: 1rem;}
+    
+    .menu__checkbox {
+          position: absolute;
+          left: -9999px;}
+    
+    .menu__toggler { 
+        position: sticky;
+        cursor: pointer;
+        z-index: 1;
+        @media screen and (min-width: 1000px) {display:none;}}
+    
+    .bar { 
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: $c-main;
+    border-radius: 10%;
+    margin-top: 10px;}
+    
+    .bar:nth-child(2) {
+    margin-top: 12px;
+    margin-bottom: 12px;}
+    
+    .menu__list {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: $c-main;
+    transition-duration: .25s;
+    overflow: auto;
+        @media screen and (min-width: 1000px) {display:flex !important;
+        justify-content: center;
+        position:absolute; 
+        background-color: transparent;
+        height: auto;
+        transform:translate(-8%, -40%);
+    }}
+    
+    .menu__item {
+        @media screen and (min-width: 1000px) {
+            width: 15vw;
+            border-bottom:none;
+            border-right: 1px solid $c-header-footer;
+            font-size: 0.9rem;
+    }}
+    
+       /* .menu__item.active { 
+          background-color: yellow;} eleventy */
+      
+    .menu__link {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    transition-duration: .25s;
+    color: $c-text;
+    font-weight: bold;
+    text-align: center;
+        @media screen and (min-width: 1000px){
+            color:$c-main;
+            padding: 15px 10px;
+            background-color:rgba(0,0,0, 0.3);
+            height: 100%;}}
+    
+    .menu__link:hover {
+    background-color:$c-text; 
+    color: $c-main;
+        @media screen and (min-width: 1000px){
+        background-color:$c-main;
+        color: $c-text; }}
+       
+    .menu__checkbox:checked ~ .menu__list{
+      // display:block;
+    left:0 !important;}
+    
+    .menu__checkbox:checked ~ .menu__toggler {position:fixed;}
+      
+    .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
+        position:absolute;
+        top: 15px;
+        z-index:100;
+        background-color: $c-button;
+        transform:rotate(45deg);
+        transition: transform 0.4s ease-in-out; }
+      
+    .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(2) {display:none;}
+      
+    .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
+        position:absolute;
+        top: 15px;
+        z-index:100;
+        background-color: $c-button;
+        transform:rotate(-45deg);
+        transition: transform 0.4s ease-in-out;}
+        
+    
