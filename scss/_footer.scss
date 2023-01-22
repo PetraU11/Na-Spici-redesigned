@@ -84,7 +84,11 @@ $c-button:rgb(131, 86, 29);
             @media screen and (min-width: 600px){margin-left: 20px;}}
 
     .footer__media {
-        @media screen and (min-width: 1000px)  {}
+        display:flex;
+        justify-content: center;
+        @media screen and (min-width: 1000px)  {
+            justify-content: left;
+        }
     }
 
     .footer__media a {

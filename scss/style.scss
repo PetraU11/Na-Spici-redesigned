@@ -116,7 +116,9 @@ transform: translateX(-45%) ;}
         text-align:left;
         width:50%;
         margin-left: 20px;
-        order: 2;}}
+        order: 2;}
+        @media screen and (min-width: 1000px) {
+    font-size: 120%;}}
        
 .section-three__images {
     margin-top: 50px;
@@ -225,7 +227,9 @@ color: $c-header-footer;} */
 .section-four__info {
 @media screen and (min-width: 600px) {text-align:right;
     margin-left: 20px;
-    width: 50%;}}
+    width: 50%;}
+@media screen and (min-width: 1000px) {
+    font-size: 120%;}}
 
 .section-four__images {order: 1;
  margin-top: 50px;
@@ -269,7 +273,9 @@ width: 190px;
         text-align:left;
         margin-right: 20px;
         width: 50%;
-        order: 2;}}
+        order: 2;}
+    @media screen and (min-width: 1000px) {
+        font-size: 120%;}}
 
 .section-five__images {
     margin-top: 50px;
