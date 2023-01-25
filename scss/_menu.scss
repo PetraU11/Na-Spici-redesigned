@@ -1,0 +1,61 @@
+$c-background:rgb(247, 219, 181); 
+$c-header-footer:rgb(166, 100, 15);
+$c-main: rgb(240, 226, 207);
+$c-text: rgb(79, 25, 11);
+$c-button:rgb(131, 86, 29);
+
+ 
+/* Section four  NAPOJAK */
+.section.four {
+    border-style: outset;
+    border-color: rgb(221, 128, 6);
+    border-width: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;}
+
+.section-four__wrapper {
+    @media screen and (min-width: 600px) {
+        display:flex;
+        align-items: center;
+        width: 90%;
+}}
+
+.section-four__info {
+@media screen and (min-width: 600px) {text-align:right;
+    margin-left: 20px;
+    width: 50%;}
+@media screen and (min-width: 1000px) {
+    font-size: 120%;
+    width: 50%;}}
+
+.section-four__images {order: 1;
+ margin-top: 50px;
+ margin-bottom: 50px;
+    @media screen and (min-width: 600px) {
+        width: 45%;}}
+
+.section-four__images img {width: 85%;
+max-width: 320px;}
+
+.img5 {border: 5px solid rgb(123, 74, 11);
+    border-radius: 5%;}
+
+.img6 {position:absolute;
+    border: 5px solid rgb(218, 124, 51);
+border-radius: 5%;
+transform: translateX(-100%) ;
+width: 190px;
+}
+
+.img7 {position:absolute;
+    border: 5px solid rgb(123, 74, 11);;
+    border-radius: 5%;
+    transform: translateX(-100%) rotate(-15deg);}
+
+.img8{position:absolute;
+    border: 5px solid rgb(218, 124, 51);
+    border-radius: 5%;
+    transform: translateX(-100%) rotate(-15deg);
+    width: 190px;}

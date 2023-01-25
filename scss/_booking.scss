@@ -1,0 +1,123 @@
+
+$c-background:rgb(247, 219, 181); 
+$c-header-footer:rgb(166, 100, 15);
+$c-main: rgb(240, 226, 207);
+$c-text: rgb(79, 25, 11);
+$c-button:rgb(131, 86, 29);
+
+
+/* Section three - Rezervace */
+
+
+.section.three { 
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    @media screen and (min-width: 600px) {display:flex;
+    align-items: center;
+width: 90%;}}
+
+.section-three__info {
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 600px) {
+        text-align:left;
+        width:50%;
+        margin-left: 20px;
+        order: 2;}
+    @media screen and (min-width: 1000px) {
+    font-size: 120%;
+    width: 55%;}}
+       
+.section-three__images {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @media screen and (min-width: 600px) {
+        width: 50%;}
+    @media screen and (min-width: 1000px) {
+        width: 45%;
+        margin-right: 10px;}}
+
+.section-three__images img {width: 250px;
+    @media screen and (min-width: 1000px) { width: 350px;
+}}
+
+.img1 {
+    border: 5px solid rgb(123, 74, 11);
+border-radius: 5%;}
+
+.img2 {position:absolute;
+    border: 5px solid rgb(218, 124, 51);
+border-radius: 5%;
+transform: translateX(-100%) rotate(15deg);}
+
+.img3 {position:absolute;
+    border: 5px solid rgb(123, 74, 11);
+border-radius: 5%;
+transform: translateX(-100%) rotate(-15deg);}
+
+.img4 {position:absolute;
+    border: 5px solid rgb(218, 124, 51);
+    border-radius: 5%;
+    transform: translateX(-100%);}
+
+
+
+/* BOOKING FORM
+.section-three__booking-timedate {display:flex;
+        flex-wrap:wrap;}
+
+form { 
+    @media screen and (min-width: 900px){
+   min-width: 520px;}}
+
+form{
+    margin-top: 20px;
+    margin-bottom: 15px;}
+
+.form {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right:auto;}
+
+.form label { display:block;}
+
+.form input,
+.form textarea {
+    width: 100%;
+    border: 2px solid $c-header-footer;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: rgb(242, 238, 232);}
+
+    .form input:focus,
+    .form textarea:focus { 
+        outline:0;
+        border: 2px solid $c-text; }
+            
+          .form input:placeholder-shown {background-color:bisque;}
+    .form input:not(:placeholder-shown):valid {
+        background-color: $c-header-footer;} *změnit
+           
+                
+    .required {
+        color: red;
+        margin:0;
+        display:inline-block; }
+
+.booking-button {background-color:$c-header-footer;
+color: $c-main;
+border:2px solid $c-text;
+padding: 10px;
+border-radius: 10px;
+font-family: 'Montserrat', sans-serif;
+font-size: 1.1rem}
+
+.booking-button:hover {background-color:$c-button;}
+
+.booking-button:active {background-color:$c-main;
+color: $c-header-footer;} */

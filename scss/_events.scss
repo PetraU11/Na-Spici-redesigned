@@ -1,0 +1,61 @@
+@use 'color';
+
+/* Section second - Aktuality Akce */
+.section.two {
+    position:relative;
+    font-weight: bold;
+    border-style: outset;
+    border-color: rgb(221, 128, 6);
+    border-width: 10px;
+    }
+    
+    
+    .section-two__content {
+        background-image: url(../images/slider-bc-food.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 420px;
+     }
+    
+    .section-two__content-two {
+        background-image: url(../images/Slider_bc_beer.jpeg); /*zmenit výšku u samotných fotek, u mobilu nesedí kvůli obsahu */
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: scroll;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: 420px;
+       }
+    
+    .section-two__content_bc-color {
+        width: 60%;
+        margin-left: 50px;
+        padding: 10px;
+    
+        @media screen and (min-width: 500px) {
+            margin-top: 30px;}
+    
+        @media screen and (min-width: 800px) {
+            margin-top: 40px;
+            font-size: 1.3em;
+            }}
+    
+    .section-two__link {font-weight: normal;
+      position:absolute;
+    bottom: 15%;
+    transform: translateX(-45%) ;}
+    
+    .section-two__link-span {color:color.$c-main;}
+    
+    
+    
+    
+    
+    
