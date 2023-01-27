@@ -562,7 +562,7 @@ color: $c-header-footer;} */
 @media screen and (min-width: 1000px) {
   .section-four__info {
     font-size: 120%;
-    width: 55%;
+    width: 50%;
   }
 }
 
@@ -627,6 +627,8 @@ color: $c-header-footer;} */
 .section.five {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 600px) {
   .section.five {
@@ -667,11 +669,11 @@ color: $c-header-footer;} */
 }
 
 .section-five__images img {
-  width: 250px;
+  width: 230px;
 }
 @media screen and (min-width: 1000px) {
   .section-five__images img {
-    width: 350px;
+    width: 300px;
   }
 }
 

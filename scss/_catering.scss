@@ -8,6 +8,8 @@ $c-button:rgb(131, 86, 29);
 .section.five {
     margin-left:auto;
     margin-right:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
     @media screen and (min-width: 600px) {display:flex;
     align-items: center;}}
 
@@ -30,9 +32,9 @@ $c-button:rgb(131, 86, 29);
         font-size: 120%;
         width: 45%;}}
 
-.section-five__images img {width: 250px;
-            @media screen and (min-width: 1000px) { width: 350px;
-}}
+.section-five__images img {width: 230px;
+            @media screen and (min-width: 1000px) { width: 300px;
+}} // musí být? 
 
 .img10 {
      border: 5px solid rgb(123, 74, 11);
