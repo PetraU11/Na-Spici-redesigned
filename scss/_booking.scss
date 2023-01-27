@@ -14,9 +14,10 @@ $c-button:rgb(131, 86, 29);
     margin-right:auto;
     margin-bottom: 20px;
     margin-top: 20px;
-    @media screen and (min-width: 600px) {display:flex;
+    @media screen and (min-width: 600px) {
+    display:flex;
     align-items: center;
-width: 90%;}}
+    width: 90%;}}
 
 .section-three__info {
     margin-left: auto;
@@ -42,6 +43,11 @@ width: 90%;}}
 .section-three__images img {width: 250px;
     @media screen and (min-width: 1000px) { width: 350px;
 }}
+
+.img00 {
+    position: absolute;
+    left: -9999px;
+}
 
 .img1 {
     border: 5px solid rgb(123, 74, 11);

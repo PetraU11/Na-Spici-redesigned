@@ -441,6 +441,11 @@ header {
   }
 }
 
+.img00 {
+  position: absolute;
+  left: -9999px;
+}
+
 .img1 {
   border: 5px solid rgb(123, 74, 11);
   border-radius: 5%;
@@ -526,34 +531,38 @@ font-size: 1.1rem}
 color: $c-header-footer;} */
 /* Section four  NAPOJAK */
 .section.four {
-  border-style: outset;
-  border-color: rgb(221, 128, 6);
-  border-width: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  border-style: outset;
+  border-color: rgb(221, 128, 6);
+  border-width: 10px;
 }
 
 @media screen and (min-width: 600px) {
   .section-four__wrapper {
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 100%;
   }
 }
 
+.section-four__info {
+  margin-left: auto;
+  margin-right: auto;
+}
 @media screen and (min-width: 600px) {
   .section-four__info {
     text-align: right;
-    margin-left: 20px;
+    margin-right: 20px;
     width: 50%;
   }
 }
 @media screen and (min-width: 1000px) {
   .section-four__info {
     font-size: 120%;
-    width: 50%;
+    width: 55%;
   }
 }
 
@@ -564,13 +573,28 @@ color: $c-header-footer;} */
 }
 @media screen and (min-width: 600px) {
   .section-four__images {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .section-four__images {
     width: 45%;
+    margin-right: 10px;
   }
 }
 
 .section-four__images img {
-  width: 85%;
-  max-width: 320px;
+  width: 250px;
+}
+@media screen and (min-width: 1000px) {
+  .section-four__images img {
+    width: 350px;
+  }
+}
+
+.img01 {
+  position: absolute;
+  left: -9999px;
 }
 
 .img5 {
@@ -582,8 +606,7 @@ color: $c-header-footer;} */
   position: absolute;
   border: 5px solid rgb(218, 124, 51);
   border-radius: 5%;
-  transform: translateX(-100%);
-  width: 190px;
+  transform: translateX(-100%) rotate(15deg);
 }
 
 .img7 {
@@ -597,8 +620,7 @@ color: $c-header-footer;} */
   position: absolute;
   border: 5px solid rgb(218, 124, 51);
   border-radius: 5%;
-  transform: translateX(-100%) rotate(-15deg);
-  width: 190px;
+  transform: translateX(-100%);
 }
 
 /* Section five - CATERING */
