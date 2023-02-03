@@ -5,21 +5,14 @@
 @use 'menu';
 @use 'catering';
 @use 'events';
-
-
-
-$c-background:rgb(247, 219, 181); 
-$c-header-footer:rgb(166, 100, 15);
-$c-main: rgb(240, 226, 207);
-$c-text: rgb(79, 25, 11);
-$c-button:rgb(131, 86, 29);
+@use 'about';
 
 *, :after, :before { box-sizing: border-box;}
 
 body {margin: 0;
 padding: 0;
-background-color: $c-main;
-color: $c-text;
+background-color: color.$c-main;
+color: color.$c-text;
 font-family: 'Montserrat', sans-serif;
 font-size: 1.1rem; 
 text-align:center;}
@@ -29,27 +22,11 @@ h2 {font-family: 'Courgette', cursive;}
 /* MAIN */
 .section {padding: 15px;}
 .section:nth-child(even),
-.footer {background-color: $c-header-footer;
-color: $c-main;}
+.footer {background-color: color.$c-header-footer;
+color: color.$c-main;}
 div[class^= "section-first"] > h2 {font-family:'Courgette', cursive;} /*vymazat?*/
 
 
-/* Section first */
 
-.section__first {
-    padding-top: 15px;
-    padding-bottom: 30px;
-}
-
-.section-first__why {
-    width:95%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 120px;
-    margin-left:auto;
-    margin-right:auto;
-    @media screen and (min-width: 1000px) {width: 70%;
-    font-size: 120%;}}
 
 
