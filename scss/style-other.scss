@@ -170,7 +170,37 @@ align-items: center;
         transform:rotate(-45deg);
         transition: transform 0.4s ease-in-out;}
         
+/*CATERING*/
+
+.catering__main { width: 90%;
+margin-left:auto;
+margin-right:auto;
+margin-top: 50px;
+margin-bottom: 50px;}
+
+
+.catering__contact { 
+    @media screen and (min-width: 1000px) {
+    grid-column: 2 / 8;}
+
+    &__contact > a {
+    text-decoration: none;
+    color:$c-text;
+    }}
     
+.catering__contacts {
+    display:block;
+    
+    @media screen and (min-width: 1000px) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55px;
+    }}
+    
+.contacts__type:nth-last-child(2){
+    margin-left: 20px;
+    margin-right: 20px;}
     
 
 /* FOOTER */
