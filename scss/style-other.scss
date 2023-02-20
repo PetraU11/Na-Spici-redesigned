@@ -21,7 +21,7 @@ body {margin: 0;
 
 header {
     background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
-    height:300px;
+    height:400px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,6 +178,52 @@ margin-right:auto;
 margin-top: 50px;
 margin-bottom: 50px;}
 
+.catering__perex-hr {
+    width: 80%;
+    margin-right:auto;
+    margin-left:auto;
+    border: 2px solid $c-text;
+}
+.catering__perex-hr:nth-child(3) {
+    margin-bottom: 40px;
+}
+
+.catering__images img {
+    display:none;
+    border-radius: 50%;
+}
+
+.catering__pricing {
+    @media screen and (min-width: 1000px) {
+    grid-column:  2 / 8;}}
+
+    .catering__pricing-size {
+        @media screen and (min-width: 750px) {
+        display:flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }}
+    
+    .pricing-size {
+        display:flex; 
+        justify-content: center;}
+    
+    .pricing-size:nth-child(2) {
+        margin-left: 20px;
+        margin-right: 20px;}
+    
+    .size { 
+        color: $c-text;
+        padding-top: 28px;
+        width: 80px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid $c-text;
+        background-color: $c-main;
+        font-weight: bold;}
+    
+
 
 .catering__contact { 
     @media screen and (min-width: 1000px) {
@@ -201,6 +247,8 @@ margin-bottom: 50px;}
 .contacts__type:nth-last-child(2){
     margin-left: 20px;
     margin-right: 20px;}
+
+
     
 
 /* FOOTER */
