@@ -47,6 +47,17 @@ header {
   color: rgb(240, 226, 207);
   margin-right: 15px;
   font-family: "Courgette", cursive;
+  font-size: 6vw;
+}
+@media screen and (min-width: 450px) {
+  .header__name-text {
+    font-size: 4vw;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header__name-text {
+    font-size: 3vw;
+  }
 }
 
 .header__name-logo {
@@ -84,6 +95,11 @@ header {
   .menu__toggler {
     display: none;
   }
+}
+
+.menu__bars {
+  margin-top: -10px;
+  margin-left: 20px;
 }
 
 .bar {
@@ -135,6 +151,11 @@ header {
 
 .menu__item:nth-child(1) {
   margin-top: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .menu__item:nth-child(1) {
+    margin-top: 0px;
+  }
 }
 
 /* .menu__item.active { 
