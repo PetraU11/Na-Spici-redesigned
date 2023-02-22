@@ -15,7 +15,7 @@ h2 {
 /* HEADER */
 header {
   background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
-  height: 400px;
+  height: 350px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,7 +99,6 @@ header {
 
 .menu__bars {
   margin-top: -10px;
-  margin-left: 20px;
 }
 
 .bar {
@@ -217,6 +216,11 @@ header {
   background-color: rgb(131, 86, 29);
   transform: rotate(-45deg);
   transition: transform 0.4s ease-in-out;
+}
+
+/*MENU LIST*/
+.carte_main {
+  padding: 20px;
 }
 
 /*CATERING*/

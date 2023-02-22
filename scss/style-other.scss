@@ -21,7 +21,7 @@ body {margin: 0;
 
 header {
     background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
-    height:400px;
+    height:350px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -62,7 +62,7 @@ align-items: center;
  .header__name-logo {width: 30%;}
 
 
-//Hamburger menu//      
+//Header - Hamburger menu//      
     
     .header__menu { 
         position:relative;
@@ -88,8 +88,7 @@ align-items: center;
         z-index: 1;
         @media screen and (min-width: 1000px) {display:none;}}
 
-.menu__bars {margin-top: -10px;
-margin-left: 20px;}
+.menu__bars {margin-top: -10px;}
     
     .bar { 
     display: block;
@@ -158,7 +157,7 @@ margin-left: 20px;}
     color: $c-main;
         @media screen and (min-width: 1000px){
         background-color:$c-main;
-        color: $c-text; }}
+        color: $c-text; }} // hover na menu__link nebo na menu item?
        
     .menu__checkbox:checked ~ .menu__list{
       // display:block;
@@ -183,6 +182,12 @@ margin-left: 20px;}
         background-color: $c-button;
         transform:rotate(-45deg);
         transition: transform 0.4s ease-in-out;}
+
+/*MENU LIST*/
+
+.carte_main { padding: 20px;}
+.carte__food {}
+
         
 /*CATERING*/
 
