@@ -223,6 +223,21 @@ header {
   padding: 20px;
 }
 
+.carte__buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.carte__drink {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+.carte__drink p {
+    display:inline-block;
+} */
 /*CATERING*/
 .catering__main {
   width: 90%;
