@@ -187,8 +187,19 @@ align-items: center;
 
 .carte_main { padding: 20px;}
 
-.carte__buttons {display:flex;
-justify-content: space-evenly;}
+.carte__buttons {
+    display:flex;
+justify-content: space-evenly;
+padding: 10px;}
+
+.carte__buttons-img {height: 80%;}
+
+.carte__buttons-drink {background-color: $c-text;
+    color: $c-main;
+padding: 10px;}
+.carte__buttons-food {background-color: $c-text;
+    color: $c-main;
+padding: 10px;}
 
 .carte__drink {width:90%;
 margin-left: auto;

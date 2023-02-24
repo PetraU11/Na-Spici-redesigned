@@ -226,6 +226,23 @@ header {
 .carte__buttons {
   display: flex;
   justify-content: space-evenly;
+  padding: 10px;
+}
+
+.carte__buttons-img {
+  height: 80%;
+}
+
+.carte__buttons-drink {
+  background-color: rgb(79, 25, 11);
+  color: rgb(240, 226, 207);
+  padding: 10px;
+}
+
+.carte__buttons-food {
+  background-color: rgb(79, 25, 11);
+  color: rgb(240, 226, 207);
+  padding: 10px;
 }
 
 .carte__drink {
