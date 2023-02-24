@@ -1,3 +1,7 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -223,12 +227,10 @@ header {
   padding: 20px;
 }
 
-.carte__buttons {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 10px;
-}
-
+/*.carte__buttons {
+display:flex;
+justify-content: space-evenly;
+padding: 10px;} */
 .carte__buttons-img {
   height: 80%;
 }
@@ -308,8 +310,8 @@ header {
 .size {
   color: rgb(79, 25, 11);
   padding-top: 28px;
-  width: 80px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border: 5px solid rgb(79, 25, 11);
   background-color: rgb(240, 226, 207);

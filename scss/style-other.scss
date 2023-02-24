@@ -4,6 +4,7 @@ $c-main: rgb(240, 226, 207);
 $c-text: rgb(79, 25, 11);
 $c-button:rgb(131, 86, 29);
 
+*, :after, :before { box-sizing: border-box; }
 
 body {margin: 0;
     padding: 0;
@@ -187,10 +188,10 @@ align-items: center;
 
 .carte_main { padding: 20px;}
 
-.carte__buttons {
-    display:flex;
+/*.carte__buttons {
+display:flex;
 justify-content: space-evenly;
-padding: 10px;}
+padding: 10px;} */
 
 .carte__buttons-img {height: 80%;}
 
@@ -264,8 +265,8 @@ margin-bottom: 50px;}
     .size { 
         color: $c-text;
         padding-top: 28px;
-        width: 80px;
-        height: 50px;
+        width: 90px;
+        height: 90px;
         border-radius: 50%;
         border: 5px solid $c-text;
         background-color: $c-main;
