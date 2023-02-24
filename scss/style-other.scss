@@ -188,10 +188,11 @@ align-items: center;
 
 .carte_main { padding: 20px;}
 
-/*.carte__buttons {
+.carte__buttons {
+    @media screen and (min-width: 500px) {
 display:flex;
 justify-content: space-evenly;
-padding: 10px;} */
+padding: 10px;} }
 
 .carte__buttons-img {height: 80%;}
 

@@ -227,10 +227,14 @@ header {
   padding: 20px;
 }
 
-/*.carte__buttons {
-display:flex;
-justify-content: space-evenly;
-padding: 10px;} */
+@media screen and (min-width: 500px) {
+  .carte__buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+}
+
 .carte__buttons-img {
   height: 80%;
 }
