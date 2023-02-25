@@ -191,6 +191,16 @@ align-items: center;
 
 .carte_main { padding: 20px;}
 
+.carte__perex-hr {
+    width: 80%;
+    margin-right:auto;
+    margin-left:auto;
+    border: 2px solid $c-text;
+}
+.carte__perex-hr:nth-child(3) {
+    margin-bottom: 40px;
+}
+
 .carte__buttons {
     @media screen and (min-width: 500px) {
 display:flex;
