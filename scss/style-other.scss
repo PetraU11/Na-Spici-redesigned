@@ -32,7 +32,8 @@ header {
         background-image: url(../images/IMG_0430up.jpg); } }
 
  .header__wrapper { 
-    padding: 30px;
+    padding: 80px 30px;
+
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -44,6 +45,8 @@ header {
 display: flex;
 justify-content: right;
 align-items: center;
+
+
 }   
     
  .header__name-text {
@@ -198,10 +201,23 @@ padding: 10px;} }
 
 .carte__buttons-drink {background-color: $c-text;
     color: $c-main;
-padding: 10px;}
+padding: 10px;
+margin-top: 20px;
+padding-top: 20px;
+max-width:320px;
+margin-left:auto;
+margin-right:auto;
+
+}
 .carte__buttons-food {background-color: $c-text;
     color: $c-main;
-padding: 10px;}
+padding: 10px;
+margin-top: 20px;
+padding-top: 20px;
+max-width:320px;
+margin-left:auto;
+margin-right:auto;
+}
 
 .carte__drink {width:90%;
 margin-left: auto;
