@@ -202,7 +202,7 @@ align-items: center;
 }
 
 .carte__buttons {
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 700px) {
 display:flex;
 justify-content: space-evenly;
 padding: 10px;} }
