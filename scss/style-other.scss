@@ -201,22 +201,27 @@ align-items: center;
     margin-bottom: 40px;
 }
 
+/*
 .carte__buttons {
     @media screen and (min-width: 700px) {
 display:flex;
 justify-content: space-evenly;
 padding: 10px;} }
+*/
 
 .carte__buttons-img {height: 80%;}
 
 .carte__buttons-drink {background-color: $c-text;
-    color: $c-main;
+color: $c-main;
 padding: 10px;
 margin-top: 20px;
 padding-top: 20px;
 max-width:320px;
 margin-left:auto;
 margin-right:auto;
+    @media screen and (min-width: 700px) {
+    padding: 30px;
+}
 
 }
 .carte__buttons-food {background-color: $c-text;
@@ -227,15 +232,24 @@ padding-top: 20px;
 max-width:320px;
 margin-left:auto;
 margin-right:auto;
+@media screen and (min-width: 700px) {
+    padding: 30px;
+}
 }
 
 
 #carte__drink {
     display:none;
+    @media screen and (min-width: 700px) {
+        display: inline-block;
+    }
 }
 
 #carte__food{
     display:none; 
+    @media screen and (min-width: 700px) {
+        display: inline-block;
+    }
 }
 
 

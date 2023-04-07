@@ -238,14 +238,13 @@ header {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 700px) {
-  .carte__buttons {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-  }
-}
-
+/*
+.carte__buttons {
+    @media screen and (min-width: 700px) {
+display:flex;
+justify-content: space-evenly;
+padding: 10px;} }
+*/
 .carte__buttons-img {
   height: 80%;
 }
@@ -260,6 +259,11 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 700px) {
+  .carte__buttons-drink {
+    padding: 30px;
+  }
+}
 
 .carte__buttons-food {
   background-color: rgb(79, 25, 11);
@@ -271,13 +275,28 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 700px) {
+  .carte__buttons-food {
+    padding: 30px;
+  }
+}
 
 #carte__drink {
   display: none;
 }
+@media screen and (min-width: 700px) {
+  #carte__drink {
+    display: inline-block;
+  }
+}
 
 #carte__food {
   display: none;
+}
+@media screen and (min-width: 700px) {
+  #carte__food {
+    display: inline-block;
+  }
 }
 
 .carte__drink {
