@@ -222,6 +222,106 @@ header {
   transition: transform 0.4s ease-in-out;
 }
 
+/*BOOKING*/
+.booking__perex {
+  grid-row: 2/3;
+}
+@media screen and (min-width: 1000px) {
+  .booking__perex {
+    grid-column: 2/8;
+  }
+}
+
+.booking__info {
+  grid-row: 3/4;
+}
+@media screen and (min-width: 1000px) {
+  .booking__info {
+    grid-column: 5/8;
+    grid-row: 3/5;
+  }
+}
+
+form {
+  width: 90%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-row: 4/6;
+}
+@media screen and (min-width: 1000px) {
+  form {
+    width: 100%;
+    grid-column: 2/5;
+    grid-row: 3/5;
+  }
+}
+
+.form {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .form {
+    display: inline-block;
+  }
+}
+
+.form label {
+  display: block;
+}
+@media screen and (min-width: 1000px) {
+  .form label {
+    display: inline-block;
+  }
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border: 2px solid rgb(79, 25, 11);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: rgb(247, 219, 181);
+}
+@media screen and (min-width: 700px) {
+  .form input,
+.form textarea {
+    flex: 1 1 100%;
+  }
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 0;
+  border: 2px solid rgb(79, 25, 11);
+}
+
+/* .form input:placeholder-shown {background-color:bisque;}*/
+.form input:not(:-moz-placeholder-shown):valid {
+  background-color: blue;
+}
+.form input:not(:-ms-input-placeholder):valid {
+  background-color: blue;
+}
+.form input:not(:placeholder-shown):valid {
+  background-color: blue;
+}
+
+.required {
+  color: red;
+  margin: 0;
+  display: inline-block;
+}
+
+.booking-sent {
+  grid-row: 3/4;
+  grid-column: 1/-1;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*MENU LIST*/
 .carte_main {
   padding: 20px;
