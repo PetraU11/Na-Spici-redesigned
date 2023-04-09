@@ -16,10 +16,12 @@
 </head>
 <body>
 
-    <header>
+
+    <header>  
+
+    <div class="header__wrapper">
+      
         <nav class="header__menu"> 
-            <div class="menu__container"><!-- -->
-            
             <input type="checkbox" class="menu__checkbox" id="menu-checkbox"> 
             <label for="menu-checkbox" class="menu__toggler"> 
               <div class="menu__bars">
@@ -30,97 +32,97 @@
             </label>
         
      <ul class="menu__list"> 
-        <li class="menu__item"><a class="menu__link" href="#">Úvod</a></li> 
+        <li class="menu__item"><a class="menu__link" href="index.html">Úvod</a></li> 
         <li class="menu__item"><a class="menu__link" href="#">O nás</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Aktuality & Akce</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Rezervace</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Naše nabídka</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Catering</a></li>
+        <li class="menu__item"><a class="menu__link" href="/">Rezervace</a></li>
+        <li class="menu__item"><a class="menu__link" href="menu.html">Naše nabídka</a></li>
+        <li class="menu__item"><a class="menu__link" href="catering.html">Catering</a></li>
              </ul>
-            </div>
-              </nav>
+           
+        </nav>
 
-   <div class="header__container">
-<h1 class="header__text"> Hospůdka Na Špici </h1>
-</div> 
+        <div class="header__name"> 
+            <h1 class="header__name-text"> Hospůdka <br> Na Špici </h1>
+            <img class="header__name-logo" src="images/main-logo.png" alt="logo">
+            </div>
+        </div>
 
     </header>
 
-<main> 
 
 
+    <main class="booking__main"> 
+
+    
     <div class="booking__perex"> 
-        <hr> 
+    <hr class="booking__perex-hr"> 
     <h2> Zarezervujte si u nás stůl online nebo nám zavolejte!</h2>
-    <hr> 
+    <hr class="booking__perex-hr"> 
     </div>
-    
-    
-        <div class="booking__info"> 
-       <p> Rezervace přes rezervační formulář lze provádět <b>pouze den předem.</b> </p>
-      <p> V případě rezervace v daný den nás neváhejte kontaktovat na tel.čísle: +420 777 777 777. 
-        </p> 
-    
-        <div class="booking_opening-hours"> 
-        <p> Otevírací doba <br>
-            PO-SO 10:00 - 24:00<br>
-           NE 10:00 - 23:00</p>
+        
+    <div class="booking__info"> 
+    <p> Rezervace přes rezervační formulář lze provádět <b>pouze den předem.</b> </p>
+    <p> V případě rezervace v daný den nás neváhejte kontaktovat na tel.čísle: +420 777 777 777. 
+    </p> 
+        
+    <div class="booking_opening-hours"> 
+    <p> Otevírací doba <br>
+    PO-SO 10:00 - 24:00<br>
+    NE 10:00 - 23:00</p>
+    </div>   
+    </div>
+        
+    <form class="booking__form" action="https://submit-form.com/AsX6HR47" method="POST"> 
+        
+    <input type="hidden" name="_redirect" value="https://hospudka-na-spici.netlify.app/booking-form-submitted/">
+        
+            
+        <div class="form">
+        <label for="jmeno"> Název rezervace <span class="required"> * </span> </label>
+        <input type="text" name="jmeno" id="jmeno" maxlength="40"
+        placeholder="Jirka Nováků" autofocus required>
         </div>
         
+        <div class="form">
+        <label for="email"> Kontaktní e-mail <span class="required"> * </span></label>
+        <input type="email" name="email" id="email" placeholder="jiri.spica@seznam.cz" required>
         </div>
-    
-    <form action="https://submit-form.com/AsX6HR47" method="POST"> 
-    
-        <input type="hidden" name="_redirect" value="https://hospudka-na-spici.netlify.app/booking-form-submitted/">
-    
         
-    <div class="form">
-    <label for="jmeno"> Název rezervace <span class="required"> * </span> </label>
-    <input type="text" name="jmeno" id="jmeno" maxlength="40"
-    placeholder="Jirka Nováků" autofocus required>
-    </div>
-    
-    <div class="form">
-    <label for="email"> Kontaktní e-mail <span class="required"> * </span></label>
-    <input type="email" name="email" id="email" placeholder="jiri.spica@seznam.cz" required>
-    </div>
-    
-    
-    <div class="form">
-    <label for="tel"> Kontaktní telefon <span class="required"> * </span> </label>
-    <input type="tel" name="tel" id="tel" min="9" max="12" placeholder="723 123 456" required>
-    </div>
-    
-    <div class="form">
-    <label for="pocet"> Počet osob <span class="required"> * </span> </label>
-    <input type="number" name="pocet" id="pocet" min="1" placeholder="3" required>
-    </div>
-    
-    <div class="form">
-    <label for="datum"> Datum <span class="required"> * </span></label>
-    <input type="date" name="datum" id="datum" required>
-    </div>
-    
-    <div class="form">
-    <label for="cas"> Čas <span class="required"> * </span></label>
-    <input type="time" name="cas" id="cas" required>
-    </div>
-    
-    <div class="form">
-    <label for="info"> Upřesňující informace </label>
-    <textarea name="info" id="info" cols="30" rows="10" >  
-    </textarea>
-    </div> 
         
-    <button class="booking-button" type="submit" name="tlacitko">Odeslat rezervaci</button> 
-    
-    
-    </form>   
+        <div class="form">
+        <label for="tel"> Kontaktní telefon <span class="required"> * </span> </label>
+        <input type="tel" name="tel" id="tel" min="9" max="12" placeholder="723 123 456" required>
+        </div>
+        
+        <div class="form">
+        <label for="pocet"> Počet osob <span class="required"> * </span> </label>
+        <input type="number" name="pocet" id="pocet" min="1" placeholder="3" required>
+        </div>
+        
+        <div class="form">
+        <label for="datum"> Datum <span class="required"> * </span></label>
+        <input type="date" name="datum" id="datum" required>
+        </div>
+        
+        <div class="form">
+        <label for="cas"> Čas <span class="required"> * </span></label>
+        <input type="time" name="cas" id="cas" required>
+        </div>
+        
+        <div class="form">
+        <label for="info"> Upřesňující informace </label>
+        <textarea name="info" id="info" cols="30" rows="10" >  
+        </textarea>
+        </div> 
+            
+        <button class="booking-button" type="submit" name="tlacitko">Odeslat rezervaci</button> 
+        
+        
+        </form>   
 
 
-
-</main>
-
+    </main>
 
 
 
@@ -178,7 +180,8 @@
         
         </div>
             </footer>
-        
+ 
+            
 
 </body>
 </html>

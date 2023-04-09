@@ -223,56 +223,35 @@ header {
 }
 
 /*BOOKING*/
-.booking__perex {
-  grid-row: 2/3;
-}
-@media screen and (min-width: 1000px) {
-  .booking__perex {
-    grid-column: 2/8;
-  }
-}
-
-.booking__info {
-  grid-row: 3/4;
-}
-@media screen and (min-width: 1000px) {
-  .booking__info {
-    grid-column: 5/8;
-    grid-row: 3/5;
-  }
-}
-
-form {
+.booking__main {
   width: 90%;
-  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  grid-row: 4/6;
+  display: grid;
+  padding: 20px;
 }
-@media screen and (min-width: 1000px) {
-  form {
-    width: 100%;
-    grid-column: 2/5;
-    grid-row: 3/5;
-  }
+
+.booking__perex-hr {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid rgb(79, 25, 11);
 }
 
 .form {
-  margin-bottom: 10px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 1000px) {
   .form {
-    display: inline-block;
+    grid-column: 2/3;
   }
 }
 
-.form label {
-  display: block;
-}
-@media screen and (min-width: 1000px) {
-  .form label {
-    display: inline-block;
-  }
+.booking__form div:nth-child(2n) {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .form input,
@@ -314,12 +293,13 @@ form {
   display: inline-block;
 }
 
-.booking-sent {
-  grid-row: 3/4;
-  grid-column: 1/-1;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+.booking-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid rgb(79, 25, 11);
+  background-color: rgb(247, 219, 181);
+  color: rgb(79, 25, 11);
 }
 
 /*MENU LIST*/
