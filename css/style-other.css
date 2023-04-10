@@ -228,7 +228,20 @@ header {
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  padding: 20px;
+  gap: 10px;
+  padding: 40px;
+}
+@media screen and (min-width: 1000px) {
+  .booking__main {
+    grid-template-columns: 5% 1fr 1fr 5%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .booking__perex {
+    grid-column: 2/4;
+    margin-bottom: 20px;
+  }
 }
 
 .booking__perex-hr {
@@ -238,20 +251,51 @@ header {
   border: 2px solid rgb(79, 25, 11);
 }
 
+@media screen and (min-width: 1000px) {
+  .booking__info {
+    grid-column: 2/3;
+    margin-top: 30px;
+  }
+}
+
+.booking__photo {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .booking__photo {
+    display: inline-block;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+}
+
 .form {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
+
 @media screen and (min-width: 1000px) {
-  .form {
-    grid-column: 2/3;
+  .booking__form {
+    grid-column: 3/4;
   }
 }
 
 .booking__form div:nth-child(2n) {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .form_timeDate {
+    display: flex;
+  }
+}
+
+.form_timeDate div:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .form input,
@@ -278,13 +322,13 @@ header {
 
 /* .form input:placeholder-shown {background-color:bisque;}*/
 .form input:not(:-moz-placeholder-shown):valid {
-  background-color: blue;
+  background-color: rgb(217, 232, 237);
 }
 .form input:not(:-ms-input-placeholder):valid {
-  background-color: blue;
+  background-color: rgb(217, 232, 237);
 }
 .form input:not(:placeholder-shown):valid {
-  background-color: blue;
+  background-color: rgb(217, 232, 237);
 }
 
 .required {
@@ -294,11 +338,22 @@ header {
 }
 
 .booking-button {
-  margin-top: 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 2px solid rgb(79, 25, 11);
+  color: rgb(247, 219, 181);
+  border: 5px solid rgb(79, 25, 11);
+  background-color: rgb(131, 86, 29);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+.booking-button:hover {
+  background-color: rgb(79, 25, 11);
+  border: 5px solid rgb(131, 86, 29);
+}
+
+.booking-button:active {
   background-color: rgb(247, 219, 181);
+  border: 5px solid rgb(131, 86, 29);
   color: rgb(79, 25, 11);
 }
 

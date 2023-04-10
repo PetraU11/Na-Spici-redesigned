@@ -12,3 +12,4 @@ const foodDiv = document.querySelector(".carte__buttons-food")
 foodDiv.addEventListener("click", () => {
     food.style.display = "inline-block"
    })
+

@@ -63,19 +63,22 @@
         
     <div class="booking__info"> 
     <p> Rezervace přes rezervační formulář lze provádět <b>pouze den předem.</b> </p>
-    <p> V případě rezervace v daný den nás neváhejte kontaktovat na tel.čísle: +420 777 777 777. 
+    <p> V případě rezervace v daný den nás neváhejte kontaktovat na tel.čísle:<b>  +420 777 777 777. </b>
     </p> 
         
     <div class="booking_opening-hours"> 
     <p> Otevírací doba <br>
     PO-SO 10:00 - 24:00<br>
     NE 10:00 - 23:00</p>
-    </div>   
+    </div> 
+    
+    <img class="booking__photo" src="images/Reserve.jpeg" alt="rezervace stolu"> 
+
     </div>
         
-    <form class="booking__form" action="https://submit-form.com/AsX6HR47" method="POST"> 
-        
-    <input type="hidden" name="_redirect" value="https://hospudka-na-spici.netlify.app/booking-form-submitted/">
+    <form class="booking__form" method="POST"> 
+    <!-- <form class="booking__form" action="https://submit-form.com/AsX6HR47" method="POST"> 
+   -->
         
             
         <div class="form">
@@ -100,6 +103,8 @@
         <input type="number" name="pocet" id="pocet" min="1" placeholder="3" required>
         </div>
         
+
+        <div class="form_timeDate">
         <div class="form">
         <label for="datum"> Datum <span class="required"> * </span></label>
         <input type="date" name="datum" id="datum" required>
@@ -109,14 +114,15 @@
         <label for="cas"> Čas <span class="required"> * </span></label>
         <input type="time" name="cas" id="cas" required>
         </div>
+        </div>
         
         <div class="form">
         <label for="info"> Upřesňující informace </label>
-        <textarea name="info" id="info" cols="30" rows="10" >  
+        <textarea name="info" id="info" cols="15" rows="5" >  
         </textarea>
         </div> 
             
-        <button class="booking-button" type="submit" name="tlacitko">Odeslat rezervaci</button> 
+        <button class="booking-button" id="booking-button" type="submit" name="tlacitko">Odeslat rezervaci</button> 
         
         
         </form>   
@@ -182,6 +188,6 @@
             </footer>
  
             
-
+<script src="scriptBooking.js"> </script>
 </body>
 </html>
