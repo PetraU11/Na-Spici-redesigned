@@ -193,7 +193,8 @@ align-items: center;
     margin-right:auto;
     display:grid;
     gap: 10px;
-    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     @media screen and (min-width: 1000px){
     grid-template-columns: 5% 1fr 1fr 5%;

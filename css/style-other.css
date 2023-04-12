@@ -229,7 +229,8 @@ header {
   margin-right: auto;
   display: grid;
   gap: 10px;
-  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 1000px) {
   .booking__main {
