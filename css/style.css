@@ -786,6 +786,15 @@ color: $c-header-footer;} */
   }
 }
 
+.section-first__link {
+  color: rgb(79, 25, 11);
+  text-decoration: none;
+}
+
+.section__first-header {
+  font-family: "Montserrat", sans-serif;
+}
+
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -813,8 +822,4 @@ h2 {
 .footer {
   background-color: rgb(166, 100, 15);
   color: rgb(240, 226, 207);
-}
-
-div[class^=section-first] > h2 {
-  font-family: "Courgette", cursive;
-} /*vymazat?*//*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

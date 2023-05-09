@@ -19,6 +19,10 @@
     font-size: 120%;}}
 
 .section-first__link {
- color: $c-text;
+ color: color.$c-text;
  text-decoration: none;
+}
+
+.section__first-header {
+    font-family: 'Montserrat', sans-serif;
 }
