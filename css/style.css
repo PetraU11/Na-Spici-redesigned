@@ -782,7 +782,6 @@ color: $c-header-footer;} */
 @media screen and (min-width: 1000px) {
   .section-first__why {
     width: 70%;
-    font-size: 120%;
   }
 }
 
