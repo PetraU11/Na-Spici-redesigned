@@ -11,16 +11,18 @@
     
     
     .section-two__content {
-        background-image: url(../images/slider-bc-food.jpeg);
+        background-image: url(../images/Slider_bc_beer.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         background-attachment: scroll;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
         width: 100%;
-        height: 420px;
+        height: 350px;
      }
+
+     //../images/slider-bc-food.jpeg
     
     .section-two__content-two {
         background-image: url(../images/Slider_bc_beer.jpeg); /*zmenit výšku u samotných fotek, u mobilu nesedí kvůli obsahu */
@@ -28,22 +30,21 @@
         background-size: cover;
         background-position: center center;
         background-attachment: scroll;
-        padding: 20px;
+        padding: 10px;
         text-align: center;
         width: 100%;
-        height: 420px;
+    
        }
     
     .section-two__content_bc-color {
-        width: 60%;
+        width: 75%;
         margin-left: 50px;
         padding: 10px;
     
         @media screen and (min-width: 500px) {
-            margin-top: 30px;}
+            margin-top: 20px;}
     
         @media screen and (min-width: 800px) {
-            margin-top: 40px;
             font-size: 1.3em;
             }}
     
