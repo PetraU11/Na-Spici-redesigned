@@ -22,10 +22,9 @@
         height: 350px;
      }
 
-     //../images/slider-bc-food.jpeg
     
     .section-two__content-two {
-        background-image: url(../images/Slider_bc_beer.jpeg); /*zmenit výšku u samotných fotek, u mobilu nesedí kvůli obsahu */
+        background-image: url(../images/slider-bc-food.jpeg); /*zmenit výšku u samotných fotek, u mobilu nesedí kvůli obsahu */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -51,7 +50,7 @@
     .section-two__link {font-weight: normal;
       position:absolute;
     bottom: 15%;
-    transform: translateX(-45%) ;}
+    transform: translateX(-50%) ;}
     
     .section-two__link-span {color:color.$c-main;}
     
