@@ -458,10 +458,8 @@ header {
   transform: translateX(-100%) rotate(15deg);
   -webkit-animation-name: photo2;
           animation-name: photo2;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 @-webkit-keyframes photo2 {
@@ -499,11 +497,9 @@ header {
   border-radius: 5%;
   -webkit-animation-name: test;
           animation-name: test;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   transform: translateX(-100%) rotate(-15deg);
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes test {
@@ -620,15 +616,81 @@ header {
   border: 5px solid rgb(218, 124, 51);
   border-radius: 5%;
   transform: translateX(-100%) rotate(15deg);
+  -webkit-animation-name: photo3;
+          animation-name: photo3;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
+@-webkit-keyframes photo3 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(15deg);
+  }
+}
+
+@keyframes photo3 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(15deg);
+  }
+}
 .img7 {
   position: absolute;
   border: 5px solid rgb(123, 74, 11);
   border-radius: 5%;
   transform: translateX(-100%) rotate(-15deg);
+  -webkit-animation-name: photo4;
+          animation-name: photo4;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
+@-webkit-keyframes photo4 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(-15deg);
+  }
+}
+
+@keyframes photo4 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(-15deg);
+  }
+}
 .img8 {
   position: absolute;
   border: 5px solid rgb(218, 124, 51);
@@ -700,15 +762,81 @@ header {
   border: 5px solid rgb(218, 124, 51);
   border-radius: 5%;
   transform: translateX(-100%) rotate(15deg);
+  -webkit-animation-name: photo5;
+          animation-name: photo5;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
+@-webkit-keyframes photo5 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(15deg);
+  }
+}
+
+@keyframes photo5 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(15deg);
+  }
+}
 .img12 {
   position: absolute;
   border: 5px solid rgb(123, 74, 11);
   border-radius: 5%;
   transform: translateX(-100%) rotate(-15deg);
+  -webkit-animation-name: photo6;
+          animation-name: photo6;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
+@-webkit-keyframes photo6 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(-15deg);
+  }
+}
+
+@keyframes photo6 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(-15deg);
+  }
+}
 .img13 {
   position: absolute;
   border: 5px solid rgb(218, 124, 51);
@@ -794,11 +922,6 @@ header {
   .section-first__why {
     width: 60%;
   }
-}
-
-.section-first__link {
-  color: rgb(79, 25, 11);
-  text-decoration: none;
 }
 
 .section__first-header {
