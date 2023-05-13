@@ -456,15 +456,85 @@ header {
   border: 5px solid rgb(218, 124, 51);
   border-radius: 5%;
   transform: translateX(-100%) rotate(15deg);
+  -webkit-animation-name: photo2;
+          animation-name: photo2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes photo2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(15deg);
+  }
+}
+
+@keyframes photo2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(15deg);
+  }
+}
 .img3 {
   position: absolute;
   border: 5px solid rgb(123, 74, 11);
   border-radius: 5%;
+  -webkit-animation-name: test;
+          animation-name: test;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   transform: translateX(-100%) rotate(-15deg);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes test {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(-15deg);
+  }
+}
+
+@keyframes test {
+  0% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-100%) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(-100%) rotate(-10deg);
+  }
+  100% {
+    transform: translateX(-100%) rotate(-15deg);
+  }
+}
 .img4 {
   position: absolute;
   border: 5px solid rgb(218, 124, 51);
