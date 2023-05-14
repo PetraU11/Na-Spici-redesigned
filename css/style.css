@@ -382,6 +382,11 @@ header {
   }
 }
 
+.footer__link {
+  text-decoration: none;
+  color: rgb(240, 226, 207);
+}
+
 /* Section three - Rezervace */
 .section.three {
   margin-left: auto;
@@ -414,6 +419,10 @@ header {
     font-size: 120%;
     width: 55%;
   }
+}
+
+.section-three__link {
+  color: rgb(79, 25, 11);
 }
 
 .section-three__images {
@@ -555,6 +564,10 @@ header {
   }
 }
 
+.section-four__link {
+  color: rgb(240, 226, 207);
+}
+
 .section-four__images {
   order: 1;
   margin-top: 50px;
@@ -685,6 +698,10 @@ header {
     font-size: 120%;
     width: 55%;
   }
+}
+
+.section-five__link {
+  color: rgb(79, 25, 11);
 }
 
 .section-five__images {
@@ -834,13 +851,10 @@ header {
 
 .section-two__link {
   font-weight: normal;
+  color: rgb(240, 226, 207);
   position: absolute;
   bottom: 15%;
   transform: translateX(-50%);
-}
-
-.section-two__link-span {
-  color: rgb(240, 226, 207);
 }
 
 /* Section first */
@@ -872,6 +886,10 @@ header {
   .section__first-header {
     font-size: 1.3em;
   }
+}
+
+.section-first__link {
+  color: rgb(79, 25, 11);
 }
 
 *, :after, :before {

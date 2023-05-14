@@ -30,6 +30,10 @@ $c-button:rgb(131, 86, 29);
     @media screen and (min-width: 1000px) {
     font-size: 120%;
     width: 55%;}}
+
+.section-three__link {
+    color:$c-text;
+}
        
 .section-three__images {
     margin-top: 50px;
@@ -87,6 +91,8 @@ animation-iteration-count: infinite;
     border: 5px solid rgb(218, 124, 51);
     border-radius: 5%;
  transform: translateX(-100%);}
+
+
 
 
 

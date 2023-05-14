@@ -101,3 +101,8 @@ $c-button:rgb(131, 86, 29);
         @media screen and (min-width: 1000px)  {grid-column: 1 / 3;
         margin-top: 30px;
     text-align: center;}}
+
+.footer__link {
+    text-decoration: none;
+    color:color.$c-main
+}
