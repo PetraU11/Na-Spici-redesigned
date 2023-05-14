@@ -6,6 +6,10 @@
     padding: 30px;
     font-size: 0.8rem;
     background-image: url(../images/mistnostDve.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
     }
     
     .footer__hr { width: 30%;
@@ -16,7 +20,7 @@
     }}
     
     .footer__wrapper { 
-        background-color: rgba(0,0,0, 0.7);
+        background-color: rgba(95, 61, 11, 0.9);
         width: 90%;
         margin-right: auto;
         margin-left: auto;
