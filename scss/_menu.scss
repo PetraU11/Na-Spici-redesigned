@@ -51,15 +51,14 @@
 
 .img6 {position:absolute;
     border: 5px solid rgb(218, 124, 51);
-border-radius: 5%;
-transform: translateX(-100%) rotate(15deg);
-animation-name: photo3;
-animation-duration: 4s;}
+    border-radius: 5%;
+    transform: translateX(-100%) rotate(15deg);
+    animation-name: photo3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;}
 
 @keyframes photo3 {
     0% {transform: translateX(-100%) }
-    25%  {transform: translateX(-100%) rotate(5deg)}
-    50%  {transform: translateX(-100%) rotate(10deg)}
     100% {transform: translateX(-100%) rotate(15deg)}
   }
 
@@ -68,12 +67,11 @@ animation-duration: 4s;}
     border-radius: 5%;
     transform: translateX(-100%) rotate(-15deg);
     animation-name: photo4;
-    animation-duration: 4s;}
+    animation-duration: 4s;
+    animation-iteration-count: infinite;}
 
     @keyframes photo4 {
         0% {transform: translateX(-100%) }
-        25%  {transform: translateX(-100%) rotate(-5deg)}
-        50%  {transform: translateX(-100%) rotate(-10deg)}
         100% {transform: translateX(-100%) rotate(-15deg)}
       }
 

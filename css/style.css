@@ -460,17 +460,13 @@ header {
           animation-name: photo2;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes photo2 {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(10deg);
   }
   100% {
     transform: translateX(-100%) rotate(15deg);
@@ -480,12 +476,6 @@ header {
 @keyframes photo2 {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(10deg);
   }
   100% {
     transform: translateX(-100%) rotate(15deg);
@@ -500,17 +490,13 @@ header {
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   transform: translateX(-100%) rotate(-15deg);
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes test {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(-5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(-10deg);
   }
   100% {
     transform: translateX(-100%) rotate(-15deg);
@@ -520,12 +506,6 @@ header {
 @keyframes test {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(-5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(-10deg);
   }
   100% {
     transform: translateX(-100%) rotate(-15deg);
@@ -620,17 +600,13 @@ header {
           animation-name: photo3;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes photo3 {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(10deg);
   }
   100% {
     transform: translateX(-100%) rotate(15deg);
@@ -640,12 +616,6 @@ header {
 @keyframes photo3 {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(10deg);
   }
   100% {
     transform: translateX(-100%) rotate(15deg);
@@ -660,17 +630,13 @@ header {
           animation-name: photo4;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes photo4 {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(-5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(-10deg);
   }
   100% {
     transform: translateX(-100%) rotate(-15deg);
@@ -680,12 +646,6 @@ header {
 @keyframes photo4 {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(-5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(-10deg);
   }
   100% {
     transform: translateX(-100%) rotate(-15deg);
@@ -766,17 +726,13 @@ header {
           animation-name: photo5;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes photo5 {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(10deg);
   }
   100% {
     transform: translateX(-100%) rotate(15deg);
@@ -786,12 +742,6 @@ header {
 @keyframes photo5 {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(10deg);
   }
   100% {
     transform: translateX(-100%) rotate(15deg);
@@ -806,17 +756,13 @@ header {
           animation-name: photo6;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes photo6 {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(-5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(-10deg);
   }
   100% {
     transform: translateX(-100%) rotate(-15deg);
@@ -826,12 +772,6 @@ header {
 @keyframes photo6 {
   0% {
     transform: translateX(-100%);
-  }
-  25% {
-    transform: translateX(-100%) rotate(-5deg);
-  }
-  50% {
-    transform: translateX(-100%) rotate(-10deg);
   }
   100% {
     transform: translateX(-100%) rotate(-15deg);

@@ -59,14 +59,12 @@ border-radius: 5%;
 transform: translateX(-100%) rotate(15deg);
 animation-name: photo2;
 animation-duration: 4s;
-//animation-iteration-count: infinite;
+animation-iteration-count: infinite;
 
 }
 
 @keyframes photo2 {
     0% {transform: translateX(-100%) }
-    25%  {transform: translateX(-100%) rotate(5deg)}
-    50%  {transform: translateX(-100%) rotate(10deg)}
     100% {transform: translateX(-100%) rotate(15deg)}
   }
 
@@ -76,14 +74,12 @@ border-radius: 5%;
 animation-name: test;
 animation-duration: 4s;
 transform: translateX(-100%) rotate(-15deg);
-//animation-iteration-count: infinite;
+animation-iteration-count: infinite;
 }
 
 
 @keyframes test {
     0% {transform: translateX(-100%) }
-    25%  {transform: translateX(-100%) rotate(-5deg)}
-    50%  {transform: translateX(-100%) rotate(-10deg)}
     100% {transform: translateX(-100%) rotate(-15deg)}
   }
 
