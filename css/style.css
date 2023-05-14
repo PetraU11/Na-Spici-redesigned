@@ -335,6 +335,7 @@ header {
 .footer__contact-tel {
   margin-top: 0px;
   margin-bottom: 0px;
+  color: rgb(240, 226, 207);
 }
 @media screen and (min-width: 430px) {
   .footer__contact-tel {

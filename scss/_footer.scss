@@ -69,6 +69,8 @@
     
             .footer__contact-tel {margin-top: 0px;
                 margin-bottom:0px;
+                color: color.$c-main;
+        
                 @media screen and (min-width: 430px) { border-right: 2px solid color.$c-main;
                     margin-right: 6px;
                     padding-right: 6px;
