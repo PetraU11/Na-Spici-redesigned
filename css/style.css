@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
+  background-image: url(../images/IMG_0430up.jpg);
   height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -708,6 +708,7 @@ header {
   margin-right: auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  width: 90%;
   max-width: 1500px;
 }
 @media screen and (min-width: 600px) {
@@ -900,6 +901,7 @@ header {
 
 .section-first__why {
   width: 90%;
+  max-width: 1000px;
   display: flex;
   justify-content: center;
   align-items: center;
