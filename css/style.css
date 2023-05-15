@@ -258,6 +258,7 @@ header {
   margin-left: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  max-width: 1500px;
 }
 @media screen and (min-width: 1000px) {
   .footer__wrapper {
@@ -409,14 +410,15 @@ header {
 }
 
 /* Section three - Rezervace */
-.section.three {
+.section-three__wrapper {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  max-width: 1500px;
 }
 @media screen and (min-width: 600px) {
-  .section.three {
+  .section-three__wrapper {
     display: flex;
     align-items: center;
     width: 90%;
@@ -550,15 +552,18 @@ header {
 
 /* Section four  NAPOJAK */
 .section.four {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
   border-style: outset;
   border-color: rgb(221, 128, 6);
   border-width: 10px;
 }
 
+.section-four__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 1500px;
+}
 @media screen and (min-width: 600px) {
   .section-four__wrapper {
     display: flex;
@@ -698,14 +703,15 @@ header {
 }
 
 /* Section five - CATERING */
-.section.five {
+.section-five__wrapper {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
   margin-top: 20px;
+  max-width: 1500px;
 }
 @media screen and (min-width: 600px) {
-  .section.five {
+  .section-five__wrapper {
     display: flex;
     align-items: center;
   }
@@ -834,6 +840,7 @@ header {
   border-style: outset;
   border-color: rgb(221, 128, 6);
   border-width: 10px;
+  padding: 0;
 }
 
 .section-two__content {
@@ -849,7 +856,7 @@ header {
 }
 
 .section-two__content-two {
-  background-image: url(../images/slider-bc-food.jpeg); /*zmenit výšku u samotných fotek, u mobilu nesedí kvůli obsahu */
+  background-image: url(../images/slider-bc-food.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -872,6 +879,8 @@ header {
 @media screen and (min-width: 800px) {
   .section-two__content_bc-color {
     font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

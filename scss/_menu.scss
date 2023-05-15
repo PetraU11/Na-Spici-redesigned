@@ -2,15 +2,16 @@
 
 /* Section four  NAPOJAK */
 .section.four {
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
     border-style: outset;
     border-color: rgb(221, 128, 6);
     border-width: 10px;}
 
 .section-four__wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 1500px;
     @media screen and (min-width: 600px) {
         display:flex;
         align-items: center;

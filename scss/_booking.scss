@@ -9,15 +9,17 @@ $c-button:rgb(131, 86, 29);
 /* Section three - Rezervace */
 
 
-.section.three { 
+.section-three__wrapper {
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 20px;
     margin-top: 20px;
+    max-width: 1500px;
     @media screen and (min-width: 600px) {
     display:flex;
     align-items: center;
     width: 90%;}}
+
 
 .section-three__info {
     margin-left: auto;
