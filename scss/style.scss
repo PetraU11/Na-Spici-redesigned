@@ -17,14 +17,10 @@ font-family: 'Montserrat', sans-serif;
 font-size: 1.1rem; 
 text-align:center;}
 
-
 h2 {font-family: 'Courgette', cursive;}
 
-/* MAIN */
-
 .section {padding: 15px;}
-.section:nth-child(even),
-.footer {background-color: color.$c-header-footer;
+.section:nth-child(even) {background-color: color.$c-header-footer;
 color: color.$c-main;}
 
 
