@@ -1,10 +1,6 @@
-/* HEADER */
+@use 'color';
 
-$c-background:rgb(247, 219, 181); 
-$c-header-footer:rgb(166, 100, 15);
-$c-main: rgb(240, 226, 207);
-$c-text: rgb(79, 25, 11);
-$c-button:rgb(131, 86, 29);
+/* HEADER */
 
 header {
     display:flex;
@@ -52,7 +48,7 @@ header {
     //musí být všechny? 
     
     
-    .header__text {color: $c-main;
+    .header__text {color: color.$c-main;
         font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
         font-family: 'Courgette', cursive;
         @media screen and (min-width: 1000px) {font-size: 3vw;}
@@ -76,7 +72,7 @@ header {
     height: 60px;
     opacity: 0.95;}
     
-    .menu__header {color:$c-main;
+    .menu__header {color:color.$c-main;
     margin-bottom:0;
     margin-left: -2px;
     font-size: 1rem;}
@@ -95,7 +91,7 @@ header {
     display: block;
     width: 40px;
     height: 5px;
-    background-color: $c-main;
+    background-color: color.$c-main;
     border-radius: 10%;
     margin-top: 10px;}
     
@@ -113,7 +109,7 @@ header {
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: $c-main;
+    background-color: color.$c-main;
     transition-duration: .25s;
     overflow: auto;
         @media screen and (min-width: 1000px) {display:flex !important;
@@ -128,7 +124,7 @@ header {
         @media screen and (min-width: 1000px) {
             width: 15vw;
             border-bottom:none;
-            border-right: 1px solid $c-header-footer;
+            border-right: 1px solid color.$c-header-footer;
             font-size: 0.9rem;
     }}
     
@@ -152,11 +148,11 @@ header {
     }
     
     .menu__link:hover {
-    background-color:$c-text; 
-    color: $c-main;
+    background-color:color.$c-text; 
+    color: color.$c-main;
         @media screen and (min-width: 1000px){
-        background-color:$c-main;
-        color: $c-text; }}
+        background-color:color.$c-main;
+        color: color.$c-text; }}
        
     .menu__checkbox:checked ~ .menu__list{
       // display:block;
@@ -168,7 +164,7 @@ header {
         position:absolute;
         top: 15px;
         z-index:100;
-        background-color: $c-button;
+        background-color: color.$c-button;
         transform:rotate(45deg);
         transition: transform 0.4s ease-in-out; }
       
