@@ -26,6 +26,9 @@ section {
     padding: 15px;
 }
 
+section a {text-decoration: none;}
+
+
 /* HEADER */
 
 header {
@@ -41,7 +44,6 @@ header {
 
  .header__wrapper { 
     padding: 80px 30px;
-
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +60,7 @@ align-items: center;
  .header__name-text {
     text-align:right;
     color: $c-main;
-    margin-right: 15px;
+    margin-right: 35px;
     font-family: 'Courgette', cursive;
     font-size: 6vw;
     @media screen and (min-width: 450px) {
@@ -404,6 +406,7 @@ padding-top: 20px;
 max-width:320px;
 margin-left:auto;
 margin-right:auto;
+
     @media screen and (min-width: 700px) {
     padding: 30px;
 }

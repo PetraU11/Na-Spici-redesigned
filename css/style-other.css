@@ -210,6 +210,10 @@ section {
   padding: 15px;
 }
 
+section a {
+  text-decoration: none;
+}
+
 /* HEADER */
 header {
   background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
@@ -243,7 +247,7 @@ header {
 .header__name-text {
   text-align: right;
   color: rgb(240, 226, 207);
-  margin-right: 15px;
+  margin-right: 35px;
   font-family: "Courgette", cursive;
   font-size: 6vw;
 }
