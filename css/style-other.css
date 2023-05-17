@@ -680,6 +680,7 @@ header {
 @media screen and (min-width: 700px) {
   .carte__food {
     display: inline-block;
+    width: 280px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -687,6 +688,7 @@ header {
     display: inline-block;
     margin-left: 40px;
     text-align: left;
+    width: auto;
   }
 }
 
