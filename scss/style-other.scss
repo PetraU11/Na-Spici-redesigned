@@ -22,6 +22,10 @@ body {margin: 0;
 .footer {background-color: color.$c-header-footer;
         color: color.$c-main;}
 
+section {
+    padding: 15px;
+}
+
 /* HEADER */
 
 header {
@@ -344,8 +348,23 @@ align-items: center;
 
 /*MENU LIST*/
 
-.carte_main { padding: 20px;}
+.carte_main { padding: 20px;
 
+    @media screen and (min-width: 700px) {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display:inline-block;
+    }
+
+}
+
+.menu__perex {
+    grid-column: 1 / -1;
+}
 .carte__perex-hr {
     width: 80%;
     margin-right:auto;
@@ -357,7 +376,7 @@ align-items: center;
 }
 
 .menu__drink {
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         width: 90%;
         margin-left:auto;
@@ -366,20 +385,18 @@ align-items: center;
 }
 
 .menu__food {
-    @media screen and (min-width: 700px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
-        flex-direction:row-reverse;
-        margin-top: 20px;
         width: 90%;
+        margin-top: 20px;
         margin-left:auto;
         margin-right: auto;
 
     }
 }
 
-.carte__buttons-img {height: 80%;}
-
-.carte__buttons-drink {background-color: $c-text;
+.carte__buttons-drink,
+.carte__buttons-food {background-color: $c-text;
 color: $c-main;
 padding: 10px;
 margin-top: 20px;
@@ -392,22 +409,13 @@ margin-right:auto;
 }
 
 }
-.carte__buttons-food {background-color: $c-text;
-    color: $c-main;
-padding: 10px;
-margin-top: 20px;
-padding-top: 20px;
-max-width:320px;
-margin-left:auto;
-margin-right:auto;
-@media screen and (min-width: 700px) {
-    padding: 30px;
-}
-}
 
 .carte__drink {
     display:none;
     @media screen and (min-width: 700px) {
+        display:inline-block;
+    }
+    @media screen and (min-width: 1200px) {
         display: flex;
         margin-left: 40px;
         text-align: left;
@@ -426,8 +434,12 @@ margin-right:auto;
 .carte__food{
     display:none; 
     @media screen and (min-width: 700px) {
+        display:inline-block;
+    }
+    @media screen and (min-width: 1200px) {
         display: inline-block;
-        margin-right: 40px;
+        margin-left: 40px;
+        text-align: left;
     }
 }
 
