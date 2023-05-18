@@ -24,6 +24,9 @@ h2 {font-family: 'Courgette', cursive;}
 
 main {
     padding: 40px 15px;
+    width: 90%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 section a {text-decoration: none;}
@@ -223,9 +226,6 @@ align-items: center;
 
 /*BOOKING*/
 .booking__main {
-    width: 90%;
-    margin-left:auto;
-    margin-right:auto;
     display:grid;
     gap: 10px;
 
@@ -455,12 +455,6 @@ margin-right:auto;
  
 /*CATERING*/
 
-.catering__main { width: 90%;
-margin-left:auto;
-margin-right:auto;
-margin-top: 50px;
-margin-bottom: 50px;}
-
 .catering__perex-hr {
     width: 80%;
     margin-right:auto;
@@ -471,10 +465,11 @@ margin-bottom: 50px;}
     margin-bottom: 40px;
 }
 
-.catering__images img {
-    display:none;
-    border-radius: 50%;
-}
+
+
+
+
+
 
 .catering__pricing {
     @media screen and (min-width: 1000px) {
@@ -508,6 +503,9 @@ margin-bottom: 50px;}
     
 
 
+
+
+
 .catering__contact { 
     @media screen and (min-width: 1000px) {
     grid-column: 2 / 8;}
@@ -534,5 +532,5 @@ margin-bottom: 50px;}
 
     
 
-/* FOOTER */
+
 
