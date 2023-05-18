@@ -296,12 +296,6 @@ align-items: center;
     }
 }
 
-.form.timeDate > div {
-    @media screen and (min-width: 1000px){
-    flex-basis: min-content;
-    }
-}
-
 
 .form.timeDate div:nth-child(2) {
     margin-top: 0;

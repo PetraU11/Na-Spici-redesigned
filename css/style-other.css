@@ -519,12 +519,6 @@ header {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .form.timeDate > div {
-    flex-basis: min-content;
-  }
-}
-
 .form.timeDate div:nth-child(2) {
   margin-top: 0;
   margin-bottom: 0;
