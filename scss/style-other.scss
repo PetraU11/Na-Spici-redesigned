@@ -472,6 +472,14 @@ margin-right:auto;
 
 
 .catering__pricing {
+    background-image: url("../images/mk/korytko-640.png"); //změnit velikost fotky, moc velké, zpomaluje načítaní
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+    @media screen and (min-width: 750px) {
+        height: 300px;
+    }
     @media screen and (min-width: 1000px) {
     grid-column:  2 / 8;}}
 
@@ -485,7 +493,8 @@ margin-right:auto;
     
     .pricing-size {
         display:flex; 
-        justify-content: center;}
+        justify-content: center;
+    }
     
     .pricing-size:nth-child(2) {
         margin-left: 20px;

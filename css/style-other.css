@@ -707,6 +707,18 @@ header {
   margin-bottom: 40px;
 }
 
+.catering__pricing {
+  background-image: url("../images/mk/korytko-640.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 2%;
+}
+@media screen and (min-width: 750px) {
+  .catering__pricing {
+    height: 300px;
+  }
+}
 @media screen and (min-width: 1000px) {
   .catering__pricing {
     grid-column: 2/8;
