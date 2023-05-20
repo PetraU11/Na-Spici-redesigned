@@ -2,9 +2,10 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "petra.ulicna@hotmail.com"; 
     $subject = "Nová rezervace";
-    $reservationName = $_POST["jmeno"];
+    $name = $_POST["jmeno"];
     $email = $_POST["email"];
     $phone = $_POST["tel"];
+    $reservationName = $_POST["jmeno"];
     $numPeople = $_POST["pocet"];
     $date = $_POST["datum"];
     $time = $_POST["cas"];
