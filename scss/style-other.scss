@@ -29,6 +29,12 @@ main {
     margin-right:auto;
 }
 
+main > div,
+main > section {
+    max-width: 1500px;
+    margin-left:auto;
+    margin-right:auto;
+}
 
 section a {text-decoration: none;}
 
@@ -454,6 +460,8 @@ margin-right:auto;
 
  
 /*CATERING*/
+
+
 
 .catering__perex-hr {
     width: 80%;
