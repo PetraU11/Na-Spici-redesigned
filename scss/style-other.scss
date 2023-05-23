@@ -79,45 +79,44 @@ align-items: center;
 
 
 //Header - Hamburger menu//      
-    
-    .header__menu { 
-        position:relative;
-        left: 0%;
-        top: 0%;
-        z-index: 2;
-        height: 30px;
-        opacity: 0.95;
+.header__menu { 
+    position:relative;
+    left: 0%;
+    top: 0%;
+    z-index: 2;
+    height: 30px;
+    opacity: 0.95;
     }
     
-    .menu__header {color:$c-main;
+.menu__header {color:$c-main;
     margin-bottom:0;
     margin-left: -2px;
     font-size: 1rem;}
     
-    .menu__checkbox {
-          position: absolute;
-          left: -9999px;}
+.menu__checkbox {
+    position: absolute;
+    left: -9999px;}
     
-    .menu__toggler { 
-        position: sticky;
-        cursor: pointer;
-        z-index: 1;
-        @media screen and (min-width: 1000px) {display:none;}}
+.menu__toggler { 
+    position: sticky;
+    cursor: pointer;
+    z-index: 1;
+    @media screen and (min-width: 1000px) {display:none;}}
 
 .menu__bars {margin-top: -10px;}
     
-    .bar { 
+.bar { 
     display: block;
     width: 40px;
     height: 5px;
     background-color: $c-main;
     border-radius: 10%;}
     
-    .bar:nth-child(2) {
+.bar:nth-child(2) {
     margin-top: 12px;
     margin-bottom: 12px;}
     
-    .menu__list {
+.menu__list {
     display: block;
     position: fixed;
     top: 0;
@@ -138,7 +137,7 @@ align-items: center;
         transform:translate(-2%, -55%);
     }}
     
-    .menu__item {
+.menu__item {
         @media screen and (min-width: 1000px) {
     
             width: 11vw;
@@ -147,14 +146,14 @@ align-items: center;
             font-size: 0.9rem;
     }}
 
-    .menu__item:nth-child(1) { margin-top: 20px;
+.menu__item:nth-child(1) { margin-top: 20px;
         @media screen and (min-width: 1000px) {margin-top: 0px;
     }}
     
        /* .menu__item.active { 
           background-color: yellow;} eleventy */
       
-    .menu__link {
+.menu__link {
     display: block;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -168,20 +167,20 @@ align-items: center;
             padding: 5px 5px;
             height: 100%;}}
     
-    .menu__link:hover {
+.menu__link:hover {
     background-color:$c-text; 
     color: $c-main;
         @media screen and (min-width: 1000px){
         background-color:$c-main;
         color: $c-text; }} // hover na menu__link nebo na menu item?
        
-    .menu__checkbox:checked ~ .menu__list{
+.menu__checkbox:checked ~ .menu__list{
       // display:block;
     left:0 !important;}
     
-    .menu__checkbox:checked ~ .menu__toggler {position:fixed;}
+.menu__checkbox:checked ~ .menu__toggler {position:fixed;}
       
-    .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
+.menu__checkbox:checked ~ .menu__toggler .bar:nth-child(1) {
         position:absolute;
         top: 15px;
         z-index:100;
@@ -189,9 +188,9 @@ align-items: center;
         transform:rotate(45deg);
         transition: transform 0.4s ease-in-out; }
       
-    .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(2) {display:none;}
+.menu__checkbox:checked ~ .menu__toggler .bar:nth-child(2) {display:none;}
       
-    .menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
+.menu__checkbox:checked ~ .menu__toggler .bar:nth-child(3) {
         position:absolute;
         top: 15px;
         z-index:100;
@@ -495,11 +494,13 @@ margin-right:auto;
     .pricing-size {
         display:flex; 
         justify-content: center;
+        position:relative;
     }
     
     .pricing-size:nth-child(2) {
-        margin-left: 20px;
-        margin-right: 20px;}
+        margin-left:50px;
+        margin-right: 50px;
+    }
     
     .size { 
         color: $c-text;
@@ -509,9 +510,23 @@ margin-right:auto;
         border-radius: 50%;
         border: 5px solid $c-text;
         background-color: $c-main;
-        font-weight: bold;}
+        font-weight: bold;
+        position:absolute;
+        transform:translate(-100%, 30%)}
     
-
+.size-small__description { 
+    background-color:rgba(240, 226, 207, 0.8);
+    padding: 10px;
+    border: 5px solid $c-text;
+    border-radius: 5% ;
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding-left: 30px;
+    width: 170px;
+   
+   
+    
+}
 
 
 
