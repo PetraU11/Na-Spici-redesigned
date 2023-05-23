@@ -484,7 +484,6 @@ margin-right:auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 2%;
     @media screen and (min-width: 750px) {
         height: 300px;
     }
@@ -522,7 +521,7 @@ margin-right:auto;
         background-color: $c-main;
         font-weight: bold;
         position:absolute;
-        transform:translate(-100%,30%);
+        transform:translate(-80%,30%);
         @media screen and (min-width: 750px) {
         transform:translateY(-50%)}}
     
@@ -533,10 +532,11 @@ margin-right:auto;
     border-radius: 5% ;
     margin-top: 10px;
     margin-bottom:10px;
-    width: 170px;
-    padding-left: 30px;
+    width: 190px;
+    text-align: right;
     @media screen and (min-width: 750px) {
-    padding-top: 50px;}
+    padding-top: 50px;
+    text-align: center;}
    
    
     

@@ -719,7 +719,6 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 2%;
 }
 @media screen and (min-width: 750px) {
   .catering__pricing {
@@ -767,7 +766,7 @@ header {
   background-color: rgb(240, 226, 207);
   font-weight: bold;
   position: absolute;
-  transform: translate(-100%, 30%);
+  transform: translate(-80%, 30%);
 }
 @media screen and (min-width: 750px) {
   .size {
@@ -782,12 +781,13 @@ header {
   border-radius: 5%;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 170px;
-  padding-left: 30px;
+  width: 190px;
+  text-align: right;
 }
 @media screen and (min-width: 750px) {
   .size-small__description {
     padding-top: 50px;
+    text-align: center;
   }
 }
 
