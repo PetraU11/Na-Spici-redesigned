@@ -221,8 +221,9 @@ main > section {
   margin-right: auto;
 }
 
-section a {
-  text-decoration: none;
+section a,
+a {
+  color: rgb(79, 25, 11);
 }
 
 /* HEADER */
@@ -482,7 +483,6 @@ header {
 @media screen and (min-width: 1000px) {
   .booking__info {
     grid-column: 2/3;
-    margin-top: 30px;
   }
 }
 
@@ -612,8 +612,6 @@ header {
 
 .carte__perex-hr {
   width: 80%;
-  margin-right: auto;
-  margin-left: auto;
   border: 2px solid rgb(79, 25, 11);
 }
 
@@ -625,8 +623,6 @@ header {
   .menu__drink {
     display: flex;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -635,8 +631,6 @@ header {
     display: flex;
     width: 90%;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -647,9 +641,9 @@ header {
   padding: 10px;
   margin-top: 20px;
   padding-top: 20px;
-  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 320px;
 }
 @media screen and (min-width: 700px) {
   .carte__buttons-drink,
@@ -670,6 +664,7 @@ header {
 @media screen and (min-width: 1200px) {
   .carte__drink {
     display: flex;
+    flex-grow: 1;
     margin-left: 40px;
     text-align: left;
   }

@@ -36,7 +36,8 @@ main > section {
     margin-right:auto;
 }
 
-section a {text-decoration: none;}
+section a,
+a{color:$c-text;}
 
 
 /* HEADER */
@@ -258,9 +259,6 @@ align-items: center;
 .booking__info{
     @media screen and (min-width: 1000px){
         grid-column: 2/3;
-        margin-top: 30px;
-        
-       
         }
 }
 
@@ -377,8 +375,6 @@ align-items: center;
 }
 .carte__perex-hr {
     width: 80%;
-    margin-right:auto;
-    margin-left:auto;
     border: 2px solid $c-text;
 }
 .carte__perex-hr:nth-child(3) {
@@ -389,8 +385,6 @@ align-items: center;
     @media screen and (min-width: 1200px) {
         display: flex;
         width: 90%;
-        margin-left:auto;
-        margin-right: auto;
     }
 }
 
@@ -399,8 +393,7 @@ align-items: center;
         display: flex;
         width: 90%;
         margin-top: 20px;
-        margin-left:auto;
-        margin-right: auto;
+
 
     }
 }
@@ -411,10 +404,9 @@ color: $c-main;
 padding: 10px;
 margin-top: 20px;
 padding-top: 20px;
-max-width:320px;
-margin-left:auto;
+margin-left: auto;
 margin-right:auto;
-
+max-width:320px;
     @media screen and (min-width: 700px) {
     padding: 30px;
     max-width:auto;
@@ -429,6 +421,7 @@ margin-right:auto;
     }
     @media screen and (min-width: 1200px) {
         display: flex;
+        flex-grow:1;
         margin-left: 40px;
         text-align: left;
      } }
