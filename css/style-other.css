@@ -226,6 +226,11 @@ a {
   color: rgb(79, 25, 11);
 }
 
+.menu__item.active {
+  background-color: rgb(247, 219, 181);
+  color: rgb(79, 25, 11);
+}
+
 /* HEADER */
 header {
   background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
