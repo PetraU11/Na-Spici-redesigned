@@ -40,8 +40,11 @@ section a,
 a{color:$c-text;}
 
 .menu__item.active {
-    background-color: color.$c-background;
-    color: color.$c-text;
+    background-color:color.$c-button; 
+}
+
+.menu__link.active {
+    color:color.$c-main;
 }
 
 /* HEADER */

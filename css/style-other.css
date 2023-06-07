@@ -227,8 +227,11 @@ a {
 }
 
 .menu__item.active {
-  background-color: rgb(247, 219, 181);
-  color: rgb(79, 25, 11);
+  background-color: rgb(131, 86, 29);
+}
+
+.menu__link.active {
+  color: rgb(240, 226, 207);
 }
 
 /* HEADER */
