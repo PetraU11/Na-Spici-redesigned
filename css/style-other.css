@@ -353,20 +353,10 @@ header {
 @media screen and (min-width: 1000px) {
   .menu__list {
     display: flex !important;
-    justify-content: left;
     position: absolute;
     background-color: transparent;
     height: auto;
     transform: translate(-2%, -55%);
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .menu__item {
-    width: 11vw;
-    border-bottom: none;
-    border-right: 3px solid rgb(166, 100, 15);
-    font-size: 0.9rem;
   }
 }
 
@@ -379,8 +369,6 @@ header {
   }
 }
 
-/* .menu__item.active { 
-   background-color: yellow;} eleventy */
 .menu__link {
   display: block;
   padding-top: 30px;
@@ -393,9 +381,14 @@ header {
 }
 @media screen and (min-width: 1000px) {
   .menu__link {
+    width: 11vw;
+    border-bottom: none;
+    border-right: 3px solid rgb(166, 100, 15);
+    font-size: 0.9rem;
+    padding: 10px 0px;
+    min-height: 50px;
     color: rgb(240, 226, 207);
     padding: 5px 5px;
-    height: 100%;
   }
 }
 

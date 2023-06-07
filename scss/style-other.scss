@@ -144,28 +144,23 @@ align-items: center;
     transition-duration: .25s;
     overflow: auto;
         @media screen and (min-width: 1000px) {display:flex !important;
-        justify-content: left;
         position:absolute; 
         background-color: transparent;
         height: auto;
         transform:translate(-2%, -55%);
+    
+      
     }}
     
 .menu__item {
         @media screen and (min-width: 1000px) {
-    
-            width: 11vw;
-            border-bottom:none;
-            border-right: 3px solid $c-header-footer;
-            font-size: 0.9rem;
+
     }}
 
 .menu__item:nth-child(1) { margin-top: 20px;
         @media screen and (min-width: 1000px) {margin-top: 0px;
     }}
     
-       /* .menu__item.active { 
-          background-color: yellow;} eleventy */
       
 .menu__link {
     display: block;
@@ -177,17 +172,25 @@ align-items: center;
     font-weight: bold;
     text-align: center;
         @media screen and (min-width: 1000px){
+            width: 11vw;
+            border-bottom:none;
+            border-right: 3px solid $c-header-footer;
+            font-size: 0.9rem;
+            padding: 10px 0px;
+            min-height: 50px;
             color:$c-main;
             padding: 5px 5px;
-            height: 100%;}}
+            }}
     
 .menu__link:hover {
     background-color:$c-text; 
-    color: $c-main;
+    color:color.$c-main;
         @media screen and (min-width: 1000px){
         background-color:$c-main;
-        color: $c-text; }} // hover na menu__link nebo na menu item?
-       
+        color: $c-text; 
+    }} // hover na menu__link nebo na menu item?
+
+
 .menu__checkbox:checked ~ .menu__list{
       // display:block;
     left:0 !important;}
