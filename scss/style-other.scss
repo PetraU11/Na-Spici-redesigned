@@ -147,15 +147,9 @@ align-items: center;
         position:absolute; 
         background-color: transparent;
         height: auto;
-        transform:translate(-2%, -55%);
-    
-      
+        transform:translate(-2%, -55%);  
     }}
     
-.menu__item {
-        @media screen and (min-width: 1000px) {
-
-    }}
 
 .menu__item:nth-child(1) { margin-top: 20px;
         @media screen and (min-width: 1000px) {margin-top: 0px;
@@ -176,7 +170,6 @@ align-items: center;
             border-bottom:none;
             border-right: 3px solid $c-header-footer;
             font-size: 0.9rem;
-            padding: 10px 0px;
             min-height: 50px;
             color:$c-main;
             padding: 5px 5px;
@@ -188,7 +181,7 @@ align-items: center;
         @media screen and (min-width: 1000px){
         background-color:$c-main;
         color: $c-text; 
-    }} // hover na menu__link nebo na menu item?
+    }} 
 
 
 .menu__checkbox:checked ~ .menu__list{

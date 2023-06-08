@@ -6,6 +6,7 @@ drinkDiv.addEventListener("click", () => {
 })
 
 
+
 const food = document.querySelector("#carte__food")
 const foodDiv = document.querySelector(".carte__buttons-food")
 
