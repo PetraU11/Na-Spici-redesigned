@@ -227,6 +227,52 @@ align-items: center;
 
 }
 
+//*AKTUALITY *
+
+.events_main-listEvents-ImgWrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.events_main-listEvents-mainImg{
+   grid-column: 1 / 3;
+   grid-row: 1 / 3;
+}
+
+.events_main-listEvents-mainImg img {
+    width:100%;
+}
+
+.events_main-listEvents-Img img {
+  width:100%;
+}
+
+.events_main-listEvents-Img.one{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.events_main-listEvents-Img.two{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.events_main-listEvents-Img.three{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.events_main-listEvents-Img.four{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.events_main-listEvents-Img.five{
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+
 
 
 /*BOOKING*/
