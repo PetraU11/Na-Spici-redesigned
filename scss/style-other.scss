@@ -229,6 +229,12 @@ align-items: center;
 
 //*AKTUALITY *
 
+.events__perex-hr {
+    width: 80%;
+    margin-right:auto;
+    margin-left:auto;
+    border: 2px solid color.$c-text;
+}
 .events_main-listEvents-ImgWrapper {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;

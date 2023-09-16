@@ -455,6 +455,13 @@ header {
   border: 2px solid rgb(79, 25, 11);
 }
 
+.events__perex-hr {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid rgb(79, 25, 11);
+}
+
 .events_main-listEvents-ImgWrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
