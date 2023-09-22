@@ -913,4 +913,8 @@ header {
 
 .contacts__type-email {
   margin-left: -10px;
+}
+
+.list__list.second {
+  display: none;
 }/*# sourceMappingURL=style-other.css.map */
