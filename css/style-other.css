@@ -705,8 +705,8 @@ header {
   transform: translateY(1%);
   -webkit-animation-name: drinkPhoto;
           animation-name: drinkPhoto;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-iteration-count: initial;
           animation-iteration-count: initial;
 }
@@ -754,14 +754,14 @@ header {
   transform: translateY(1%);
   -webkit-animation-name: foodPhoto;
           animation-name: foodPhoto;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-iteration-count: initial;
           animation-iteration-count: initial;
 }
 @-webkit-keyframes foodPhoto {
   0% {
-    transform: translateY(-60%);
+    transform: translateY(-5%);
   }
   100% {
     transform: translateY(1%);
@@ -769,7 +769,7 @@ header {
 }
 @keyframes foodPhoto {
   0% {
-    transform: translateY(-60%);
+    transform: translateY(-5%);
   }
   100% {
     transform: translateY(1%);
@@ -824,7 +824,7 @@ header {
 @media screen and (min-width: 750px) {
   .catering__pricing-size {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 15px;
     margin-bottom: 15px;
   }
@@ -839,11 +839,6 @@ header {
   .pricing-size {
     margin-top: 50px;
   }
-}
-
-.pricing-size:nth-child(2) {
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .size {
@@ -871,13 +866,21 @@ header {
   border-radius: 5%;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 190px;
+  padding-right: 20px;
+  width: 200px;
   text-align: right;
 }
 @media screen and (min-width: 750px) {
   .size-small__description {
+    width: 150px;
     padding-top: 50px;
+    padding-right: 10px;
     text-align: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .size-small__description {
+    width: 200px;
   }
 }
 
