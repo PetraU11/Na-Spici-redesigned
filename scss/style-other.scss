@@ -227,12 +227,22 @@ align-items: center;
 
 }
 
-.about__section.one,
+.about__section.one {
+    @media screen and (min-width: 1000px) {
+        display:flex;
+    
+    }
+}
+
 .about__section.two {
     @media screen and (min-width: 1000px) {
         display:flex;
+        flex-direction:row-reverse;
       
     }
+}
+
+.about__section.two {
 
 }
 .about__main img {

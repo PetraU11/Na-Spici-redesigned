@@ -452,9 +452,15 @@ header {
 }
 
 @media screen and (min-width: 1000px) {
-  .about__section.one,
-.about__section.two {
+  .about__section.one {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about__section.two {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
