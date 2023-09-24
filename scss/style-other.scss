@@ -651,3 +651,13 @@ max-width:320px;
 .list__list.second {
     display:none;
 }
+
+.list__list,
+.list__list-two{
+    list-style: none;
+}
+
+.list__showhide {
+    text-decoration: underline;
+
+}
