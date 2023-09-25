@@ -267,14 +267,16 @@ align-items: center;
 
 }
 
+
+
 .about__image {
-    padding: 15px;
+    padding: 10px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
-    background-color: color.$c-text;
+    row-gap: 5px;
+    column-gap: 5px;
+    background-color: color.$c-button;
   
   
 }

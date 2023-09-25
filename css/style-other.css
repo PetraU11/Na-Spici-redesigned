@@ -486,14 +486,14 @@ header {
 }
 
 .about__image {
-  padding: 15px;
+  padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  row-gap: 10px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  background-color: rgb(79, 25, 11);
+  row-gap: 5px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  background-color: rgb(131, 86, 29);
 }
 
 .img0 {
