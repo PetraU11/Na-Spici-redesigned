@@ -137,7 +137,7 @@ header {
     padding-bottom: 30px;
     text-decoration: none;
     transition-duration: .25s;
-    color: $c-text;
+    color: color.$c-text;
     font-weight: bold;
     text-align: center;
         @media screen and (min-width: 1000px){
