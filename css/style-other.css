@@ -264,7 +264,7 @@ header {
   text-align: right;
   color: rgb(240, 226, 207);
   margin-right: 10px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 1000px) {
   .header__name-text {
@@ -322,8 +322,8 @@ header {
 }
 
 .bar:nth-child(2) {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .menu__list {
