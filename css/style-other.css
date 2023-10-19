@@ -261,7 +261,7 @@ header {
 }
 
 .header__name-text {
-  text-align: right;
+  text-align: center;
   color: rgb(240, 226, 207);
   margin-right: 35px;
   font-size: 1.5rem;
