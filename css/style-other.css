@@ -250,7 +250,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   height: 100px;
 }
 
@@ -264,17 +264,11 @@ header {
   text-align: right;
   color: rgb(240, 226, 207);
   margin-right: 35px;
-  font-family: "Courgette", cursive;
-  font-size: 6vw;
-}
-@media screen and (min-width: 450px) {
-  .header__name-text {
-    font-size: 4vw;
-  }
+  font-size: 1.5rem;
 }
 @media screen and (min-width: 1000px) {
   .header__name-text {
-    font-size: 3vw;
+    font-size: 1.8rem;
   }
 }
 
@@ -352,7 +346,7 @@ header {
     position: absolute;
     background-color: transparent;
     height: auto;
-    transform: translate(-2%, -55%);
+    transform: translate(-2%, -45%);
   }
 }
 

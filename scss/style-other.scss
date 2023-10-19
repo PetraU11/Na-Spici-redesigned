@@ -60,7 +60,7 @@ header {
     display:flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(0,0,0, 0.4);
+    background-color: rgba(0,0,0, 0.5);
     height: 100px;
 }   
  
@@ -74,14 +74,12 @@ align-items: center;
     text-align:right;
     color: color.$c-main;
     margin-right: 35px;
-    font-family: 'Courgette', cursive;
-    font-size: 6vw;
-    @media screen and (min-width: 450px) {
-        font-size: 4vw;}
+
+    //font-family: 'Courgette', cursive;
+    font-size: 1.5rem;
+    
     @media screen and (min-width: 1000px) {
-            font-size: 3vw;}
-
-
+            font-size: 1.8rem;}
  }
         
  .header__name-logo {width: 30%;}
@@ -142,7 +140,7 @@ align-items: center;
         position:absolute; 
         background-color: transparent;
         height: auto;
-        transform:translate(-2%, -55%);  
+        transform:translate(-2%, -45%);  
     }}
     
 
