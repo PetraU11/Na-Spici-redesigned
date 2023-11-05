@@ -12,7 +12,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-
     
     @media screen and (min-width: 451px) {
         background-image: url(../images/IMG_0430up.jpg); } }
@@ -26,11 +25,10 @@ header {
     justify-content: center;
     align-items: center;
     width: 50%;
+    aspect-ratio: 1;
     border-radius: 60%;
     text-align:center;
     border: 3px solid burlywood;
-    transform: rotateY(45deg);
-	animation: rotateAnimation 1s linear infinite;
     
     @media screen and (max-height: 450px) {width: 35%;}
     
@@ -47,21 +45,12 @@ header {
             width: 25%;
          }}
     }
-
-  
-
-    @keyframes rotateAnimation {
-        from {transform: rotateY(45deg);}
-        to {transform: rotateY(225deg);}
-    }
     //musí být všechny? 
     
     
     .header__text {color: color.$c-main;
         font-size: 6vw; /* 10vw responziv písmo Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
         font-family: 'Courgette', cursive;
-        
-
         @media screen and (min-width: 1000px) {font-size: 3vw;}
         @media screen and (max-height: 450px) {font-size: 4vw;}}
     

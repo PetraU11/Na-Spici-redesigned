@@ -25,11 +25,13 @@ header {
   justify-content: center;
   align-items: center;
   width: 50%;
-  aspect-ratio: 1;
   border-radius: 60%;
   text-align: center;
   border: 3px solid burlywood;
+
 }
+
+
 @media screen and (max-height: 450px) {
   .header__container {
     width: 35%;
