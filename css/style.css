@@ -25,13 +25,11 @@ header {
   justify-content: center;
   align-items: center;
   width: 50%;
+  aspect-ratio: 1;
   border-radius: 60%;
   text-align: center;
   border: 3px solid burlywood;
-
 }
-
-
 @media screen and (max-height: 450px) {
   .header__container {
     width: 35%;
@@ -167,8 +165,6 @@ header {
   }
 }
 
-/* .menu__item.active { 
-   background-color: yellow;} eleventy */
 .menu__link {
   display: block;
   padding-top: 30px;
@@ -234,11 +230,13 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 0.8rem;
-  background-image: url(../images/mistnostDve.jpg);
+  background-image: url(../images/background-img/mistnostDve.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
+  background-color: rgb(166, 100, 15);
+  color: rgb(240, 226, 207);
 }
 
 .footer__hr {
@@ -403,6 +401,7 @@ header {
     display: inline-block;
     background-color: rgba(95, 61, 11, 0.9);
     text-align: center;
+    padding: 5px;
   }
 }
 
@@ -892,7 +891,7 @@ header {
   color: rgb(240, 226, 207);
   position: absolute;
   bottom: 15%;
-  transform: translateX(-50%);
+  transform: translatX(-50%);
 }
 
 /* Section first */
@@ -949,13 +948,11 @@ h2 {
   font-family: "Courgette", cursive;
 }
 
-/* MAIN */
 .section {
   padding: 15px;
 }
 
-.section:nth-child(even),
-.footer {
+.section:nth-child(even) {
   background-color: rgb(166, 100, 15);
   color: rgb(240, 226, 207);
 }/*# sourceMappingURL=style.css.map */

@@ -501,11 +501,12 @@ align-items: center;
     @media screen and (min-width: 700px) {
         display:grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 10%;
+        column-gap: 5%;
     }
 
     @media screen and (min-width: 1200px) {
-        display:inline-block;
+        column-gap: 1%;
+    
     }
 
 }
@@ -524,17 +525,13 @@ align-items: center;
 .menu__drink {
     @media screen and (min-width: 1200px) {
         display: flex;
-        width: 90%;
     }
 }
 
 .menu__food {
     @media screen and (min-width: 1200px) {
         display: flex;
-        width: 90%;
-        margin-top: 20px;
-
-
+        
     }
 }
 
@@ -570,22 +567,24 @@ max-width:320px;
     @media screen and (min-width: 700px) {
         display:inline-block;
     }
+
     @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-grow:1;
-        margin-left: 40px;
+        display:flex;
+        flex-direction: column;
+    }
+    }
+
+.carte__drink-list {
+    display:none;
+}
+
+.carte__drink-header-list {
+    @media screen and (min-width: 1200px) {
         text-align: left;
-     } }
-
-
-.carte__drink div {
-    flex-grow: 1;
+        margin-left: 40px;
+    }
 }
 
-.carte__drink div:nth-child(2) {
-    margin-left: 10px;
-    margin-right: 10px;   
-}
 
 .carte__food{
     display:none; 
@@ -602,10 +601,12 @@ max-width:320px;
 
     @media screen and (min-width: 700px) {
         display:inline-block;
-        width:280px
+        width:320px
     }
     @media screen and (min-width: 1200px) {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         margin-left: 40px;
         text-align: left;
         width:auto;
