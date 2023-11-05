@@ -45,7 +45,7 @@ a{color:color.$c-text;}
 /* HEADER */
 
 header {
-    background-image: url(../images/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
+    background-image: url(../images/background-img/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/
     height:350px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -53,7 +53,7 @@ header {
     background-attachment: scroll;
     
     @media screen and (min-width: 451px) {
-        background-image: url(../images/IMG_0430up.jpg); } }
+        background-image: url(../images/background-img/IMG_0430up.jpg); } }
 
  .header__wrapper { 
     padding: 80px 30px;
@@ -634,7 +634,7 @@ max-width:320px;
 
 
 .catering__pricing {
-    background-image: url("../images/mk/korytko-640.png"); //změnit velikost fotky, moc velké, zpomaluje načítaní
+    background-image: url("../images/background-img/korytko-640.png"); //změnit velikost fotky, moc velké, zpomaluje načítaní
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
