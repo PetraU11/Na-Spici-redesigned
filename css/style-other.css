@@ -720,25 +720,6 @@ header {
 }
 
 /*MENU LIST*/
-@media screen and (min-width: 700px) {
-  .carte_main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    -moz-column-gap: 5%;
-         column-gap: 5%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .carte_main {
-    -moz-column-gap: 1%;
-         column-gap: 1%;
-  }
-}
-
-.menu__perex {
-  grid-column: 1/-1;
-}
-
 .carte__perex-hr {
   width: 80%;
   border: 2px solid rgb(79, 25, 11);
@@ -748,13 +729,13 @@ header {
   margin-bottom: 40px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 700px) {
   .menu__drink {
     display: flex;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 700px) {
   .menu__food {
     display: flex;
   }
@@ -782,35 +763,13 @@ header {
 .carte__drink {
   display: none;
   transform: translateY(1%);
-  -webkit-animation-name: drinkPhoto;
-          animation-name: drinkPhoto;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: initial;
-          animation-iteration-count: initial;
-}
-@-webkit-keyframes drinkPhoto {
-  0% {
-    transform: translateY(-5%);
-  }
-  100% {
-    transform: translateY(1%);
-  }
-}
-@keyframes drinkPhoto {
-  0% {
-    transform: translateY(-5%);
-  }
-  100% {
-    transform: translateY(1%);
-  }
 }
 @media screen and (min-width: 700px) {
   .carte__drink {
     display: inline-block;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 700px) {
   .carte__drink {
     display: flex;
     flex-direction: column;
@@ -821,53 +780,32 @@ header {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+.carte__drink-list.shown {
+  display: inline-block;
+}
+
+.carte__drink-header-shown {
+  display: inline-block;
+}
+
+@media screen and (min-width: 700px) {
   .carte__drink-header-list {
     text-align: left;
-    margin-left: 40px;
+    margin-left: 20px;
   }
 }
 
 .carte__food {
   display: none;
-  transform: translateY(1%);
-  -webkit-animation-name: foodPhoto;
-          animation-name: foodPhoto;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: initial;
-          animation-iteration-count: initial;
-}
-@-webkit-keyframes foodPhoto {
-  0% {
-    transform: translateY(-5%);
-  }
-  100% {
-    transform: translateY(1%);
-  }
-}
-@keyframes foodPhoto {
-  0% {
-    transform: translateY(-5%);
-  }
-  100% {
-    transform: translateY(1%);
-  }
 }
 @media screen and (min-width: 700px) {
-  .carte__food {
-    display: inline-block;
-    width: 320px;
-  }
-}
-@media screen and (min-width: 1200px) {
   .carte__food {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: 40px;
     text-align: left;
     width: auto;
+    margin-left: 20px;
   }
 }
 
