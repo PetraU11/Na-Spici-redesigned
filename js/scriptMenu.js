@@ -25,20 +25,21 @@ foodDiv.addEventListener("click", () => {
 const header = document.querySelectorAll(".carte__drink-header-list")
 const drinkList = document.querySelectorAll(".carte__drink-list")
 
-
-header.forEach((h3) => {
+header.forEach((h3, index) => {
     h3.addEventListener('click', () => {
-   h3.nextElementSibling.classList.toggle("shown")
-
-
-    drinkList.forEach((wrapper) => {
-        wrapper.addEventListener("click",() =>  
-        wrapper.classList.remove("shown"))
-
-    })
-
-
+        drinkList.forEach((list, listIndex) => {
+            if (listIndex !== index) {
+                list.classList.remove("shown")
+            }
+        })
+    drinkList[index].classList.toggle("shown")
 })})
+
+drinkList.forEach((list) => {
+    list.addEventListener("click",() => {
+        list.classList.remove("shown")
+    } )
+})
 
 
 
