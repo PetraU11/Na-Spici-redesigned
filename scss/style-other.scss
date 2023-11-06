@@ -510,8 +510,7 @@ align-items: center;
     @media screen and (min-width: 700px) {
         display: flex;
     }
-    
-    
+
 }
 
 .menu__food {
@@ -525,7 +524,6 @@ align-items: center;
 .carte__buttons-food {background-color: color.$c-text;
 color: color.$c-main;
 padding: 10px;
-margin-top: 20px;
 padding-top: 20px;
 margin-left: auto;
 margin-right:auto;
@@ -533,16 +531,20 @@ max-width:320px;
     @media screen and (min-width: 700px) {
     padding: 30px;
     max-width:auto;
+   
 }
 }
 
+.carte__buttons-food{
+    margin-top:20px;
+}
 
 .carte__drink {
     display:none;
-    transform: translateY(1%);
+    
    
    
-
+    // transform: translateY(1%);
    // animation-name: drinkPhoto;
     //animation-duration: 2s;
    // animation-iteration-count:initial;
@@ -557,10 +559,9 @@ max-width:320px;
         display:inline-block;
     }
 
-    @media screen and (min-width:700px) {
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
+    @media screen and (min-width:1200px) {
+        display:grid;
+        grid-column: 1fr 1fr;
     }
     }
 
@@ -575,10 +576,13 @@ max-width:320px;
     }
 
     @media screen and (min-width: 1200px) {
-        text-align: left;
-    
-        
-       
+        text-align: left;  
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 8;
+      
     }
     
     
@@ -603,6 +607,9 @@ max-width:320px;
         margin-top:0;
         margin-bottom:0;
         
+    }
+    @media screen and (min-width: 1200px) {
+        grid-column: 1 / 2;
     }
 }
 
