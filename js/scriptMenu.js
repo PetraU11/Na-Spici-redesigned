@@ -33,9 +33,11 @@ header.forEach((h3, index) => {
         drinkList.forEach((list, listIndex) => {
             if (listIndex !== index) {
                 list.classList.remove("shown") 
+               
             }
         }) 
     drinkList[index].classList.toggle("shown")
+    
    
     
 })})

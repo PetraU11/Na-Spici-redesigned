@@ -772,12 +772,19 @@ header {
 @media screen and (min-width: 700px) {
   .carte__drink {
     display: inline-block;
+    flex: 1 1 80%;
   }
 }
 @media screen and (min-width: 1200px) {
   .carte__drink {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 4fr;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .carte__drink-wrapper {
+    flex: 1 1;
   }
 }
 
@@ -821,7 +828,6 @@ header {
 }
 
 .carte__drink-header-list {
-  width: 310px;
   padding: 15px;
 }
 @media screen and (min-width: 700px) {
