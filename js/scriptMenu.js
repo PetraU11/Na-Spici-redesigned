@@ -24,15 +24,20 @@ foodDiv.addEventListener("click", () => {
 
 const header = document.querySelectorAll(".carte__drink-header-list")
 const drinkList = document.querySelectorAll(".carte__drink-list")
+const drinkListSpirits = document.querySelectorAll(".carte__drink-list.spirits")
 
 header.forEach((h3, index) => {
-    h3.addEventListener('click', () => {
+    h3.addEventListener('mouseover', () => {
+       // h3.style.backgroundColor = "rgb(79, 25, 11)"
+        // h3.style.color = "rgb(240, 226, 207)"
         drinkList.forEach((list, listIndex) => {
             if (listIndex !== index) {
-                list.classList.remove("shown")
+                list.classList.remove("shown") 
             }
-        })
+        }) 
     drinkList[index].classList.toggle("shown")
+   
+    
 })})
 
 drinkList.forEach((list) => {

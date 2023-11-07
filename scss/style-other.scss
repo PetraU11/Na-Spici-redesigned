@@ -561,18 +561,17 @@ max-width:320px;
 
     @media screen and (min-width:1200px) {
         display:grid;
-        grid-column: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
+       
     }
     }
-
 
 
 .carte__drink-list {
     display:none;
     @media screen and (min-width: 700px) {
         text-align: left;
-        margin-left: 35px;
-       
+        margin-left: 35px;  
     }
 
     @media screen and (min-width: 1200px) {
@@ -582,16 +581,21 @@ max-width:320px;
     @media screen and (min-width: 1200px) {
         grid-column: 2 / 3;
         grid-row: 1 / 8;
-      
-    }
-    
-    
+       
+    }      
 }
 
 
 
 .carte__drink-list.shown {
     display:inline-block;
+    
+    @media screen and (min-width: 1200px) {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        column-gap: 15px;
+        height: 650px;}
 }
 
 .carte__drink-header-shown {
@@ -610,16 +614,18 @@ max-width:320px;
     }
     @media screen and (min-width: 1200px) {
         grid-column: 1 / 2;
+        
     }
 }
-
-
 
 .carte__drink-header-list:hover {
     background-color: rgb(79, 25, 11) ;
     color: rgb(240, 226, 207);
     border-radius:1px;
 }
+
+
+
 
 .carte__food{
     display:none; 
