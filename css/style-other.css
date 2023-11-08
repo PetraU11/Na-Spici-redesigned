@@ -1047,14 +1047,23 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgb(79, 25, 11);
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+}
+@media screen and (min-width: 1000px) {
+  .catering__gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .img {
-  width: 100%;
+  width: 90%;
   scale: 1;
   transition: 0.3s ease-in-out;
+}
+@media screen and (min-width: 1000px) {
+  .img {
+    width: 100%;
+  }
 }
 
 .img:hover {
