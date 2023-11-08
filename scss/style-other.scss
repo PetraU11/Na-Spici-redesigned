@@ -10,7 +10,8 @@ body {margin: 0;
     color: color.$c-text;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem; 
-    text-align:center;}
+    text-align:center;
+    line-height: 1.5;}
     
 // h2 {font-family: 'Courgette', cursive;}
     
@@ -629,6 +630,7 @@ max-width:320px;
     background-color: rgb(79, 25, 11) ;
     color: rgb(240, 226, 207);
     border-radius:1px;
+    
 }
 
 
@@ -775,24 +777,56 @@ max-width:320px;
 }
 
 
+
+
     
 
+.catering__list{
+    @media screen and (min-width: 1200px) {
+        display:flex;
+        flex-wrap: wrap;
+    column-gap: 4%;
+    }
+}
+
+.catering__list-main-header {
+    @media screen and (min-width: 1200px) {
+        flex-basis: 100%;
+}}
+
+.catering__list-wrapper{
+    @media screen and (min-width: 1200px) {
+        flex-basis: 48%;
+        text-align: left;
+        
+}}
 
 
-.list__list.second {
+
+.catering__list-yearly.second {
     display:none;
 }
 
-.list__list,
-.list__list-two{
+.catering__list-showhide {
+    text-decoration: underline;
+    margin-top:10px;
+ 
+
+}
+
+.catering__list-yearly-items,
+.catering__list-seasonal-items{
     list-style: none;
     padding-left:0;
-   
+    margin-top:0;
+    margin-bottom:0;
+    
 }
 
-.list__showhide {
-    text-decoration: underline;
-
+.img {
+    width:20%;
 }
+    
+
 
 

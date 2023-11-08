@@ -1,3 +1,4 @@
+// navigace v menu - označené tlačítko
 const menuButton = document.querySelector("#menu__itemActive")
 menuButton.classList.add(".menu__item.active");
 
@@ -5,6 +6,8 @@ const menuButtonLink = document.querySelector("#menu__linkActive")
 menuButtonLink.classList.add(".menu__link.active");
 
 
+
+//Rozbalovací nabídka 
 const showButton = document.getElementById("showList")
 const hideButton = document.getElementById("hideList")
 const listPartTwo = document.getElementById("listSecondPart")

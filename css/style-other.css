@@ -196,6 +196,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   text-align: center;
+  line-height: 1.5;
 }
 
 .footer {
@@ -989,16 +990,45 @@ header {
   margin-left: -10px;
 }
 
-.list__list.second {
+@media screen and (min-width: 1200px) {
+  .catering__list {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 4%;
+         column-gap: 4%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catering__list-main-header {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .catering__list-wrapper {
+    flex-basis: 48%;
+    text-align: left;
+  }
+}
+
+.catering__list-yearly.second {
   display: none;
 }
 
-.list__list,
-.list__list-two {
-  list-style: none;
-  padding-left: 0;
+.catering__list-showhide {
+  text-decoration: underline;
+  margin-top: 10px;
 }
 
-.list__showhide {
-  text-decoration: underline;
+.catering__list-yearly-items,
+.catering__list-seasonal-items {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.img {
+  width: 20%;
 }/*# sourceMappingURL=style-other.css.map */
