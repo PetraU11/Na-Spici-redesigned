@@ -684,6 +684,9 @@ max-width:320px;
     background-repeat: no-repeat;
     margin-top: 40px;
     margin-bottom: 40px;
+    border-radius: 1%;
+    border-top: 20px solid color.$c-text;
+    border-bottom: 20px solid color.$c-text;
     @media screen and (min-width: 750px) {
         height: 300px;
     }
@@ -694,8 +697,7 @@ max-width:320px;
         @media screen and (min-width: 750px) {
         display:flex;
         justify-content: space-evenly;
-        margin-top: 15px;
-        margin-bottom: 15px;
+       
     }}
     
     .pricing-size {
@@ -703,7 +705,7 @@ max-width:320px;
         justify-content: center;
         position:relative;
         @media screen and (min-width: 750px) {
-        margin-top: 50px;}
+        margin-top: 15px;}
     }
     
 
@@ -831,12 +833,19 @@ max-width:320px;
     padding-bottom:20px;
     background-color:color.$c-text;
     display:grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  
     
 }
 
 .img {
    width:100%;
+   scale:1;
+   transition: .3s ease-in-out;
+}
+
+.img:hover {
+    transform:scale(1.3)
 }
     
 
