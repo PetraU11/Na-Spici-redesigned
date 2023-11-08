@@ -1029,6 +1029,14 @@ header {
   margin-bottom: 0;
 }
 
+.catering__gallery-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(166, 100, 15);
+}
+
 .img {
   width: 20%;
 }/*# sourceMappingURL=style-other.css.map */
