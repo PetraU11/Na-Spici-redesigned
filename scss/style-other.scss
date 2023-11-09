@@ -43,6 +43,19 @@ a{color:color.$c-text;}
     color:color.$c-main;
 }
 
+
+
+.perex-hr {
+    width: 90%;
+    margin-right:auto;
+    margin-left:auto;
+    border: 2px solid color.$c-text;
+}
+
+.perex-hr:nth-child(3) {
+    margin-bottom: 40px;
+}
+
 /* HEADER */
 
 header {
@@ -212,36 +225,20 @@ align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;}
 
-.about__perex-hr { 
-    width: 80%;
-    margin-right:auto;
-    margin-left:auto;
-    border: 2px solid color.$c-text;
-
-}
-
-.about__perex-hr { 
-    width: 80%;
-    margin-right:auto;
-    margin-left:auto;
-    margin-bottom:20px;
-    border: 2px solid color.$c-text;
 
 
-}
-
-.about__section.two {
+.about__gallery.two {
     margin-top: 5px;
    
 }
 
-.about__image img {
+.about__gallery-wrapper img {
     width: 100%;
     height:100%;
 
 }
 
-.about__image {
+.about__gallery-wrapper {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 5px;
@@ -314,13 +311,8 @@ align-items: center;
 
 //*AKTUALITY *
 
-.events__perex-hr {
-    width: 80%;
-    margin-right:auto;
-    margin-left:auto;
-    border: 2px solid color.$c-text;
-}
-.events_main-listEvents-ImgWrapper {
+
+.events__leaflets-wrapper {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -331,40 +323,40 @@ align-items: center;
     }
     
 }
-.events_main-listEvents-mainImg{
+.events__leaflets-mainImg {
    grid-column: 1 / 3;
    grid-row: 1 / 3;
 }
 
-.events_main-listEvents-mainImg img {
+.events__leaflets-mainImg img {
     width:100%;
 }
 
-.events_main-listEvents-Img img {
+.events__leaflets-img img {
   width:100%;
 }
 
-.events_main-listEvents-Img.one{
+.events__leaflets-img.one{
     grid-column: 3 / 4;
     grid-row: 1 / 2;
 }
 
-.events_main-listEvents-Img.two{
+.events__leaflets-img.two{
     grid-column: 3 / 4;
     grid-row: 2 / 3;
 }
 
-.events_main-listEvents-Img.three{
+.events__leaflets-img.three{
     grid-column: 1 / 2;
     grid-row: 3 / 4;
 }
 
-.events_main-listEvents-Img.four{
+.events__leaflets-img.four{
     grid-column: 2 / 3;
     grid-row: 3 / 4;
 }
 
-.events_main-listEvents-Img.five{
+.events__leaflets-img.five{
     grid-column: 3 / 4;
     grid-row: 3 / 4;
 }
@@ -373,35 +365,16 @@ align-items: center;
 
 
 /*BOOKING*/
-.booking__main {
+.booking{
     display:grid;
     gap: 10px;
 
     @media screen and (min-width: 1000px){
-    grid-template-columns: 5% 1fr 1fr 5%;
+    grid-template-columns: 1fr 1fr;
     }
 
 }
 
-.booking__perex {
-    @media screen and (min-width: 1000px){
-    grid-column: 2 / 4;
-    margin-bottom: 20px;
-}}
-
-.booking__perex-hr { 
-    width: 80%;
-    margin-right:auto;
-    margin-left:auto;
-    border: 2px solid color.$c-text;
-
-}
-
-.booking__info{
-    @media screen and (min-width: 1000px){
-        grid-column: 2/3;
-        }
-}
 
 .booking__photo {
     display:none;
@@ -418,12 +391,6 @@ align-items: center;
     width: 70%;
     margin-left:auto;
     margin-right:auto;
-}
-
-.booking__form{
-    @media screen and (min-width: 1000px){
-        grid-column: 3 / 4;
-    }
 }
 
 .booking__form div:nth-child(2n){
@@ -498,13 +465,6 @@ align-items: center;
 
 /*MENU LIST*/
 
-.carte__perex-hr {
-    width: 80%;
-    border: 2px solid color.$c-text;
-}
-.carte__perex-hr:nth-child(3) {
-    margin-bottom: 40px;
-}
 
 .menu__drink {
     cursor:pointer;
@@ -665,18 +625,6 @@ max-width:320px;
 /*CATERING*/
 
 
-
-.catering__perex-hr {
-    width: 90%;
-    margin-right:auto;
-    margin-left:auto;
-    border: 2px solid color.$c-text;
-}
-.catering__perex-hr:nth-child(3) {
-    margin-bottom: 40px;
-}
-
-
 .catering__pricing {
     background-image: url("../images/background-img/korytko-640.png"); //změnit velikost fotky, moc velké, zpomaluje načítaní
     background-size: cover;
@@ -794,7 +742,7 @@ max-width:320px;
     @media screen and (min-width: 1200px) {
         display:flex;
         flex-wrap: wrap;
-    column-gap: 4%;
+        column-gap: 4%;
     }
 }
 
@@ -814,14 +762,12 @@ max-width:320px;
 
 .catering__list-yearly.second {
     display:none;
-}
+    }
 
 .catering__list-showhide {
     text-decoration: underline;
     margin-top:10px;
- 
-
-}
+    }
 
 .catering__list-yearly-items,
 .catering__list-seasonal-items{
@@ -829,13 +775,12 @@ max-width:320px;
     padding-left:0;
     margin-top:0;
     margin-bottom:0;
-    
-}
+    }
 
 
 .catering__gallery-wrapper{
-    margin-top:42px;
-    margin-bottom:42px;
+    margin-top:40px;
+    margin-bottom:40px;
     padding-top: 20px;
     padding-bottom:20px;
     background-color:color.$c-text;
@@ -846,18 +791,17 @@ max-width:320px;
     grid-template-columns: repeat(4, 1fr);}
     }
 
-.img {
+.catering__gallery-img {
     width:100%;
     scale:1;
-   transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 
     @media screen and (min-width: 1000px) {
-   width:100%;
+    width:100%;
   }
 }
 
-
-.img:hover {
+.catering__gallery-img:hover {
     transform:scale(1.4);
     position:relative;
     z-index: 100;
