@@ -27,7 +27,7 @@ const drinkList = document.querySelectorAll(".carte__drink-list")
 
 header.forEach((h3, index) => {
     h3.addEventListener('mouseover', () => {
-       
+      
         drinkList.forEach((list, listIndex) => {
             if (listIndex !== index) {
                 list.classList.remove("shown") 
