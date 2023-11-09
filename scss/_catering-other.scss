@@ -1,0 +1,195 @@
+@use 'color';
+
+/*CATERING*/
+
+.catering__description-intro,
+.section__perex-intro{
+    max-width:1200px;
+}
+
+.catering__pricing {
+    background-image: url("../images/background-img/korytko-640.png"); //změnit velikost fotky, moc velké, zpomaluje načítaní
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    border-radius: 1%;
+    border-top: 20px solid color.$c-text;
+    border-bottom: 20px solid color.$c-text;
+    @media screen and (min-width: 750px) {
+        height: 300px;
+    }
+    @media screen and (min-width: 1000px) {
+    grid-column:  2 / 8;}}
+
+    .catering__pricing-size {
+        @media screen and (min-width: 750px) {
+        display:flex;
+        justify-content: space-evenly;
+       
+    }
+    
+    .pricing-size {
+        display:flex; 
+        justify-content: center;
+        position:relative;
+        font-weight: bold;
+        @media screen and (min-width: 750px) {
+        margin-top: 15px;
+        scale:1;
+        transition: .3s ease-in-out;}
+    }
+    
+    .pricing-size:hover{
+        margin-top:0;
+        transform:scale(1.15);
+    }
+    
+    .size { 
+        color: color.$c-text;
+        padding-top: 33px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid color.$c-text;
+        background-color: color.$c-main;
+        position:absolute;
+        transform:translate(-100%,30%);
+    
+        @media screen and (min-width: 750px) {
+        transform:translateY(-50%)}}
+    
+.size-small__description { 
+    background-color:rgba(240, 226, 207, 0.8);
+    padding: 10px;
+    border: 5px solid color.$c-text;
+    border-radius: 5% ;
+    margin-top: 10px;
+    margin-bottom:10px;
+    padding-right: 20px;
+    width: 220px;
+    text-align: right;
+    @media screen and (min-width: 750px) {
+    width:150px;
+    padding-top: 50px;
+    padding-right: 10px;
+    text-align: center;}
+    @media screen and (min-width: 1000px) {
+        width:200px;
+    }
+    
+   
+   
+    
+}
+
+
+
+
+.catering__contact { 
+    margin-top: 42px;
+    margin-bottom: 42px;
+    @media screen and (min-width: 1000px) {
+    grid-column: 2 / 8;}
+
+    &__contact > a {
+    text-decoration: none;
+    color:color.$c-text;
+    }}
+    
+.catering__contacts {
+    display:block;
+    
+    @media screen and (min-width: 1000px) {
+    display:flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left:55px;
+    }}
+    
+
+
+.contacts__type-email{
+    margin-left: -10px;
+}
+
+
+
+
+    
+
+.catering__list{
+    @media screen and (min-width: 1200px) {
+        display:flex;
+        flex-wrap: wrap;
+        column-gap: 4%;
+    }
+}
+
+.catering__list-main-header {
+    @media screen and (min-width: 1200px) {
+        flex-basis: 100%;
+}}
+
+.catering__list-wrapper{
+    @media screen and (min-width: 1200px) {
+        flex-basis: 48%;
+        text-align: left;
+        
+}}
+
+
+
+.catering__list-yearly.second {
+    display:none;
+    }
+
+.catering__list-showhide {
+    text-decoration: underline;
+    margin-top:10px;
+    }
+
+.catering__list-yearly-items,
+.catering__list-seasonal-items{
+    list-style: none;
+    padding-left:0;
+    margin-top:0;
+    margin-bottom:0;
+    }
+
+
+.catering__gallery-wrapper{
+    margin-top:40px;
+    margin-bottom:40px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    background-color:color.$c-text;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media screen and (min-width: 1000px) {
+    grid-template-columns: repeat(4, 1fr);}
+    }
+
+.catering__gallery-img {
+    width:100%;
+    scale:1;
+    transition: .3s ease-in-out;
+
+    @media screen and (min-width: 1000px) {
+    width:100%;
+  }
+}
+
+.catering__gallery-img:hover {
+    transform:scale(1.4);
+    position:relative;
+    z-index: 100;
+
+}
+    
+
+
+

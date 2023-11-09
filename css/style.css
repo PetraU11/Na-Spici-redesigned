@@ -895,7 +895,7 @@ header {
   color: rgb(240, 226, 207);
   position: absolute;
   bottom: 15%;
-  transform: translatX(-50%);
+  transform: translateX(-50%);
 }
 
 /* Section first */
