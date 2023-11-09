@@ -773,14 +773,13 @@ max-width:320px;
     
     @media screen and (min-width: 1000px) {
     display:flex;
+    column-gap: 30px;
     justify-content: center;
     align-items: center;
-    margin-left: 55px;
+    margin-left:55px;
     }}
     
-.contacts__type:nth-last-child(2){
-    margin-left: 20px;
-    margin-right: 20px;}
+
 
 .contacts__type-email{
     margin-left: -10px;
