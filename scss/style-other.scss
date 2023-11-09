@@ -624,6 +624,10 @@ max-width:320px;
  
 /*CATERING*/
 
+.catering__description-intro,
+.section__perex-intro{
+    max-width:1200px;
+}
 
 .catering__pricing {
     background-image: url("../images/background-img/korytko-640.png"); //změnit velikost fotky, moc velké, zpomaluje načítaní
