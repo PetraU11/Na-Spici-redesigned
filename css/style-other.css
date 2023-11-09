@@ -210,9 +210,11 @@
     height: 300px;
   }
 }
-@media screen and (min-width: 1000px) {
-  .catering__pricing {
-    grid-column: 2/8;
+
+@media screen and (min-width: 750px) {
+  .catering__pricing-size {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
 
@@ -281,11 +283,6 @@
   margin-top: 42px;
   margin-bottom: 42px;
 }
-@media screen and (min-width: 1000px) {
-  .catering__contact {
-    grid-column: 2/8;
-  }
-}
 .catering__contact__contact > a {
   text-decoration: none;
   color: rgb(79, 25, 11);
@@ -349,8 +346,8 @@
 }
 
 .catering__gallery-wrapper {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 42px;
+  margin-bottom: 42px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgb(79, 25, 11);
@@ -378,6 +375,166 @@
   transform: scale(1.4);
   position: relative;
   z-index: 100;
+}
+
+/*MENU LIST*/
+.menu__drink {
+  cursor: pointer;
+}
+@media screen and (min-width: 700px) {
+  .menu__drink {
+    display: flex;
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .menu__food {
+    display: flex;
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+}
+
+.carte__buttons-drink,
+.carte__buttons-food {
+  background-color: rgb(79, 25, 11);
+  color: rgb(240, 226, 207);
+  padding: 10px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 320px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 700px) {
+  .carte__buttons-drink,
+.carte__buttons-food {
+    padding: 30px;
+    max-width: auto;
+  }
+}
+
+.carte__buttons-food {
+  margin-top: 20px;
+}
+
+.carte__buttons-img {
+  border-radius: 5px;
+}
+
+.carte__drink {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .carte__drink {
+    display: inline-block;
+    flex: 1 1 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carte__drink {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .carte__drink-wrapper {
+    flex: 1 1;
+  }
+}
+
+.carte__drink-list {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .carte__drink-list {
+    text-align: left;
+    margin-left: 35px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carte__drink-list {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carte__drink-list {
+    grid-column: 2/3;
+    grid-row: 1/12;
+  }
+}
+
+.carte__drink-list p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.carte__drink-list.shown {
+  display: block;
+}
+@media screen and (min-width: 700px) {
+  .carte__drink-list.shown {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
+    max-height: 550px;
+  }
+}
+
+.carte__drink-header-shown {
+  display: inline-block;
+}
+
+.carte__drink-header-list {
+  padding: 15px;
+}
+@media screen and (min-width: 700px) {
+  .carte__drink-header-list {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carte__drink-header-list {
+    grid-column: 1/2;
+    padding: 0;
+    height: 75px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.carte__drink-header-list:hover {
+  background-color: rgb(79, 25, 11);
+  color: rgb(240, 226, 207);
+  border-radius: 1px;
+}
+
+.carte__drink-header-list.colored {
+  background-color: pink;
+}
+
+.carte__food {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .carte__food {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: auto;
+    margin-left: 20px;
+  }
 }
 
 *, :after, :before {
@@ -869,140 +1026,4 @@ header {
   background-color: rgb(247, 219, 181);
   border: 5px solid rgb(131, 86, 29);
   color: rgb(79, 25, 11);
-}
-
-/*MENU LIST*/
-.menu__drink {
-  cursor: pointer;
-}
-@media screen and (min-width: 700px) {
-  .menu__drink {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .menu__food {
-    display: flex;
-  }
-}
-
-.carte__buttons-drink,
-.carte__buttons-food {
-  background-color: rgb(79, 25, 11);
-  color: rgb(240, 226, 207);
-  padding: 10px;
-  padding-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 320px;
-}
-@media screen and (min-width: 700px) {
-  .carte__buttons-drink,
-.carte__buttons-food {
-    padding: 30px;
-    max-width: auto;
-  }
-}
-
-.carte__buttons-food {
-  margin-top: 20px;
-}
-
-.carte__drink {
-  display: none;
-}
-@media screen and (min-width: 700px) {
-  .carte__drink {
-    display: inline-block;
-    flex: 1 1 80%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .carte__drink {
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .carte__drink-wrapper {
-    flex: 1 1;
-  }
-}
-
-.carte__drink-list {
-  display: none;
-}
-@media screen and (min-width: 700px) {
-  .carte__drink-list {
-    text-align: left;
-    margin-left: 35px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .carte__drink-list {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .carte__drink-list {
-    grid-column: 2/3;
-    grid-row: 1/8;
-  }
-}
-
-.carte__drink-list.shown {
-  display: inline-block;
-}
-@media screen and (min-width: 1200px) {
-  .carte__drink-list.shown {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    -moz-column-gap: 15px;
-         column-gap: 15px;
-    height: 650px;
-  }
-}
-
-.carte__drink-header-shown {
-  display: inline-block;
-}
-
-.carte__drink-header-list {
-  padding: 15px;
-}
-@media screen and (min-width: 700px) {
-  .carte__drink-header-list {
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .carte__drink-header-list {
-    grid-column: 1/2;
-  }
-}
-
-.carte__drink-header-list:hover {
-  background-color: rgb(79, 25, 11);
-  color: rgb(240, 226, 207);
-  border-radius: 1px;
-}
-
-.carte__food {
-  display: none;
-}
-@media screen and (min-width: 700px) {
-  .carte__food {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    width: auto;
-    margin-left: 20px;
-  }
 }/*# sourceMappingURL=style-other.css.map */

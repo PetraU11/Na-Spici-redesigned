@@ -25,20 +25,16 @@ foodDiv.addEventListener("click", () => {
 const header = document.querySelectorAll(".carte__drink-header-list")
 const drinkList = document.querySelectorAll(".carte__drink-list")
 
-
 header.forEach((h3, index) => {
     h3.addEventListener('mouseover', () => {
-    
+       
         drinkList.forEach((list, listIndex) => {
             if (listIndex !== index) {
                 list.classList.remove("shown") 
-               
-            }
+            } 
         }) 
     drinkList[index].classList.toggle("shown")
-    
-   
-    
+
 })})
 
 drinkList.forEach((list) => {
