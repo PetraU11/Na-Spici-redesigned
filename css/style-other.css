@@ -125,6 +125,10 @@
   margin-top: 0px;
   margin-bottom: 0px;
 } /* margin top pro mobil a a href pro email */
+.footer__contact-tel {
+  color: rgb(240, 226, 207);
+}
+
 @media screen and (min-width: 600px) {
   .footer__payment {
     display: flex;
