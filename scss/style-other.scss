@@ -3,7 +3,11 @@
 @use 'catering-other';
 @use 'menu-other';
 
-// 1200,1000, 950 (menu) 750, 700, 451, 
+// zakladní bp: 1200,1000,700
+// jiné bp:  950 (menu), 750 (catering), 451 
+//margin-top / margin-bottom 42px
+//border radius 5px
+
 *, :after, :before { box-sizing: border-box; }
 
 body {margin: 0;

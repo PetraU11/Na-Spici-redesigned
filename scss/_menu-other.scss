@@ -1,6 +1,6 @@
 @use 'color';
 
-//border radius 5px
+
 
 /*MENU LIST*/
 
@@ -61,8 +61,7 @@ border-radius: 5px;
     @media screen and (min-width:1200px) {
         display:grid;
         grid-template-columns: 2fr 4fr;
-       
-    }
+       }
     }
 
 
@@ -89,8 +88,7 @@ border-radius: 5px;
 .carte__drink-wrapper{
     @media screen and (min-width: 700px) {
         flex:1 1;
-       
-    } 
+        } 
 }
 
 
@@ -103,8 +101,7 @@ border-radius: 5px;
     @media screen and (min-width: 700px) {
         text-align: left;
         margin-left: 35px; 
-      
-    }
+      }
 
     @media screen and (min-width: 1200px) {
         grid-column: 2 / 3;
