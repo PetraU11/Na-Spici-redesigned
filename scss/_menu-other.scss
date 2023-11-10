@@ -115,12 +115,18 @@ border-radius: 5px;
         flex-wrap: wrap;
         text-align: right;
         column-gap:15px;
-        max-height: 550px;}
+        max-height: 600px;}
+
+        @media screen and (min-width: 1200px) {
+        text-align: left;
+        }
 }
 
-.carte__drink-header-shown {
-    display:inline-block;
+.carte__drink-header-list.shown {
+    background-color: rgb(79, 25, 11) ;
+    color: rgb(240, 226, 207);
 }
+
 
 .carte__drink-header-list {
     padding:15px;
@@ -129,12 +135,12 @@ border-radius: 5px;
         margin-left: 20px;
         margin-top:0;
         margin-bottom:0;
+        height:75px;
         
     }
     @media screen and (min-width: 1200px) {
         grid-column: 1 / 2;  
         padding:0;
-        height:75px;
         padding-left:15px;
         display:flex;
         flex-direction: row;
@@ -149,8 +155,7 @@ border-radius: 5px;
 .carte__drink-header-list:hover {
     background-color: rgb(79, 25, 11) ;
     color: rgb(240, 226, 207);
-    border-radius:1px;
-    
+    border-radius:1px;  
 }
 
 

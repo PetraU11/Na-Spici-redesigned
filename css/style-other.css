@@ -483,12 +483,18 @@
     text-align: right;
     -moz-column-gap: 15px;
          column-gap: 15px;
-    max-height: 550px;
+    max-height: 600px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carte__drink-list.shown {
+    text-align: left;
   }
 }
 
-.carte__drink-header-shown {
-  display: inline-block;
+.carte__drink-header-list.shown {
+  background-color: rgb(79, 25, 11);
+  color: rgb(240, 226, 207);
 }
 
 .carte__drink-header-list {
@@ -500,13 +506,13 @@
     margin-left: 20px;
     margin-top: 0;
     margin-bottom: 0;
+    height: 75px;
   }
 }
 @media screen and (min-width: 1200px) {
   .carte__drink-header-list {
     grid-column: 1/2;
     padding: 0;
-    height: 75px;
     padding-left: 15px;
     display: flex;
     flex-direction: row;
