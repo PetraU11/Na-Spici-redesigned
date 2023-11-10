@@ -24,10 +24,17 @@ foodDiv.addEventListener("click", () => {
 
 const header = document.querySelectorAll(".carte__drink-header-list")
 const drinkList = document.querySelectorAll(".carte__drink-list")
+let selectedHeader = null
 
 header.forEach((h3, index) => {
     h3.addEventListener('click', () => {
-      
+    
+        if (selectedHeader) {
+            selectedHeader.classList.remove("active")}
+
+        h3.classList.add("active")
+        selectedHeader = h3
+
         drinkList.forEach((list, listIndex) => {
             if (listIndex !== index) {
                 list.classList.remove("shown") 
@@ -37,6 +44,7 @@ header.forEach((h3, index) => {
     drinkList[index].classList.toggle("shown")
     
 })})
+
 
 drinkList.forEach((list) => {
     list.addEventListener("click",() => {

@@ -617,6 +617,7 @@
 
 .carte__drink-header-list {
   padding: 15px;
+  border-radius: 5px;
 }
 @media screen and (min-width: 700px) {
   .carte__drink-header-list {
@@ -641,7 +642,13 @@
 .carte__drink-header-list:hover {
   background-color: rgb(79, 25, 11);
   color: rgb(240, 226, 207);
-  border-radius: 1px;
+}
+
+.carte__drink-header-list.active {
+  background: rgb(79, 25, 11);
+  color: rgb(240, 226, 207);
+  border-top: 1px solid rgb(240, 226, 207);
+  border-bottom: 1px solid rgb(240, 226, 207);
 }
 
 .carte__food {

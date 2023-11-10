@@ -4,10 +4,8 @@
 
 /*MENU LIST*/
 
-
 .menu__drink {
     cursor:pointer;
-    
     @media screen and (min-width: 700px) {
         display: flex;
         margin-top: 42px;
@@ -22,6 +20,9 @@
         margin-bottom: 42px;
         }
 }
+
+
+
 
 .carte__buttons-drink,
 .carte__buttons-food {background-color: color.$c-text;
@@ -160,6 +161,8 @@ border-radius: 5px;
 
 .carte__drink-header-list {
     padding:15px;
+    border-radius:5px;
+   
     @media screen and (min-width: 700px) {
         text-align: left;
         margin-left: 20px;
@@ -180,12 +183,17 @@ border-radius: 5px;
 }
 
 .carte__drink-header-list:hover {
-    background-color: rgb(79, 25, 11) ;
-    color: rgb(240, 226, 207);
-    border-radius:1px;  
+    background-color: color.$c-text;
+    color: color.$c-main;
+    
 }
 
-
+.carte__drink-header-list.active {
+    background:color.$c-text;
+    color:color.$c-main;
+    border-top:1px solid color.$c-main;
+    border-bottom:1px solid color.$c-main;
+}
 .carte__food{
     display:none; 
     animation-name: foodPhoto;
