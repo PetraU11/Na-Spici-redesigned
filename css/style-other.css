@@ -426,6 +426,12 @@
 
 .carte__drink {
   display: none;
+  -webkit-animation-name: drinkPhoto;
+          animation-name: drinkPhoto;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
 }
 @media screen and (min-width: 700px) {
   .carte__drink {
@@ -440,6 +446,61 @@
   }
 }
 
+@-webkit-keyframes drinkPhoto {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1%);
+    opacity: 1;
+  }
+}
+
+@keyframes drinkPhoto {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1%);
+    opacity: 1;
+  }
+}
+@media (min-width: 700px) {
+  @-webkit-keyframes drinkPhoto {
+    0% {
+      transform: translateX(-90%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(1%);
+      opacity: 1;
+    }
+  }
+  @keyframes drinkPhoto {
+    0% {
+      transform: translateX(-90%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(1%);
+      opacity: 1;
+    }
+  }
+}
 @media screen and (min-width: 700px) {
   .carte__drink-wrapper {
     flex: 1 1;
@@ -457,13 +518,9 @@
 }
 @media screen and (min-width: 1200px) {
   .carte__drink-list {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .carte__drink-list {
     grid-column: 2/3;
     grid-row: 1/12;
+    text-align: left;
   }
 }
 
@@ -528,6 +585,12 @@
 
 .carte__food {
   display: none;
+  -webkit-animation-name: foodPhoto;
+          animation-name: foodPhoto;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
 }
 @media screen and (min-width: 700px) {
   .carte__food {
@@ -540,6 +603,61 @@
   }
 }
 
+@-webkit-keyframes foodPhoto {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1%);
+    opacity: 1;
+  }
+}
+
+@keyframes foodPhoto {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1%);
+    opacity: 1;
+  }
+}
+@media (min-width: 700px) {
+  @-webkit-keyframes foodPhoto {
+    0% {
+      transform: translateX(-90%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(1%);
+      opacity: 1;
+    }
+  }
+  @keyframes foodPhoto {
+    0% {
+      transform: translateX(-90%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(1%);
+      opacity: 1;
+    }
+  }
+}
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -600,11 +718,11 @@ a {
 
 .button-arrow {
   width: 30px;
-  -webkit-animation: bounce 1s infinite;
-          animation: bounce 1s infinite;
+  -webkit-animation: down 1s infinite;
+          animation: down 1s infinite;
 }
 
-@-webkit-keyframes bounce {
+@-webkit-keyframes down {
   0% {
     transform: translateY(-25%);
     -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
@@ -622,7 +740,7 @@ a {
   }
 }
 
-@keyframes bounce {
+@keyframes down {
   0% {
     transform: translateY(-25%);
     -webkit-animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
@@ -639,6 +757,21 @@ a {
             animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
 }
+.button-arrow.right {
+  display: none;
+}
+@media screen and (min-width: 700px) {
+  .button-arrow.right {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .button-arrow.down {
+    display: none;
+  }
+}
+
 /* HEADER */
 header {
   background-image: url(../images/background-img/IMG_0430up.jpg); /*nastavit fotky pro breakpointy*/

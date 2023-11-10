@@ -3,7 +3,7 @@
 @use 'catering-other';
 @use 'menu-other';
 
-// 1200,1000, 750, 700, 451, 
+// 1200,1000, 950 (menu) 750, 700, 451, 
 *, :after, :before { box-sizing: border-box; }
 
 body {margin: 0;
@@ -60,10 +60,10 @@ a{color:color.$c-text;}
 
 .button-arrow {
     width: 30px;
-    animation: bounce 1s infinite;
+    animation: down 1s infinite;
 }
 
-@keyframes bounce {
+@keyframes down {
   0% {
     transform: translateY(-25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
@@ -76,6 +76,17 @@ a{color:color.$c-text;}
     transform: translateY(-25%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
+}
+
+.button-arrow.right {
+    display:none;
+    @media screen and (min-width: 700px) {
+        display:inline-block;
+}}
+
+.button-arrow.down {
+    @media screen and (min-width: 700px) {
+        display:none;}
 }
 
 /* HEADER */
