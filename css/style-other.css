@@ -428,8 +428,8 @@
   display: none;
   -webkit-animation-name: drinkPhoto;
           animation-name: drinkPhoto;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-iteration-count: initial;
           animation-iteration-count: initial;
 }
@@ -509,6 +509,12 @@
 
 .carte__drink-list {
   display: none;
+  -webkit-animation-name: drinkList;
+          animation-name: drinkList;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
 }
 @media screen and (min-width: 700px) {
   .carte__drink-list {
@@ -524,6 +530,61 @@
   }
 }
 
+@-webkit-keyframes drinkList {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1%);
+    opacity: 1;
+  }
+}
+
+@keyframes drinkList {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1%);
+    opacity: 1;
+  }
+}
+@media (min-width: 700px) {
+  @-webkit-keyframes drinkList {
+    0% {
+      transform: translateX(-90%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(1%);
+      opacity: 1;
+    }
+  }
+  @keyframes drinkList {
+    0% {
+      transform: translateX(-90%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(1%);
+      opacity: 1;
+    }
+  }
+}
 .carte__drink-list p {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -587,8 +648,8 @@
   display: none;
   -webkit-animation-name: foodPhoto;
           animation-name: foodPhoto;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-iteration-count: initial;
           animation-iteration-count: initial;
 }
