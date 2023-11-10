@@ -599,7 +599,7 @@ a {
 }
 
 .button-arrow {
-  width: 20px;
+  width: 30px;
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
 }
