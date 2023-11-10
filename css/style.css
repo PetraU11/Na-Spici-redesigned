@@ -937,7 +937,7 @@ header {
   padding-bottom: 30px;
 }
 
-.section-first__why {
+.section-first__wrapper {
   width: 90%;
   max-width: 1000px;
   display: flex;
@@ -948,7 +948,7 @@ header {
   margin-right: auto;
 }
 @media screen and (min-width: 1000px) {
-  .section-first__why {
+  .section-first__wrapper {
     width: 60%;
   }
 }
