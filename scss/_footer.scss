@@ -85,9 +85,17 @@
                 margin-bottom:0px;
             } /* margin top pro mobil a a href pro email */
         
-            .footer__contact-tel{
-                color: color.$c-main;
-            }
+            
+
+
+            a[href^="tel"] {
+                color: inherit;
+                text-decoration: none;
+              }
+
+
+              
+
     .footer__payment {
          @media screen and (min-width: 600px) {display:flex;
     align-items: center;
