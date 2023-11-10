@@ -26,7 +26,7 @@ const header = document.querySelectorAll(".carte__drink-header-list")
 const drinkList = document.querySelectorAll(".carte__drink-list")
 
 header.forEach((h3, index) => {
-    h3.addEventListener('mouseover', () => {
+    h3.addEventListener('click', () => {
       
         drinkList.forEach((list, listIndex) => {
             if (listIndex !== index) {
