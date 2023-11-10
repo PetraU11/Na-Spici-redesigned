@@ -483,18 +483,18 @@
     text-align: right;
     -moz-column-gap: 15px;
          column-gap: 15px;
-    max-height: 600px;
+    max-height: 1050px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .carte__drink-list.shown {
+    max-height: 550px;
   }
 }
 @media screen and (min-width: 1200px) {
   .carte__drink-list.shown {
     text-align: left;
   }
-}
-
-.carte__drink-header-list.shown {
-  background-color: rgb(79, 25, 11);
-  color: rgb(240, 226, 207);
 }
 
 .carte__drink-header-list {
