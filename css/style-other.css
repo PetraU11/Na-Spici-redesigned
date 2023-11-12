@@ -760,6 +760,11 @@ a {
   color: rgb(79, 25, 11);
 }
 
+.menu__item {
+  display: flex;
+  justify-content: center;
+}
+
 .menu__item.active {
   background-color: rgb(131, 86, 29);
 }
@@ -1271,4 +1276,13 @@ header {
   background-color: rgb(247, 219, 181);
   border: 5px solid rgb(131, 86, 29);
   color: rgb(79, 25, 11);
+}
+
+.form__warning-email,
+.form__warning-phone {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  text-align: left;
+  margin-top: 4px;
 }/*# sourceMappingURL=style-other.css.map */

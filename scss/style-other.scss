@@ -41,6 +41,12 @@ main > section {
 section a,
 a{color:color.$c-text;}
 
+.menu__item{
+    display:flex;
+    justify-content: center;
+  
+}
+
 .menu__item.active {
     background-color:color.$c-button; 
 }
@@ -493,5 +499,12 @@ align-items: center;
     border: 5px solid color.$c-button;
     color: color.$c-text;}
 
-
+.form__warning-email,
+.form__warning-phone {
+    display:none;
+    color:red;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top:4px;
+}
 

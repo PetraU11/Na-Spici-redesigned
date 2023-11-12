@@ -78,44 +78,48 @@
 
     </div>
         
-    <form class="booking__form" method="POST" action="BookingMail.php"> 
+    <form class="booking__form" method="POST"> 
 
-    <!-- <form class="booking__form" action="https://submit-form.com/AsX6HR47" method="POST"> 
+    <!-- 
+         <form class="booking__form" method="POST" action="BookingMail.php">
+        <form class="booking__form" action="https://submit-form.com/AsX6HR47" method="POST"> 
 --> 
         
             
         <div class="form">
         <label for="jmeno"> Název rezervace <span class="required"> * </span> </label>
-        <input type="text" name="jmeno" id="jmeno" maxlength="40"
-        placeholder="Jirka Nováků" autofocus required>
+        <input type="text" name="jmeno" id="jmeno" maxlength="60"
+        placeholder="Oslava Honza" autofocus>
         </div>
         
         <div class="form">
         <label for="email"> Kontaktní e-mail <span class="required"> * </span></label>
         <input type="email" name="email" id="email" placeholder="jiri.spica@seznam.cz" required>
+        <p class="form__warning-email"> Zadejte platnou emailovou adresu.</p>
         </div>
         
         
         <div class="form">
         <label for="tel"> Kontaktní telefon <span class="required"> * </span> </label>
-        <input type="tel" name="tel" id="tel" min="9" max="12" placeholder="723 123 456" required>
+        <input type="tel" name="tel" id="tel" min="9" max="12" placeholder="+420723123456" required>
+        <p class="form__warning-phone"> Zadejte platné telefonní číslo ve formátu +42737123456.</p>
         </div>
         
         <div class="form">
         <label for="pocet"> Počet osob <span class="required"> * </span> </label>
-        <input type="number" name="pocet" id="pocet" min="1" placeholder="3" required>
+        <input type="number" name="pocet" id="pocet" min="1" max="99" placeholder="3">
         </div>
         
 
         <div class="form timeDate">
         <div class="form date">
         <label for="datum"> Datum <span class="required"> * </span></label>
-        <input type="date" name="datum" id="datum" required>
+        <input type="date" name="datum" id="datum">
         </div>
         
         <div class="form time">
         <label for="cas"> Čas <span class="required"> * </span></label>
-        <input type="time" name="cas" id="cas" required>
+        <input type="time" name="cas" id="cas" >
         </div>
         </div>
         
