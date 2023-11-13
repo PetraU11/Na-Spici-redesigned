@@ -773,7 +773,7 @@
     display: flex;
     justify-items: center;
     width: 70%;
-    gap: 10%;
+    gap: 5%;
   }
 }
 
@@ -789,10 +789,12 @@
 
 .form.time > input {
   height: 36px;
+  min-width: 130px;
 }
 
 .form.date > input {
   height: 36px;
+  min-width: 130px;
 }
 
 .form.date,
