@@ -67,6 +67,7 @@ flex-direction: column;
 .form input,
 .form textarea {
     width: 100%;
+    min-height: 50px;
     border: 2px solid color.$c-text;
     border-radius: 10px;
     font-size: 16px;
