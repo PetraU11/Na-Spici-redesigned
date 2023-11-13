@@ -44,9 +44,10 @@ section a,
 a{color:color.$c-text;}
 
 .menu__item{
+    @media screen and (min-width: 1000px) {
     display:flex;
     justify-content: center;
-  
+    align-items: center;}
 }
 
 .menu__item.active {
@@ -138,10 +139,10 @@ align-items: center;
     color: color.$c-main;
     margin-right: 10px;
     //font-family: 'Courgette', cursive;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
     @media screen and (min-width: 1000px) {
-            font-size: 1.8rem;}
+            font-size: 1.6rem;}
  }
         
  .header__name-logo {width: 23%;}
@@ -224,7 +225,7 @@ align-items: center;
             width: 11vw;
             border-bottom:none;
             border-right: 3px solid color.$c-header-footer;
-            font-size: 0.9rem;
+            font-size: 1rem;
             min-height: 50px;
             color:color.$c-main;
             padding: 5px 5px;}

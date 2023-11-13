@@ -24,8 +24,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 42px;
-    margin-bottom: 42px;
+    margin: 42px auto;
     border-radius: 1%;
     border-top: 20px solid color.$c-text;
     border-bottom: 20px solid color.$c-text;
@@ -33,27 +32,18 @@
     justify-content: center;
     align-items: center;
     width:90%;
-    margin-left: auto;
-    margin-right:auto;
+    
 }
 
 .booking__opening-hours-wrapper {
     background-color: rgba(0, 0, 0, 0.609);
     color:color.$c-main;
-    padding:15px;
-    
+    padding:15px;  
 }
 
-.booking__photo {
-    display:none;
-    @media screen and (min-width: 1000px){
-        display:none;
-        width: 90%;
-        border-radius: 10px;
-        margin-top: 60px;
-        border: 5px solid rgb(123, 74, 11);
-        
-    }
+.booking__form div:nth-child(2n){
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .form {
@@ -63,11 +53,6 @@
     @media screen and (min-width: 700px){
     width:80%;
     }
-}
-
-.booking__form div:nth-child(2n){
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .form.timeDate {
@@ -114,8 +99,6 @@ flex-direction: column;
 
 
 
-
-
 .form > input,
 .form textarea {
     width: 100%;
@@ -140,11 +123,10 @@ flex-direction: column;
     outline:0;
     border: 2px solid color.$c-text; }
         
-       /* .form input:placeholder-shown {background-color:bisque;}*/
 .form input:not(:placeholder-shown):valid {
     background-color: rgb(217, 232, 237);} 
        
-            
+        
 .required {
     color: red;
     margin:0;

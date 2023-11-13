@@ -745,8 +745,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 42px;
-  margin-bottom: 42px;
+  margin: 42px auto;
   border-radius: 1%;
   border-top: 20px solid rgb(79, 25, 11);
   border-bottom: 20px solid rgb(79, 25, 11);
@@ -754,8 +753,6 @@
   justify-content: center;
   align-items: center;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .booking__opening-hours-wrapper {
@@ -764,17 +761,9 @@
   padding: 15px;
 }
 
-.booking__photo {
-  display: none;
-}
-@media screen and (min-width: 1000px) {
-  .booking__photo {
-    display: none;
-    width: 90%;
-    border-radius: 10px;
-    margin-top: 60px;
-    border: 5px solid rgb(123, 74, 11);
-  }
+.booking__form div:nth-child(2n) {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .form {
@@ -786,11 +775,6 @@
   .form {
     width: 80%;
   }
-}
-
-.booking__form div:nth-child(2n) {
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .form.timeDate {
@@ -859,13 +843,14 @@
   border: 2px solid rgb(79, 25, 11);
 }
 
-/* .form input:placeholder-shown {background-color:bisque;}*/
 .form input:not(:-moz-placeholder-shown):valid {
   background-color: rgb(217, 232, 237);
 }
+
 .form input:not(:-ms-input-placeholder):valid {
   background-color: rgb(217, 232, 237);
 }
+
 .form input:not(:placeholder-shown):valid {
   background-color: rgb(217, 232, 237);
 }
@@ -944,9 +929,12 @@ a {
   color: rgb(79, 25, 11);
 }
 
-.menu__item {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 1000px) {
+  .menu__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .menu__item.active {
@@ -1063,11 +1051,11 @@ header {
   text-align: right;
   color: rgb(240, 226, 207);
   margin-right: 10px;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 @media screen and (min-width: 1000px) {
   .header__name-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -1173,7 +1161,7 @@ header {
     width: 11vw;
     border-bottom: none;
     border-right: 3px solid rgb(166, 100, 15);
-    font-size: 0.9rem;
+    font-size: 1rem;
     min-height: 50px;
     color: rgb(240, 226, 207);
     padding: 5px 5px;
