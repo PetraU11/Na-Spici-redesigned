@@ -19,7 +19,11 @@ text-align:center;}
 
 h2 {font-family: 'Courgette', cursive;}
 
-.section {padding: 15px;}
+section {
+    margin-top:42px;
+    margin-bottom: 42px;
+    padding:0 15px;}
+
 .section:nth-child(even) {background-color: color.$c-header-footer;
 color: color.$c-main;}
 

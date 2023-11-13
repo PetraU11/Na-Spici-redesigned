@@ -931,11 +931,6 @@ header {
 }
 
 /* Section first */
-.section__first {
-  padding-top: 15px;
-  padding-bottom: 30px;
-}
-
 .section-first__wrapper {
   width: 90%;
   max-width: 1000px;
@@ -984,8 +979,10 @@ h2 {
   font-family: "Courgette", cursive;
 }
 
-.section {
-  padding: 15px;
+section {
+  margin-top: 42px;
+  margin-bottom: 42px;
+  padding: 0 15px;
 }
 
 .section:nth-child(even) {

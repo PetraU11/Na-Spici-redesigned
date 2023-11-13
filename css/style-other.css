@@ -1293,6 +1293,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 42px;
+  margin-bottom: 42px;
 }
 @media screen and (min-width: 1000px) {
   .events__leaflets-wrapper {
