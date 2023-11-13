@@ -768,6 +768,7 @@
     display: flex;
     justify-items: center;
     width: 70%;
+    gap: 10%;
   }
 }
 
@@ -788,7 +789,7 @@
   flex-direction: column;
 }
 
-.form input,
+.form > input,
 .form textarea {
   width: 100%;
   min-height: 50px;
@@ -799,7 +800,7 @@
   background-color: rgb(247, 219, 181);
 }
 @media screen and (min-width: 700px) {
-  .form input,
+  .form > input,
 .form textarea {
     flex: 1 1 100%;
   }
