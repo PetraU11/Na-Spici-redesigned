@@ -31,7 +31,7 @@ menuButtonLink.classList.add(".menu__link.active");
 
 
     
-emailInput.addEventListener("input", function () {
+emailInput.addEventListener("input", () => {
     if (validovatEmail(emailInput.value)) {
         warningMail.style.display = "none"
     } else {
@@ -40,7 +40,7 @@ emailInput.addEventListener("input", function () {
 })
 
 
-telInput.addEventListener("input", function () {
+telInput.addEventListener("input", () => {
     if (validovatTelefon(telInput.value)) {
         warningPhone.style.display = "none"
     } else {
