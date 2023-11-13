@@ -721,6 +721,129 @@
     }
   }
 }
+/*BOOKING*/
+.booking {
+  display: grid;
+  gap: 10px;
+}
+@media screen and (min-width: 1000px) {
+  .booking {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.booking_opening-hours {
+  font-weight: bold;
+}
+
+.booking__photo {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .booking__photo {
+    display: inline-block;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: 5px solid rgb(123, 74, 11);
+  }
+}
+
+.form {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking__form div:nth-child(2n) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form.timeDate {
+  width: auto;
+}
+@media screen and (min-width: 700px) {
+  .form.timeDate {
+    display: flex;
+    justify-items: center;
+    width: 70%;
+  }
+}
+
+.form.timeDate div:nth-child(2) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  border: 2px solid rgb(79, 25, 11);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: rgb(247, 219, 181);
+}
+@media screen and (min-width: 700px) {
+  .form input,
+.form textarea {
+    flex: 1 1 100%;
+  }
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: 0;
+  border: 2px solid rgb(79, 25, 11);
+}
+
+/* .form input:placeholder-shown {background-color:bisque;}*/
+.form input:not(:-moz-placeholder-shown):valid {
+  background-color: rgb(217, 232, 237);
+}
+.form input:not(:-ms-input-placeholder):valid {
+  background-color: rgb(217, 232, 237);
+}
+.form input:not(:placeholder-shown):valid {
+  background-color: rgb(217, 232, 237);
+}
+
+.required {
+  color: red;
+  margin: 0;
+  display: inline-block;
+}
+
+.booking-button {
+  color: rgb(247, 219, 181);
+  border: 5px solid rgb(79, 25, 11);
+  background-color: rgb(131, 86, 29);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+
+.booking-button:hover {
+  background-color: rgb(79, 25, 11);
+  border: 5px solid rgb(131, 86, 29);
+}
+
+.booking-button:active {
+  background-color: rgb(247, 219, 181);
+  border: 5px solid rgb(131, 86, 29);
+  color: rgb(79, 25, 11);
+}
+
+.form__warning-email,
+.form__warning-phone {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  text-align: left;
+  margin-top: 4px;
+}
+
 *, :after, :before {
   box-sizing: border-box;
 }
@@ -786,7 +909,7 @@ a {
 }
 
 .perex-hr:nth-child(3) {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .button-arrow {
@@ -1166,123 +1289,4 @@ header {
 .events__leaflets-img.five {
   grid-column: 3/4;
   grid-row: 3/4;
-}
-
-/*BOOKING*/
-.booking {
-  display: grid;
-  gap: 10px;
-}
-@media screen and (min-width: 1000px) {
-  .booking {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.booking__photo {
-  display: none;
-}
-@media screen and (min-width: 1000px) {
-  .booking__photo {
-    display: inline-block;
-    width: 90%;
-    border-radius: 10px;
-    margin-top: 20px;
-    border: 5px solid rgb(123, 74, 11);
-  }
-}
-
-.form {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.booking__form div:nth-child(2n) {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.form.timeDate {
-  width: auto;
-}
-@media screen and (min-width: 700px) {
-  .form.timeDate {
-    display: flex;
-    justify-items: center;
-    width: 70%;
-  }
-}
-
-.form.timeDate div:nth-child(2) {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.form input,
-.form textarea {
-  width: 100%;
-  border: 2px solid rgb(79, 25, 11);
-  border-radius: 10px;
-  font-size: 16px;
-  padding: 5px 10px;
-  background-color: rgb(247, 219, 181);
-}
-@media screen and (min-width: 700px) {
-  .form input,
-.form textarea {
-    flex: 1 1 100%;
-  }
-}
-
-.form input:focus,
-.form textarea:focus {
-  outline: 0;
-  border: 2px solid rgb(79, 25, 11);
-}
-
-/* .form input:placeholder-shown {background-color:bisque;}*/
-.form input:not(:-moz-placeholder-shown):valid {
-  background-color: rgb(217, 232, 237);
-}
-.form input:not(:-ms-input-placeholder):valid {
-  background-color: rgb(217, 232, 237);
-}
-.form input:not(:placeholder-shown):valid {
-  background-color: rgb(217, 232, 237);
-}
-
-.required {
-  color: red;
-  margin: 0;
-  display: inline-block;
-}
-
-.booking-button {
-  color: rgb(247, 219, 181);
-  border: 5px solid rgb(79, 25, 11);
-  background-color: rgb(131, 86, 29);
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 1em;
-}
-
-.booking-button:hover {
-  background-color: rgb(79, 25, 11);
-  border: 5px solid rgb(131, 86, 29);
-}
-
-.booking-button:active {
-  background-color: rgb(247, 219, 181);
-  border: 5px solid rgb(131, 86, 29);
-  color: rgb(79, 25, 11);
-}
-
-.form__warning-email,
-.form__warning-phone {
-  display: none;
-  color: red;
-  font-size: 0.9rem;
-  text-align: left;
-  margin-top: 4px;
 }/*# sourceMappingURL=style-other.css.map */
