@@ -3,7 +3,7 @@
 /*BOOKING*/
 .booking{
     display:grid;
-    gap: 10px;
+    gap:20px;
 
     @media screen and (min-width: 1000px){
     grid-template-columns: 1fr 1fr;
@@ -11,14 +11,43 @@
 
 }
 
-.booking_opening-hours{
+.booking__info{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.booking__opening-hours{
     font-weight: bold;
+    height: 200px;
+    background-image: url(../images/booking/Reserve.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    border-radius: 1%;
+    border-top: 20px solid color.$c-text;
+    border-bottom: 20px solid color.$c-text;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.booking__opening-hours-wrapper {
+    background-color: rgba(0, 0, 0, 0.609);
+    color:color.$c-main;
+    padding:15px;
+    
 }
 
 .booking__photo {
     display:none;
     @media screen and (min-width: 1000px){
-        display:inline-block;
+        display:none;
         width: 90%;
         border-radius: 10px;
         margin-top: 60px;

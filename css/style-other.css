@@ -724,7 +724,7 @@
 /*BOOKING*/
 .booking {
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 @media screen and (min-width: 1000px) {
   .booking {
@@ -732,8 +732,36 @@
   }
 }
 
-.booking_opening-hours {
+.booking__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.booking__opening-hours {
   font-weight: bold;
+  height: 200px;
+  background-image: url(../images/booking/Reserve.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 42px;
+  margin-bottom: 42px;
+  border-radius: 1%;
+  border-top: 20px solid rgb(79, 25, 11);
+  border-bottom: 20px solid rgb(79, 25, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking__opening-hours-wrapper {
+  background-color: rgba(0, 0, 0, 0.609);
+  color: rgb(240, 226, 207);
+  padding: 15px;
 }
 
 .booking__photo {
@@ -741,7 +769,7 @@
 }
 @media screen and (min-width: 1000px) {
   .booking__photo {
-    display: inline-block;
+    display: none;
     width: 90%;
     border-radius: 10px;
     margin-top: 60px;
@@ -887,7 +915,7 @@ body {
   background-color: rgb(240, 226, 207);
   color: rgb(79, 25, 11);
   font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-align: center;
   line-height: 1.5;
 }
