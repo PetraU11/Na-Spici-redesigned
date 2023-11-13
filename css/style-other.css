@@ -821,6 +821,10 @@
   }
 }
 
+.form > label {
+  font-weight: bold;
+}
+
 .form input:focus,
 .form textarea:focus {
   outline: 0;
