@@ -65,9 +65,15 @@
             align-items: left; }}
     
             .footer__contact-wrapper {
-                @media screen and (min-width: 430px) {display:flex;
+                display:flex;
+                flex-direction: column;
                 justify-content: center;
-            align-items: center;}
+                align-items: center;
+                gap:16px;
+                @media screen and (min-width: 430px) {display:flex;
+                    flex-direction:row;
+                    gap:0px;
+               }
             @media screen and (min-width: 1000px) {
                 justify-content: left; }}
     
