@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /* FOOTER */
 .footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 0.8rem;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  font-size: 1rem;
   background-image: url(../images/background-img/mistnostDve.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -30,8 +30,8 @@
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 42px;
+  padding-bottom: 42px;
   max-width: 1500px;
 }
 @media screen and (min-width: 1000px) {

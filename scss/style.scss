@@ -24,7 +24,7 @@ section {
     margin-bottom: 42px;
     padding:0 15px;}
 
-.section:nth-child(even) {background-color: color.$c-header-footer;
+section:nth-child(even) {background-color: color.$c-header-footer;
 color: color.$c-main;}
 
 .phone_number{

@@ -264,9 +264,9 @@ header {
 
 /* FOOTER */
 .footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font-size: 0.8rem;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  font-size: 1rem;
   background-image: url(../images/background-img/mistnostDve.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -293,8 +293,8 @@ header {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 42px;
+  padding-bottom: 42px;
   max-width: 1500px;
 }
 @media screen and (min-width: 1000px) {
@@ -450,8 +450,6 @@ header {
 .section-three__wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
   max-width: 1500px;
 }
 @media screen and (min-width: 600px) {
@@ -597,8 +595,8 @@ header {
 .section-four__wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin-bottom: 42px;
+  margin-top: 42px;
   max-width: 1500px;
 }
 @media screen and (min-width: 600px) {
@@ -743,8 +741,6 @@ header {
 .section-five__wrapper {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
   width: 90%;
   max-width: 1500px;
 }
@@ -985,7 +981,7 @@ section {
   padding: 0 15px;
 }
 
-.section:nth-child(even) {
+section:nth-child(even) {
   background-color: rgb(166, 100, 15);
   color: rgb(240, 226, 207);
 }
