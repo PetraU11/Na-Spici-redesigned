@@ -1039,27 +1039,33 @@
   grid-column: 1/2;
 }
 
+@media screen and (min-width: 700px) {
+  .about__song {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .about__song {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .about__song-wrapper {
+    text-align: left;
+    flex-basis: 50%;
+  }
+}
+
 .img12 {
   width: 70%;
 }
 @media screen and (min-width: 700px) {
   .img12 {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .about__song {
-    display: flex;
-    gap: 15px;
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .about__song-wrapper {
-    text-align: right;
-    flex-basis: 50%;
   }
 }
 
