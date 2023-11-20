@@ -897,6 +897,20 @@
   margin-top: 4px;
 }
 
+.events__news-group {
+  display: flex;
+}
+
+.events__news-group img {
+  width: 30%;
+}
+
+@media screen and (min-width: 700px) {
+  .events__news-group-display {
+    display: none;
+  }
+}
+
 .events__leaflets-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -999,6 +1013,11 @@
 
 .hidden {
   display: none;
+}
+@media screen and (min-width: 700px) {
+  .hidden {
+    display: block;
+  }
 }
 
 .no-menu {

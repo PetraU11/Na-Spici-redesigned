@@ -5,6 +5,8 @@ menuButton.classList.add(".menu__item.active");
 
 //leaflet gallery
 
+/*
+
 const seznamAkci = document.querySelector(".events__leaflets-img.main")
 const gulas = document.querySelector(".events__leaflets-img.zero")
 const gulasMenu = document.querySelector(".events__leaflets-img.zero.menu.hidden")
@@ -41,7 +43,9 @@ husa.addEventListener("click", () => {
 })
 
 vepr.addEventListener("click", () => {
+    console.log("funguju")
     seznamAkci.src = "images/events/vepr_hody.png"
+    
 })
 
 
@@ -56,7 +60,7 @@ masopust.addEventListener("click", () => {
 })
 
 
-
+*/
 
 
 
