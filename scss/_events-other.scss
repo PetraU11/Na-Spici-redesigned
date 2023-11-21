@@ -2,11 +2,18 @@
 
 //*AKTUALITY *
 
+.events__news-group:nth-child(odd){
+    background-color: color.$c-text;
+    color: color.$c-main;
+}
+
 .events__news-group {
-    display:flex;
+    padding: 10px 5px;
+    margin:10px 0px;
+    border-radius: 5px;
 }
 .events__news-group img {
-    width:30%;  
+    width:60%;  
 }
 
 .events__news-group-display {
