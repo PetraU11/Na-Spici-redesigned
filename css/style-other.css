@@ -356,7 +356,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 450px) {
   .catering__gallery-wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -367,7 +367,7 @@
   scale: 1;
   transition: 0.3s ease-in-out;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 450px) {
   .catering__gallery-img {
     width: 100%;
   }

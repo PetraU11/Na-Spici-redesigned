@@ -156,17 +156,17 @@
     background-color:color.$c-text;
     display:grid;
     grid-template-columns: 1fr 1fr;
-
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 450px) {
     grid-template-columns: repeat(4, 1fr);}
     }
+
 
 .catering__gallery-img {
     width:100%;
     scale:1;
     transition: .3s ease-in-out;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 450px) {
     width:100%;
   }
 }
