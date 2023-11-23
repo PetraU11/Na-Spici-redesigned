@@ -1,15 +1,23 @@
 const menuButton = document.querySelector("#menu__itemActive")
 menuButton.classList.add(".menu__item.active");
 
-
+const divWrapper = document.querySelectorAll(".events_news-group-hide-show-wrapper")
 const displayMenu = document.querySelectorAll(".events__news-group-display")
 const menuToDisplay = document.querySelectorAll(".events__news-group--img-menu")
 const menuToHide = document.querySelectorAll(".events__news-group-hide")
 
 
-displayMenu.forEach((menu, index) => {
+divWrapper.forEach((menu, index) => {
+
     menu.addEventListener("click", () => {
-    menu.classList.add("hidden")
+    
+    displayMenu.forEach((toshow, showIndex) => {
+        toshow.classList.add("hidden-button")
+        if(showIndex != index){
+            toshow.classList.remove("hidden-button")
+        }
+    })
+    
     menuToDisplay[index].classList.toggle("hidden")
 
     menuToHide.forEach((tohide, hideIndex) =>{
@@ -17,17 +25,17 @@ displayMenu.forEach((menu, index) => {
          if (hideIndex != index){
             tohide.classList.add("hidden-button")
          }
+
+       
     })
+
+    
+    displayMenu[indexHide].classList.remove("hidden")
+    menuToDisplay[indexHide].classList.add("hidden")
+   
 
     })
 })
 
-menuToHide.forEach((hideMenu, indexHide) => {
-    hideMenu.addEventListener("click", () => {
-        hideMenu.classList.add("hidden-button")
-        displayMenu[indexHide].classList.remove("hidden")
-        menuToDisplay[indexHide].classList.add("hidden")
-    })
 
-})
 

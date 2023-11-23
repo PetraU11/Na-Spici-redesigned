@@ -912,6 +912,12 @@
 
 .events__news-group h3 {
   margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.events_news-group-hide-show-wrapper {
+  cursor: pointer;
+  background-color: black;
 }
 
 @media screen and (min-width: 700px) {
