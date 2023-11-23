@@ -4,40 +4,30 @@ menuButton.classList.add(".menu__item.active");
 
 const displayMenu = document.querySelectorAll(".events__news-group-display")
 const menuToDisplay = document.querySelectorAll(".events__news-group--img-menu")
-let selectedMenu = null
+const menuToHide = document.querySelectorAll(".events__news-group-hide")
+
 
 displayMenu.forEach((menu, index) => {
     menu.addEventListener("click", () => {
     menu.classList.add("hidden")
     menuToDisplay[index].classList.toggle("hidden")
+
+    menuToHide.forEach((tohide, hideIndex) =>{
+        tohide.classList.remove("hidden-button")
+         if (hideIndex != index){
+            tohide.classList.add("hidden-button")
+         }
     })
-})
-
-
-
-/*
-displayMenu.forEach((menu, index) => {
-    menu.addEventListener("click", () => {
-
-        if (selectedMenu){
-            selectedMenu.classList.remove("hidden")
-        }
-
-    menu.classList.add("hidden")
-    selectedMenu = menu
-
-    menuToDisplay.forEach((list, menuList) => {
-        if (menuList != index) {
-            list.classList.remove("hidden")
-        }
-
-    })
-
-menuToDisplay[index].classList.toggle("hidden")
 
     })
 })
 
+menuToHide.forEach((hideMenu, indexHide) => {
+    hideMenu.addEventListener("click", () => {
+        hideMenu.classList.add("hidden-button")
+        displayMenu[indexHide].classList.remove("hidden")
+        menuToDisplay[indexHide].classList.add("hidden")
+    })
 
-*/
+})
 
