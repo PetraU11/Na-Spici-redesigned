@@ -10,14 +10,14 @@
   background-size: cover;
   background-attachment: scroll;
   background-color: rgb(166, 100, 15);
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
 }
 
 .footer__hr {
   width: 30%;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
 }
 @media screen and (min-width: 1000px) {
   .footer__hr {
@@ -121,7 +121,7 @@
 }
 @media screen and (min-width: 430px) {
   .footer__contact-tel {
-    border-right: 2px solid rgb(240, 226, 207);
+    border-right: 2px solid rgb(250, 245, 240);
     margin-right: 6px;
     padding-right: 6px;
   }
@@ -169,7 +169,7 @@
 }
 
 .footer__location-link {
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
 }
 
 .footer__copyright {
@@ -187,7 +187,7 @@
 
 .footer__link {
   text-decoration: none;
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
 }
 
 /*CATERING*/
@@ -246,7 +246,7 @@
   height: 100px;
   border-radius: 50%;
   border: 5px solid rgb(79, 25, 11);
-  background-color: rgb(240, 226, 207);
+  background-color: rgb(250, 245, 240);
   position: absolute;
   transform: translate(-100%, 30%);
 }
@@ -402,7 +402,7 @@
 .carte__buttons-drink,
 .carte__buttons-food {
   background-color: rgb(79, 25, 11);
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
   padding: 10px;
   padding-top: 20px;
   margin-left: auto;
@@ -643,14 +643,14 @@
 
 .carte__drink-header-list:hover {
   background-color: rgb(79, 25, 11);
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
 }
 
 .carte__drink-header-list.active {
   background: rgb(79, 25, 11);
-  color: rgb(240, 226, 207);
-  border-top: 1px solid rgb(240, 226, 207);
-  border-bottom: 1px solid rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
+  border-top: 1px solid rgb(250, 245, 240);
+  border-bottom: 1px solid rgb(250, 245, 240);
 }
 
 .carte__food {
@@ -764,7 +764,7 @@
 
 .booking__opening-hours-wrapper {
   background-color: rgba(0, 0, 0, 0.609);
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
   padding: 15px;
 }
 
@@ -899,7 +899,7 @@
 
 .events__news-group:nth-child(odd) {
   background-color: rgb(79, 25, 11);
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
 }
 
 .events__news-group {
@@ -1203,7 +1203,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(240, 226, 207);
+  background-color: rgb(250, 245, 240);
   color: rgb(79, 25, 11);
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
@@ -1213,7 +1213,7 @@ body {
 
 .footer {
   background-color: rgb(166, 100, 15);
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
 }
 
 main {
@@ -1248,7 +1248,7 @@ a {
 }
 
 .menu__link.active {
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
 }
 
 .phone_number {
@@ -1359,7 +1359,7 @@ header {
 
 .header__name-text {
   text-align: right;
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
   margin-right: 10px;
   font-size: 1.3rem;
 }
@@ -1383,7 +1383,7 @@ header {
 }
 
 .menu__header {
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
   margin-bottom: 0;
   margin-left: -2px;
   font-size: 1rem;
@@ -1414,7 +1414,7 @@ header {
   display: block;
   width: 40px;
   height: 5px;
-  background-color: rgb(240, 226, 207);
+  background-color: rgb(250, 245, 240);
   border-radius: 10%;
 }
 
@@ -1433,7 +1433,7 @@ header {
   margin: 0;
   padding: 80px 0;
   list-style: none;
-  background-color: rgb(240, 226, 207);
+  background-color: rgb(250, 245, 240);
   transition-duration: 0.25s;
   overflow: auto;
 }
@@ -1473,7 +1473,7 @@ header {
     border-right: 3px solid rgb(166, 100, 15);
     font-size: 1rem;
     min-height: 50px;
-    color: rgb(240, 226, 207);
+    color: rgb(250, 245, 240);
     padding: 5px 5px;
   }
 }
@@ -1485,11 +1485,11 @@ header {
 
 .menu__link:hover {
   background-color: rgb(79, 25, 11);
-  color: rgb(240, 226, 207);
+  color: rgb(250, 245, 240);
 }
 @media screen and (min-width: 1000px) {
   .menu__link:hover {
-    background-color: rgb(240, 226, 207);
+    background-color: rgb(250, 245, 240);
     color: rgb(79, 25, 11);
   }
 }
