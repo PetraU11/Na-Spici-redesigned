@@ -1255,6 +1255,7 @@ a {
 
 @media screen and (min-width: 1000px) {
   .menu__item {
+    border-right: 3px solid rgb(166, 100, 15);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1488,7 +1489,6 @@ header {
   .menu__link {
     width: 11vw;
     border-bottom: none;
-    border-right: 3px solid rgb(166, 100, 15);
     font-size: 1rem;
     min-height: 50px;
     color: rgb(246, 241, 235);
@@ -1507,6 +1507,13 @@ header {
 }
 @media screen and (min-width: 1000px) {
   .menu__link:hover {
+    background-color: rgb(246, 241, 235);
+    color: rgb(79, 25, 11);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu__item:hover {
     background-color: rgb(246, 241, 235);
     color: rgb(79, 25, 11);
   }

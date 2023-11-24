@@ -47,6 +47,7 @@ a{color:color.$c-text;}
 
 .menu__item{
     @media screen and (min-width: 1000px) {
+    border-right: 3px solid color.$c-header-footer;   
     display:flex;
     justify-content: center;
     align-items: center;
@@ -233,7 +234,7 @@ align-items: center;
         @media screen and (min-width: 1000px){
             width: 11vw;
             border-bottom:none;
-            border-right: 3px solid color.$c-header-footer;
+          //  border-right: 3px solid color.$c-header-footer;
             font-size: 1rem;
             min-height: 50px;
             color:color.$c-main;
@@ -249,6 +250,12 @@ align-items: center;
         background-color:color.$c-main;
         color: color.$c-text; 
     }} 
+
+.menu__item:hover{
+    @media screen and (min-width: 1000px){
+        background-color:color.$c-main;
+        color: color.$c-text; 
+}}
 
 
 .menu__checkbox:checked ~ .menu__list{
