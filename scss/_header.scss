@@ -12,9 +12,11 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    
-    @media screen and (min-width: 451px) {
-        background-image: url(../images/IMG_0430up.jpg); } }
+
+    @media  screen and  (min-width: 1000px)  {
+        background-image: url(../images/bar_5_1000.jpg);
+ }
+}
 
     
     .header__container {

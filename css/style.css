@@ -11,9 +11,9 @@ header {
   background-size: cover;
   background-attachment: scroll;
 }
-@media screen and (min-width: 451px) {
+@media screen and (min-width: 1000px) {
   header {
-    background-image: url(../images/IMG_0430up.jpg);
+    background-image: url(../images/bar_5_1000.jpg);
   }
 }
 
