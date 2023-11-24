@@ -978,6 +978,11 @@
   }
 }
 
+.events__news-group-display,
+.events__news-group-hide {
+  text-decoration: underline;
+}
+
 .events__news-group.leaflets-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
