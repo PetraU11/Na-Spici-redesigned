@@ -132,11 +132,24 @@
 
 .catering__list-yearly.second {
     display:none;
+    animation-name: menuSecond;
+    animation-duration: 0.5s;
+    animation-iteration-count:initial;
     }
+
+    @keyframes menuSecond {
+        0% {transform: translateY(-90%);
+            opacity: 0; }
+        50% {opacity:0;}
+        100% {transform: translateY(1%);
+            opacity:1; } 
+    }
+
 
 .catering__list-showhide {
     text-decoration: underline;
     margin-top:10px;
+    cursor: pointer;
     }
 
 .catering__list-yearly-items,

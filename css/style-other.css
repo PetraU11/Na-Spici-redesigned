@@ -332,11 +332,45 @@
 
 .catering__list-yearly.second {
   display: none;
+  -webkit-animation-name: menuSecond;
+          animation-name: menuSecond;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
 }
 
+@-webkit-keyframes menuSecond {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1%);
+    opacity: 1;
+  }
+}
+
+@keyframes menuSecond {
+  0% {
+    transform: translateY(-90%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(1%);
+    opacity: 1;
+  }
+}
 .catering__list-showhide {
   text-decoration: underline;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .catering__list-yearly-items,
