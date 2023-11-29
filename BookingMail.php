@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = "petra.ulicna@hotmail.com"; 
-    $subject = "Nová rezervace";
+    $to = "info@hospudkanaspici.cz"; 
+    $subject = "Nová rezervace z webu";
     $name = $_POST["jmeno"];
     $email = $_POST["email"];
     $phone = $_POST["tel"];
