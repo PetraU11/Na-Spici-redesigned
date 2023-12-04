@@ -14,7 +14,7 @@ menuButtonLink.classList.add(".menu__link.active");
     const telInput = document.getElementById("tel")
     const warningMail = document.querySelector(".form__warning-email")
     const warningPhone = document.querySelector(".form__warning-phone")
-   
+    const doneMail = document.querySelector(".form_submit-done")
 
     form.addEventListener("submit", (event) => {
         if (!validovatEmail(emailInput.value)) {
@@ -24,9 +24,12 @@ menuButtonLink.classList.add(".menu__link.active");
             warningPhone.style.display = "block"
             event.preventDefault()
         } else {
-            button.innerHTML = "Děkujeme! Vaše rezervace byla úspěšně odeslána.";
-            event.preventDefault()
-        }
+            doneMail.innerHTML = "&check; Email byl úspěšně odeslán."
+            doneMail.style.color = "green"
+            doneMail.style.fontWeight = "bold"
+            doneMail.style.fontSize = "larger"
+        } 
+        
     });
 
 
@@ -61,3 +64,5 @@ telInput.addEventListener("input", () => {
         const telefonRegex = /^\+\d{3}\d{9}$/
         return telefonRegex.test(telefon)
     }
+
+    

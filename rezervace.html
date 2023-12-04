@@ -87,12 +87,9 @@
 </div>
     
         
-    <form class="booking__form" method="POST" action="BookingMail.php"> 
+  
+<form class="booking__form" action="https://submit-form.com/AsX6HR47" method="POST"> 
 
-    <!-- 
-         <form class="booking__form" method="POST" action="BookingMail.php">
-        <form class="booking__form" action="https://submit-form.com/AsX6HR47" method="POST"> 
---> 
         
             
         <div class="form">
@@ -137,10 +134,20 @@
         <textarea name="info" id="info" cols="15" rows="5" >  
         </textarea>
         </div> 
-            
-        <button class="booking-button" id="booking-button" type="submit" name="tlacitko">Odeslat rezervaci</button> 
         
-        
+    <p class="form_submit-done">&check; Email byl úspěšně odeslán. </p>    
+    <input type="submit" value="Odeslat" class="booking-button">
+   
+    
+    
+    <!-- Formspark data -->
+    <input type="hidden" name="_redirect" value="https://hospudkanaspici.cz/rezervace.html">
+    <input type="hidden" name="_email.subject" value="Nová rezervace z webu Hospudka Na Spici" /> 
+    <input type="hidden" name="_email.from" value="Hospudka Na Spici" />
+    <input type="hidden" name="_email.template.title" value="Nová rezervace z webu Hospudka Na Spici" />
+    <input type="hidden" name="_email.template.footer" value="false" />
+
+
         </form>   
 
     </section> 
@@ -204,5 +211,6 @@
  
             
 <script src="js/scriptBooking.js"> </script>
+
 </body>
 </html>
