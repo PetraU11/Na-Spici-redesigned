@@ -1,4 +1,4 @@
-In progress. To be published no later then by the end of 2023. 
-
+Published.
+https://hospudkanaspici.cz/index.html
 # Na-Spici-redesigned
 https://naspici.netlify.app
